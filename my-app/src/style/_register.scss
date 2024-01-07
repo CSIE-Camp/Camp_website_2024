@@ -1,0 +1,174 @@
+@mixin confirmArrow() {
+  border: 3px solid #d9d9d9;
+  color: #ffffff;
+  background: rgba(217, 217, 217, 0.35);
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+
+  &:hover {
+    // color: #f7d967;
+    background: radial-gradient(149.95% 387.57% at 54.19% 45.2%,
+        #000000 52.6%,
+        rgba(255, 255, 255, 0.63) 100%);
+
+    cursor: pointer;
+  }
+
+  //箭頭尖端
+  span.arrow {
+    display: block;
+    margin: 0px auto;
+    width: 15px;
+    height: 15px;
+    //border-radius: 3px;
+    border-top: 5px solid #d9d9d9;
+    border-left: 5px solid #d9d9d9;
+    transform: rotate(135deg); // transform: rotate(180deg);
+  }
+
+  //箭頭尾部
+  span.arrow::after {
+    content: "";
+    //border-radius: 3px;
+    display: block;
+    width: 5px;
+    height: 15px;
+    background-color: #d9d9d9;
+    transform: rotate(-45deg) translate(3px, 0px);
+    left: 0;
+    top: 0;
+  }
+}
+
+// main scss
+form.regist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-family: "Noto Sans TC", monospace;
+  text-align: center;
+
+  h1.title {
+    padding: 1rem 0px;
+    font-family: "ToronoGlitchSans H2", sans-serif;
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+    padding-right: 2rem;
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  div.inputFlex {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+
+    input {
+      width: 100%;
+    }
+
+    div.inputEmail {
+      position: relative;
+
+      input.loginMail {
+        @include inputStyle();
+      }
+
+      button.confirm {
+        @include confirmArrow();
+      }
+    }
+
+    ::placeholder {
+      // letter-spacing: 1rem;
+      //font-family: "ToronoGlitchSans H3";
+      color: #ffffff;
+    }
+
+    // div.pwd_container {
+    //   display: flex;
+    //   position: relative;
+
+    //   input {
+    //     width: 100%;
+    //   }
+
+    //   input.loginPassword {
+
+    //     @include inputStyle;
+
+
+    //   }
+    // }
+  }
+
+  /*div.helpFlex {
+    width: 100%;
+    padding: 0rem 0 3rem 0;
+    display: flex;
+    justify-content: center;
+
+    div.helpContent {
+      width: 50vw;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    a {
+      font-size: 1rem;
+      padding-bottom: 0.5rem;
+      padding-right: 2rem;
+      text-decoration: none;
+      color: #ffffff;
+    }
+  }*/
+
+  div.passwordFlex {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    // 在passwordFlex裡面的input樣式一致
+    *.forgetPassword {
+      @include inputStyle(); //引用mixin裡面的函式 在login.scss裡面
+    }
+
+    div.pwd_container {
+      display: flex;
+      position: relative;
+
+      input.forgetPassword {
+        width: 100%;
+      }
+
+      button.confirm {
+        @include arrowButtonStyle();
+      }
+    }
+  }
+}
+
+@media screen and (max-width:600px) {
+  form.regist {
+    div.inputFlex {
+      width: 75vw;
+    }
+
+    div.passwordFlex {
+      width: 75vw;
+    }
+  }
+
+}

@@ -1,0 +1,85 @@
+div.infoFlex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+
+
+  div.infoContent {
+    width: 65vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: #ffffff;
+    font-family: "Noto Sans TC", monospace;
+
+    h1.title {
+      padding: 1rem;
+      font-family: "ToronoGlitchSans H2", sans-serif;
+      font-size: 2.5rem;
+    }
+
+    hr.bar {
+      width: 65%;
+      min-width: 580px;
+      padding: 0px 0px 0px 0px;
+      size: "1px";
+      margin: 0.5rem 0;
+    }
+
+    .mainInfo {
+      font-size: 1rem;
+      margin: 0 1.5rem;
+      max-width: 65ch;
+      width: 100%;
+      position: relative;
+      line-height: 1.5rem;
+
+      ol,
+      ul {
+        padding-left: 2rem;
+      }
+
+      p {
+        margin-bottom: 1rem;
+      }
+    }
+
+    table.important {
+      width: 80%;
+      font-size: 1rem;
+      padding: 0.5rem;
+
+      tr.contextImport {
+        text-align: left;
+
+        a {
+          margin-left: 0.75rem;
+        }
+      }
+    }
+
+    div.registerButton {
+      margin: 2.5rem 0;
+
+      a {
+        @include registerButton();
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  div.infoFlex {
+    div.infoContent {
+      width: 90vw;
+
+      hr.bar {
+        min-width: 450px;
+      }
+    }
+  }
+}

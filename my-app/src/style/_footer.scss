@@ -1,0 +1,138 @@
+footer {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+
+
+
+  div#footerFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    div#text {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 350px;
+      top: 2rem;
+
+      h1 {
+        font-size: 2rem;
+        font-family: "ToronoGlitchSans H2";
+        color: #000;
+        z-index: 1;
+      }
+
+      #bar {
+        margin-top: 0.25rem;
+        border: 1px #000 dashed;
+      }
+
+      // 總籌 信箱 連絡電話
+      p {
+        font-family: "Noto Sans TC", monospace;
+        font-size: 1rem;
+        z-index: 1;
+        font-weight: 800;
+
+        // span {
+        //   font-size: 800;
+        // }
+      }
+
+    }
+
+  }
+
+  //Images
+  #picture {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    user-select: none;
+  }
+
+  .island {
+    position: relative;
+    bottom: 0;
+    display: flex;
+    margin: 0 20px;
+  }
+
+  #left {
+    top: 5rem;
+    max-width: 10rem;
+    height: 3rem;
+  }
+
+  #left2 {
+    top: 6rem;
+    max-width: 4rem;
+    height: 3rem;
+  }
+
+  #middle {
+    max-width: 20rem;
+    margin-right: 2.5rem;
+    margin-left: 1rem;
+    height: 150px;
+    right: 0;
+    left: 0;
+    margin-top: 2rem;
+  }
+
+  #right2 {
+    top: 5rem;
+    max-width: 4rem;
+    height: 3rem;
+  }
+
+  #right {
+    top: 7rem;
+    max-width: 4rem;
+    height: 3rem;
+  }
+
+  p {
+
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
+
+  p.Copyright {
+    margin: 10px;
+    text-align: center;
+    font-family: "Noto Sans TC", monospace;
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+
+  div.icon {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    user-select: none;
+
+    a {
+      img {
+        width: 3rem;
+        padding: 0 0.5rem;
+      }
+
+      &:hover {
+        transform: scale(1.1);
+
+        translate: all 0.4s;
+      }
+    }
+  }
+}
+
+// @media screen and (max-width:650px) {
+//   footer {}
+// }

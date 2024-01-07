@@ -1,0 +1,223 @@
+div#formPage {
+  $orange-color: $orange-2;
+
+  $focus-color: $yellow-1;
+
+  @mixin inputFontStyle() {
+    font-size: 1rem;
+    color: #f2a2f2;
+  }
+
+  @mixin inputHover() {
+    &:hover {
+      border: 3px solid $orange-color;
+    }
+
+    &:focus {
+      color: #f7d967;
+      background: radial-gradient(149.95% 387.57% at 54.19% 45.2%,
+          #000000 52.6%,
+          rgba(255, 255, 255, 0.63) 100%);
+      border: 5px solid $orange-color;
+    }
+  }
+
+  h1 {
+    padding: 10px;
+    font-family: "ToronoGlitchSans H2";
+    //font-style: normal;
+    //font-weight: 900;
+    //line-height: 48px;
+    font-size: 2rem;
+  }
+
+  h2 {
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  h4 {
+    font-weight: bold;
+  }
+
+  hr.bar {
+    margin: 0 2rem;
+    padding: 0px 0px 0px 0px;
+    size: "1px";
+    left: 3%;
+  }
+
+  hr.field {
+    padding: 0 0 0 0;
+    size: 1px;
+    width: 100%;
+  }
+
+  div.registerContain {
+    color: #fff;
+    text-align: center;
+    background-color: #0000003b;
+  }
+
+  form {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+
+    fieldset {
+      border: 0px;
+      width: 50%;
+      text-align: left;
+      margin: 10px 0;
+
+      legend {
+        font-size: 1.25rem;
+
+        padding-bottom: 10px;
+      }
+
+      label {
+        display: block; // 加上這行才能改padding
+        font-size: 1.1rem;
+      }
+
+      input {
+        margin-top: 10px;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  form input[type="text"],
+  form input[type="date"],
+  input[type="tel"],
+  input[type="url"] {
+    padding-left: 20px;
+    width: 45%;
+    left: 0%;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    // background-color: #d9d9d930;
+    background: rgba(217, 217, 217, 0.35);
+    height: 3rem;
+    font-size: 1rem;
+
+
+    color: rgb(255, 255, 255);
+
+  }
+
+  form input:focus {
+    color: $focus-color;
+    background: radial-gradient(149.95% 387.57% at 54.19% 45.2%,
+        #000000 52.6%,
+        rgba(255, 255, 255, 0.63) 100%);
+  }
+
+  form input[type="file"] {
+    display: none;
+  }
+
+  ::placeholder {
+    color: #fff;
+  }
+
+  form input:hover {
+    border: 3px solid $focus-color;
+    color: #f7d967;
+    background: #000000;
+  }
+
+  input[type="radio"] {
+    @include inputFontStyle();
+    margin: 0 0 0 20px;
+    width: 18px;
+    height: 18px;
+  }
+
+  select {
+    // background-color: #d9d9d930;
+    background: rgba(217, 217, 217, 0.35);
+    color: #fff;
+    height: 2rem;
+    padding-left: 10px;
+    border-radius: 7px;
+    font-size: 1rem;
+  }
+
+  select>option {
+    font-size: 1rem;
+    //background-color: $orange-2;
+    color: #fff;
+  }
+
+  textarea {
+    font-size: 1rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: rgba(217, 217, 217, 0.35);
+    color: #fff;
+    border-radius: 7px;
+    @include inputHover();
+  }
+
+
+
+  .experience {
+    font-size: 0.8rem;
+  }
+
+  .self {
+    width: 2rem;
+    height: 2rem;
+    float: left;
+  }
+
+  #presentFile {
+    display: inline-block;
+  }
+
+  div.registerButton {
+    display: flex;
+    justify-content: center;
+
+    a {
+      @include registerButton();
+    }
+  }
+
+  div.picture {
+    background: #0630ff37;
+    border: 3px solid #fff;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 2rem;
+
+
+
+    label {
+      display: inline;
+      padding-top: 5px;
+      cursor: pointer;
+
+      input {
+
+        margin-top: 10px;
+      }
+
+    }
+  }
+
+  @media screen and (max-width:900px) {
+    form {
+      fieldset {
+        width: 80%;
+      }
+    }
+  }
+}

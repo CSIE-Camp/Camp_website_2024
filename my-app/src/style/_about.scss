@@ -1,0 +1,234 @@
+div.aboutFlex {
+  display: flex;
+  justify-content: center;
+
+
+  img {
+    pointer-events: none;
+  }
+
+  div.aboutBox {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      padding: 10px;
+      font-family: "ToronoGlitchSans H2";
+      font-style: normal;
+      font-weight: 900;
+      line-height: 48px;
+      font-size: 2.5rem;
+      color: #fff;
+    }
+
+    div.intro {
+      width: 70%;
+      //margin-left: 15%;
+      text-align: center;
+      color: #fff;
+
+      @mixin borderStyle($color: #fff) {
+        border: #fff 3px groove;
+        background-color: $color;
+      }
+
+      div.secondTitle {
+        display: flex;
+        text-align: left;
+        background-color: #fff;
+        color: #000;
+        border-radius: 5px;
+        border: 2px solid #000;
+        padding: 0.5vh 0;
+
+        h2 {
+          padding: 10px;
+          font-style: normal;
+          font-weight: 900;
+          display: flex;
+          align-items: center;
+          user-select: none;
+
+          img.secondTitle {
+            width: 2.5rem;
+            height: 2rem;
+            margin: 0.5vh 1vw 0.5vh 0.5vh;
+          }
+        }
+      }
+
+      div.courseList {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1rem;
+
+        div.detail {
+          width: 95%;
+
+          div.summary {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1rem;
+            font-weight: bold;
+            height: auto;
+            width: 100%;
+            padding: 1% 1%;
+            margin: 10px 0;
+            cursor: pointer;
+            list-style: none;
+
+            @include borderStyle();
+            color: hsl(0, 0%, 0%);
+            border-radius: 30px;
+
+            transition: all 0.3s ease-out;
+            user-select: none;
+
+            img {
+              transition: all 0.3s ease-out;
+            }
+
+            img.summaryHead {
+              width: 2rem;
+              height: 1.2rem;
+            }
+
+            img.summary {
+              width: 1.2rem;
+              height: 1.2rem;
+            }
+
+            &.click-true {
+              // include border style
+              @include borderStyle($yellow-1);
+              background-color: $yellow-1; // 文字方塊顏色
+              color: #fff;
+              padding: 1% 1%;
+              font-size: 1.3rem;
+              border-radius: 15px;
+              width: 90%;
+              margin-left: 5%;
+              text-align: center;
+              transition: 0.3s ease-out;
+
+              ~div.hidden {
+                //margin-right: 30%;
+                //padding: 5px;
+                opacity: 1;
+                width: 100%;
+                height: auto;
+                float: none;
+                border: 5px groove;
+                border-color: $yellow-1; //文字方塊邊框顏色
+                border-radius: 10px;
+                border-top: 0;
+                transform: rotateX(-1deg);
+                transition: width ease-in-out 1s;
+                position: relative;
+              }
+
+              img {
+                width: 3rem;
+                height: 1.8rem;
+                transform: rotateX(-360deg) rotateY(-180deg) rotateZ(-180deg);
+                transition-duration: 0.7s;
+              }
+
+              img.summary {
+                width: 2rem;
+                height: 2rem;
+                transform: rotate(-90deg) rotateY(-360deg);
+                transition-duration: 0.7s;
+              }
+            }
+          }
+
+          div.hidden {
+            opacity: 0;
+            overflow: hidden;
+            overflow-wrap: normal;
+            border-top: 0px;
+            width: 0;
+            padding: 0;
+            margin: 0;
+            border: 0;
+            position: absolute;
+            background: linear-gradient(to bottom right,
+                hsla(0, 0%, 100%, 0.452),
+                rgba(109, 113, 113, 0.226),
+                80%,
+                rgba(44, 38, 44, 0.117));
+            color: #fff;
+
+            div.hidden_text {
+              // 字體大小待調整
+              line-height: 1.5rem;
+              font-size: 16px;
+              // φ(*￣0￣)  \\
+              position: relative;
+              height: auto;
+              width: 59vw;
+              padding-left: 1rem;
+              padding: 10px;
+              box-sizing: border-box;
+              text-align: left;
+
+
+              //
+              ul {
+                margin-left: 18px;
+              }
+
+              a {
+                font-weight: 900;
+                margin-top: 5px;
+                display: block;
+                text-align: center;
+              }
+
+              // 改變br標籤的行高
+              br {
+                display: block;
+                /* makes it have a width */
+                content: "";
+                /* clears default height */
+                margin-top: 10px;
+                /* change this to whatever height you want it */
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  p {
+    margin: 1rem;
+    text-align: left;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width:770px) {
+  div.aboutFlex {
+    div.aboutBox {
+      div.intro {
+        width: 100%;
+
+        div.courseList {
+          div.detail {
+            div.hidden {
+              div.hidden_text {
+                width: 85vw;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

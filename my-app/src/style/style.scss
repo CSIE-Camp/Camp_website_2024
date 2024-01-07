@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+  //position: relative;
+}
+
+$orange-1: #DC6A0B;
+$orange-2: #DA5512;
+$yellow-1: #E7AE16;
+$blue-1: #083A75;
+$gray-bg1: rgba(217, 217, 217, 0.35);
+
+html,
+body,
+body>#root,
+#root>.App {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+
+#root>.App {
+  overflow-y: auto;
+  background-image: url(image/Purple_background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#bg {
+  position: relative;
+  top: 0;
+  //bottom: 0;
+  left: 0;
+  //right: 0;
+  width: 100%;
+  height: 100%;
+  //z-index: -1;
+  display: flex;
+  flex-direction: column;
+  //align-content: space-between;
+  //background-image: url(image/Blue_background.png);
+  // background-size: 100% 100%;
+  // background-position: center center;
+  // background-repeat: no-repeat;
+  // background-attachment: fixed;
+}
+
+// #container{
+//   background-image: url(image/Blue_background.png);
+//   background-size: cover;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-attachment: fixed;
+// }
+
+body {
+  z-index: 1;
+}
+
+// @font-face {
+//   font-family: ToronoGlitchSans H1;
+//   src: local("ToronoGlitchSans H1"), url(./font/torono-glitch-sans/Torono_Glitch_SansH1.otf);
+// }
+
+@font-face {
+  font-family: ToronoGlitchSans H2;
+  src: local("ToronoGlitchSans H2"), url(./font/torono-glitch-sans/Torono_Glitch_SansH2.otf);
+}
+
+// @font-face {
+//   font-family: ToronoGlitchSans H3;
+//   src: local("ToronoGlitchSans H3"), url(./font/torono-glitch-sans/Torono_Glitch_SansH3.otf);
+// }
+
+@font-face {
+  font-family: ToronoGlitchSans H4;
+  src: local("ToronoGlitchSans H4"), url(./font/torono-glitch-sans/Torono_Glitch_SansH4.otf);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: $yellow-1;
+}
+
+
+@import "./nav";
+@import "./home";
+@import "./footer";
+@import "./scrollbar";
+@import "./info";
+@import "./login";
+@import "./register";
+@import "./registerSuccess";
+@import "./about";
+@import "./forget";
+@import "./form";
+@import "./review";
+@import "./personal";
+@import "./admin";
+@import "./payment";
+@import "./exam";

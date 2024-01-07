@@ -1,0 +1,145 @@
+@mixin inputStyle() {
+  text-align: left;
+  padding: 1rem;
+  border: 3px solid #d9d9d9;
+  color: #ffffff;
+  line-height: 36px;
+  font-size: 1.5rem;
+  background: rgba(217, 217, 217, 0.35);
+  border-radius: 20px;
+  margin-bottom: 1rem;
+
+  &::placeholder {
+    color: #ffffff;
+  }
+
+  &:hover {
+    background: #000000;
+  }
+}
+
+@mixin arrowButtonStyle() {
+  border: 3px solid #d9d9d9;
+  color: #ffffff;
+  background: rgba(217, 217, 217, 0.35);
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+
+  &:hover {
+
+    background: radial-gradient(149.95% 387.57% at 54.19% 45.2%,
+        #000000 52.6%,
+        rgba(255, 255, 255, 0.63) 100%);
+    cursor: pointer;
+  }
+
+  //箭頭尖端
+  span.arrow {
+    display: block;
+    margin: 0px auto;
+    width: 15px;
+    height: 15px;
+    border-top: 5px solid #d9d9d9;
+    border-left: 5px solid #d9d9d9;
+    transform: rotate(135deg); // transform: rotate(180deg);
+
+    //箭頭尾部
+    &::after {
+      content: "";
+      display: block;
+      width: 5px;
+      height: 15px;
+      background-color: #d9d9d9;
+      transform: rotate(-45deg) translate(3px, 0px);
+      left: 0;
+      top: 0;
+    }
+  }
+}
+
+form.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-family: "Noto Sans TC", monospace;
+  text-align: center;
+
+  h1.title {
+    padding: 1rem 0px;
+    font-family: "ToronoGlitchSans H2", sans-serif;
+    font-size: 2.5rem;
+  }
+
+  div.inputFlex {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+
+
+    input.loginMail {
+      @include inputStyle(); //引用mixin裡面的函式
+    }
+
+    input:hover {
+      color: #f7d967;
+      background: radial-gradient(149.95% 387.57% at 54.19% 45.2%,
+          #000000 52.6%,
+          rgba(255, 255, 255, 0.63) 100%);
+      cursor: auto;
+    }
+
+    div.pwd_container {
+      display: flex;
+      position: relative;
+
+      input.loginPassword {
+        width: 100%;
+        @include inputStyle(); //引用mixin裡面的函式
+      }
+
+      button.confirm {
+        @include arrowButtonStyle();
+      }
+    }
+  }
+
+  div.helpFlex {
+    width: 100%;
+    padding: 0rem 0 3rem 0;
+    display: flex;
+    justify-content: center;
+
+    div.helpContent {
+      width: 50vw;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    a {
+      font-size: 1rem;
+      // padding-bottom: 0.5rem;
+      // padding-right: 2rem;
+      text-decoration: none;
+      color: #ffffff;
+
+      &:hover {
+        color: $yellow-1;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:600px) {
+  form.login {
+    div.inputFlex {
+      width: 75vw;
+    }
+  }
+}

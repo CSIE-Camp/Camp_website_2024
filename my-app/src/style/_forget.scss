@@ -1,0 +1,84 @@
+form.forget {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-family: "Noto Sans TC", monospace;
+  text-align: center;
+
+  h1.title {
+    padding: 1rem 0px;
+    font-family: "ToronoGlitchSans H2", sans-serif;
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+    padding-right: 2rem;
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  div.inputFlex {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    position: relative;
+
+    div.helpFlex {
+      width: 100%;
+      padding: 0rem 0 3rem 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    button.confirm {
+      @include arrowButtonStyle();
+    }
+  }
+
+  input.forgetMail {
+    @include inputStyle(); //引用mixin裡面的函式 在login.scss裡面
+  }
+  div.passwordFlex {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    // 在passwordFlex裡面的input樣式一致
+    *.forgetPassword {
+      @include inputStyle(); //引用mixin裡面的函式 在login.scss裡面
+    }
+
+    div.pwd_container {
+      display: flex;
+      position: relative;
+
+      input.forgetPassword {
+        width: 100%;
+      }
+      button.confirm {
+        @include arrowButtonStyle();
+      }
+    }
+  }
+
+  input.button {
+    margin: 0px 0px 20px 0px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  form.forget {
+    div.inputFlex {
+      width: 75vw;
+    }
+
+    div.passwordFlex {
+      width: 75vw;
+    }
+  }
+}
