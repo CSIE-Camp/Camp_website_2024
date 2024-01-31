@@ -1,235 +1,63 @@
+$black: #000000;
+$white: #ffffff;
+$orange: #ff7a00;
+$light_orange: #ffead8;
+$red: #ff0000;
+$blue-green: #19a6a2;
+$brown: #794221;
+
 nav {
+  position: fixed;
+  width: 100%;
+  height: 54px;
+  left: 0;
+  background: $orange;
+}
+.banner_icon {
+  // width: 50px;
+  height: 40px;
+  margin: 5px;
+}
+ul.nav_ul {
+  list-style-type: none;
+  margin: auto;
+  padding: 4px;
+  overflow: hidden;
+}
+li.banner_button {
+  float: right;
+  padding: 5px;
 
-  //overflow: hidden;
-  background: white;
-  position: sticky;
-  top: 0;
-  z-index: 5;
-  width: 100vw;
+  position: relative;
+  width: 80px;
 
-  // display: flex;
-  // flex-wrap: wrap;
-  // justify-content: space-between;
-  // align-items: center;
-  padding: 1rem 1rem;
-  margin: 2rem 0;
-
-  img {
-    width: 300px;
+  a {
+    border-width: 4px;
+    border-style: none;
+    border-radius: 32px;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    padding: 4px 4px;
+    text-align: center;
+    text-decoration: none;
+    color: $black;
   }
-
-  div.hamburgerFlex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-
-    div#hamburger {
-      display: block;
-      margin-left: 0.5rem;
-      display: block;
-      width: 40px;
-      position: relative;
-      z-index: 1;
-      //appearance: none;
-      user-select: none;
-      outline: none;
-      background: none;
-      border: none;
-      cursor: pointer;
-
-      span {
-        display: block;
-        z-index: -1;
-        // 防止誤觸
-        pointer-events: none;
-
-        width: 40px;
-        height: 4px;
-        position: relative;
-        margin-bottom: 0.5rem;
-        border-radius: 5px;
-        background-color: $yellow-1;
-        // transition
-        transform-origin: 0 0;
-        transition: all 0.7s;
-      }
-
-
-      // &:hover {
-      //   span {
-      //     background-color: $orange-2;
-      //   }
-      // }
-
-      // hamburger -> X
-      &.dropdown {
-        // span {
-        //   background-color: $orange-2;
-        // }
-
-        span:nth-child(1) {
-          transform: translate(0px, -2px) rotate(45deg);
-        }
-
-        span:nth-child(2) {
-          transform: translateX(20px);
-          opacity: 0;
-        }
-
-        span:nth-child(3) {
-          transform: translate(-3px, 3px) rotate(-45deg);
-        }
-      }
-    }
+  :hover {
+    border-style: solid;
+    border-color: $blue-green;
   }
-
-
-
-  div.ulFlex {
-    display: flex;
-    justify-content: center;
-    /*
-    &:has(ul.show) {
-      // transform: translateY(0px);
-      //transition: all 0.3s linear;
-    }
-
-    &:has(ul.hide) {
-      // transform: translateY(-80px);
-      // transition: all 0.3s linear;
-    }*/
-
-
-    ul {
-      display: flex;
-
-      justify-content: flex-end;
-      list-style-type: none;
-
-      li {
-        padding: 0.5rem;
-
-        a {
-          display: flex;
-          justify-content: center;
-          padding: 1rem;
-          background: rgba(183, 183, 183, 0.3);
-          color: black;
-
-          font-weight: 800;
-          font-size: 1.25rem;
-          line-height: 2.5rem;
-          border-radius: 18px;
-        }
-
-        a:hover {
-          background: #000000;
-          color: #ffffff;
-        }
-
-        a.active {
-          background: #000000;
-          color: #ffffff;
-        }
-      }
-
-
-      // navbar show
-      .show {
-        display: flex;
-        align-items: center;
-
-      }
-
-      // &.hide {
-      //   // height: 0;
-      // }
-
-    }
-  }
-
-  @media screen and (max-width: 1220px) {
-
-    justify-content: center;
-
-  }
-
-  @media screen and (min-width: 870px) {
-    display: flex;
-    justify-content: space-between;
-
-
-    div.hamburgerFlex {
-      // img {
-      //   width: 480px;
-      // }
-
-      div#hamburger {
-        display: none;
-      }
-
-    }
-
-    div.ulFlex {
-      display: flex;
-
-      ul {
-        &.show {
-          flex-direction: row;
-        }
-
-        &.hide {
-          transition: max-height 0.3s ease-in;
-
-        }
-      }
-    }
-  }
-
-  @media screen and (max-width:565px) {
-    div.ulFlex {
-      // &:has(ul.show) {
-      //   // apply the height to child
-      //   overflow: auto;
-      //   max-height: 458px;
-      //   transition: max-height 0.3s ease-out;
-      // }
-
-      // &:has(ul.hide) {
-      //   overflow: auto;
-      //   max-height: 0px;
-      //   transition: max-height 0.3s ease-in;
-      // }
-
-      ul {
-        width: 90%;
-        flex-direction: column;
-
-        &.show {
-          overflow: auto;
-          max-height: 458px;
-          transition: max-height 0.3s ease-out;
-        }
-
-        &.hide {
-          overflow: auto;
-          max-height: 0px;
-          transition: max-height 0.3s ease-in;
-        }
-      }
-    }
-  }
-
-  @media screen and (max-width:399px) {
-    img {
-      width: 250px;
-    }
+  :active {
+    border-style: solid;
+    border-color: $blue-green;
+    background-color: $blue-green;
   }
 }
 
-// 目前所在的網頁
-a.active {
-  background: #000000;
-  color: #ffffff;
+@media screen and (max-width: 600px) {
+  .banner_button {
+    a {
+      font-size: 10px;
+    }
+  }
 }
