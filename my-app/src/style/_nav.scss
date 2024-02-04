@@ -9,55 +9,75 @@ $brown: #794221;
 nav {
   position: fixed;
   width: 100%;
-  height: 54px;
+  // height: 54px;
   left: 0;
   background: $orange;
 }
-.banner_icon {
-  // width: 50px;
-  height: 40px;
-  margin: 5px;
+.banner_logo {
+  height: 45px;
 }
-ul.nav_ul {
-  list-style-type: none;
+.nav_ul {
+  list-style: none;
   margin: auto;
-  padding: 4px;
-  overflow: hidden;
-}
-li.banner_button {
-  float: right;
   padding: 5px;
-
-  position: relative;
-  width: 80px;
-
-  a {
-    border-width: 4px;
-    border-style: none;
-    border-radius: 32px;
-    font-size: 16px;
-    font-weight: bold;
-    display: block;
-    padding: 4px 4px;
-    text-align: center;
-    text-decoration: none;
-    color: $black;
+  overflow: hidden;
+  .home_link {
+    position: relative;
+    top: 2px;
+    left: 5px;
   }
-  :hover {
-    border-style: solid;
-    border-color: $blue-green;
-  }
-  :active {
-    border-style: solid;
-    border-color: $blue-green;
-    background-color: $blue-green;
+  li {
+    float: right;
+    padding: 5px;
+    position: relative;
+    top: 1px;
+    width: 80px;
+
+    a {
+      border-width: 4px;
+      border-style: solid;
+      border-color: $orange;
+      border-radius: 32px;
+      font-size: 16px;
+      font-weight: bold;
+      display: block;
+      padding: 4px 4px;
+      text-align: center;
+      text-decoration: none;
+      color: $black;
+    }
+    :hover {
+      border-style: solid;
+      border-color: $blue-green;
+    }
+    :active {
+      border-style: solid;
+      border-color: $blue-green;
+      background-color: $blue-green;
+    }
   }
 }
 
-@media screen and (max-width: 600px) {
-  .banner_button {
-    a {
-      font-size: 10px;
+@media screen and (width<= 620px) {
+  .nav_ul {
+    display: flex;
+    overflow: auto;
+    li {
+      flex-shrink: 0;
     }
+  }
+}
+@media screen and (width: 980px) and (min-height: 1700px) {
+  .nav_ul {
+    li {
+      width: 100px;
+
+      a {
+        font-size: 20px;
+      }
+    }
+  }
+  .banner_logo {
+    height: 50px;
   }
 }

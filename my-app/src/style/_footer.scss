@@ -24,15 +24,13 @@ footer {
     // justify-content: center;
     // align-items: center;
     padding: 10px 32px;
-    width: 200px;
-    height: 98px;
     background: $light_orange;
     border: 15px solid $brown;
     border-radius: 8px;
     margin: 0;
 }
 .contact_text {
-    margin: 2px;
+    margin: 0;
     text-align: center;
 }
 .contact_title {
@@ -40,11 +38,13 @@ footer {
     font-weight: bolder;
     line-height: 30px;
     color: $black;
+    line-height: 1.5em;
 }
 .contact_content {
     font-size: 14px;
     line-height: 20px;
     color: $black;
+    line-height: 1.5em;
 }
 .social_media {
     display: flex;
@@ -62,5 +62,20 @@ footer {
     }
     .messenger_icon:hover {
         filter: invert(100%);
+    }
+}
+
+// @media screen and (width<= 620px) {
+
+// }
+@media screen and (width: 980px) and (min-height: 1700px) {
+    // .contact {
+    //     // width: 300px;
+    // }
+    .contact_title {
+        font-size: 36px;
+    }
+    .contact_content {
+        font-size: 18px;
     }
 }

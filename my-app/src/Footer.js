@@ -10,11 +10,11 @@ const Footer = () => {
           (張建堯 總籌)</p>
       </div>
       <div class="social_media">
-        <a href="https://www.facebook.com/ntnucsiecamp" target="_blank"><img src="icon-source/facebook.png"
+        <a href="https://www.facebook.com/ntnucsiecamp" target="_blank"><img src="./image/fb.png"
           alt="facebook" class="facebook_icon social_media_icon"></img></a>
-        <a href="https://www.instagram.com/ntnucsiecamp/" target="_blank"><img src="icon-source/instagram.png"
+        <a href="https://www.instagram.com/ntnucsiecamp/" target="_blank"><img src="image/ig.png"
           alt="instagram" class="instagram_icon social_media_icon"></img></a>
-        <a href="http://m.me/ntnucsiecamp" target="_blank"><img src="icon-source/messenger.png" alt="messenger"
+        <a href="http://m.me/ntnucsiecamp" target="_blank"><img src="./image/messenger.png" alt="messenger"
           class="messenger_icon social_media_icon"></img></a>
       </div>
     </footer>
