@@ -10,7 +10,7 @@ nav {
   position: fixed;
   width: 100%;
   // height: 54px;
-  top:0;
+  top: 0;
   left: 0;
   background: $orange;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -37,7 +37,7 @@ nav {
   }
   li {
     float: right;
-    padding: 5px;
+    margin: 5px;
     position: relative;
     top: 1px;
     width: 80px;
@@ -108,15 +108,15 @@ nav {
 @keyframes button_animation {
   0% {
     // background-color: $orange;
-    filter:brightness(1);
+    filter: brightness(1);
   }
   50% {
     // background-color: $blue-green;
-    filter:brightness(1.2);
+    filter: brightness(1.2);
   }
   100% {
     // background-color: $orange;
-    filter: brightness(1)
+    filter: brightness(1);
   }
 }
 @keyframes logo_spin {
