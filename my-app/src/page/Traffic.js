@@ -1,0 +1,96 @@
+import React, { useState } from "react";
+
+const Traffic = () => {
+  function public_method() {
+    let content = document.getElementById("tra-pub");
+    let computedStyle = window.getComputedStyle(content);
+    if (computedStyle.getPropertyValue("display") === "none") {
+      content.style.display = "block";
+      document.getElementById("tra-car").style.display = "none";
+    }
+    // content.style.display = "none";
+  }
+
+  function car() {
+    let content = document.getElementById("tra-car");
+    let computedStyle = window.getComputedStyle(content);
+    if (computedStyle.getPropertyValue("display") === "none") {
+      content.style.display = "block";
+      document.getElementById("tra-pub").style.display = "none";
+    }
+    // content.style.display = "none";
+  }
+  return (
+    <>
+      <div className="container">
+        <div className="traffic-info">
+          <h1>交通資訊</h1>
+          <p className="ntnu-address">臺灣師範大學公館校區（師大分部）</p>
+          <p className="ntnu-address">
+            11677 台北市文山區汀州路四段 88 號 應用科學大樓一樓 資訊工程學系
+          </p>
+        </div>
+        <div className="map-content">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.7905148156797!2d121.53508984715559!3d25.007233251863084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442aa1e27ab738b%3A0x2e5be38c37583475!2z5ZyL56uL6Ie654Gj5bir56-E5aSn5a24IOWFrOmkqOagoeWNgA!5e0!3m2!1szh-TW!2stw!4v1705928987464!5m2!1szh-TW!2stw"
+            width="600"
+            height="450"
+            style={{ border: "0" }}
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div className="traffic-method">
+          <button className="traffic-btn" onClick={public_method}>
+            大眾運輸工具
+          </button>
+          <button className="traffic-btn" onClick={car}>
+            自行開車
+          </button>
+        </div>
+        <div className="traffic-public" id="tra-pub">
+          <div style={{ display: "flex" }}>
+            <div>
+              <b>
+                <p className="metro-title">搭乘捷運</p>
+              </b>
+              <img src={require("../image/metro.png")} className="metro-image" />
+            </div>
+            <div className="metro-method">
+              <p style={{ padding: "40px", fontSize: "25px" }}>
+                <b>路線一：</b>搭乘捷運至新店線萬隆站，沿羅斯福路往北步行約 10 分鐘抵達。
+              </p>
+              <p style={{ paddingLeft: "40px", fontSize: "25px" }}>
+                <b>路線二：</b>搭乘捷運至新店線公館站，沿羅斯福路往南步行約 11 分鐘抵達。
+              </p>
+            </div>
+          </div>
+          <div style={{ display: "flex", marginTop: "8%" }}>
+            <div>
+              <b>
+                <p className="bus-title">搭乘公車</p>
+              </b>
+              <img src={require("../image/bus.png")} className="bus-image" />
+            </div>
+            <div className="bus-method"></div>
+          </div>
+          <p></p>
+        </div>
+        <div className="traffic-car" id="tra-car">
+          <p style={{ fontSize: "30px", marginLeft: "18%", marginBottom: "3%" }}>
+            <b>開車路線</b>
+          </p>
+          <div style={{ display: "flex", justifyContent: "center", maxWidth: "100%" }}>
+            <div className="drive-method">
+              <p style={{ padding: "50px" }}>開車方式......</p>
+            </div>
+          </div>
+        </div>
+        <script src="script.js"></script>
+      </div>
+    </>
+  );
+};
+
+export default Traffic;
