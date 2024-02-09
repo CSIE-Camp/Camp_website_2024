@@ -9,26 +9,26 @@ export const Info = () => {
         
         <div class="date">
             <h2 class="datetitle">日期</h2>
-            <img src={require("./image/dateicon.jpg")} alt="date_icon" class="dateicon">
+            <img src={require("../image/dateicon.jpg")} alt="date_icon" class="dateicon"></img>
         </div>
     
         <div class="place">
             <h2 class="placetitle">地點</h2>
-            <img src={require("./image/school_icon.png")} alt="school_icon" class="schoolicon">
+            <img src={require("../image/school_icon.png")} alt="school_icon" class="schoolicon"></img>
         </div>
         <div class="time">
             <h2 class="timetitle">報名時間</h2>
-            <img src={require("./image/clockicon.png")} alt="clock_icon" class="clockicon">
+            <img src={require("../image/clockicon.png")} alt="clock_icon" class="clockicon"></img>
 
         </div>
         
         <div class="solo">
             <h2 class="solotitle">個人報名</h2>
-            <img src={require("./image/soloicon.png")} alt="solo_icon" class="soloicon">
+            <img src={require("../image/soloicon.png")} alt="solo_icon" class="soloicon"></img>
         </div>
         <div class="group">
             <h2 class="grouptitle">團體報名</h2>
-            <img src={require("./image/groupicon.png")} alt="group_icon" class="groupicon">
+            <img src={require("../image/groupicon.png")} alt="group_icon" class="groupicon"></img>
         </div>
 
         <button type="button" class="attend_button" onclick="location.href='https://www.google.com.tw/'">報名營隊</button>
