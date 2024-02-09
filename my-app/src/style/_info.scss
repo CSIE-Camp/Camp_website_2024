@@ -1,85 +1,261 @@
-div.infoFlex {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
 
-
-
-  div.infoContent {
-    width: 65vw;
-    display: flex;
-    flex-direction: column;
+.infotext{
+    font-size: 60px;
+    text-align: center;
     justify-content: center;
-    align-items: center;
-
-    color: #ffffff;
+    vertical-align: middle;
+    line-height: 48px;
+    color: rgb(255, 255, 255);
+    display: flex;
     font-family: "Noto Sans TC", monospace;
+}
+.info{
 
-    h1.title {
-      padding: 1rem;
-      font-family: "ToronoGlitchSans H2", sans-serif;
-      font-size: 2.5rem;
-    }
-
-    hr.bar {
-      width: 65%;
-      min-width: 580px;
-      padding: 0px 0px 0px 0px;
-      size: "1px";
-      margin: 0.5rem 0;
-    }
-
-    .mainInfo {
-      font-size: 1rem;
-      margin: 0 1.5rem;
-      max-width: 65ch;
-      width: 100%;
-      position: relative;
-      line-height: 1.5rem;
-
-      ol,
-      ul {
-        padding-left: 2rem;
-      }
-
-      p {
-        margin-bottom: 1rem;
-      }
-    }
-
-    table.important {
-      width: 80%;
-      font-size: 1rem;
-      padding: 0.5rem;
-
-      tr.contextImport {
-        text-align: left;
-
-        a {
-          margin-left: 0.75rem;
-        }
-      }
-    }
-
-    div.registerButton {
-      margin: 2.5rem 0;
-
-      a {
-        @include registerButton();
-      }
-    }
-  }
+    height: 100px;
+    width: 700px;
+    display: flex;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 8%;
+    transform: translate(-50%, 0%);
+    justify-content: center;
+    vertical-align: middle;
+    font-family: "Noto Sans TC", monospace;
 }
 
-@media screen and (max-width: 650px) {
-  div.infoFlex {
-    div.infoContent {
-      width: 90vw;
+.datetitle{
+    font-family: "Noto Sans TC", monospace;
+    font-size: 48px;
+    color:rgb(0, 0, 0);
+    text-align: center;
+    position: absolute;
+    left: 75px;
+    top: 30px;
+    display: flex;
+    transform: translate(0%, -50%);
 
-      hr.bar {
-        min-width: 450px;
-      }
-    }
-  }
+}
+
+.dateicon{
+    font-family: "Noto Sans TC", monospace;
+    height:130px;
+    width: 130px;
+    left: 750px;
+    top:10px;
+    display: flex;
+    position: absolute;
+
+}
+
+
+.date{
+    font-family: "Noto Sans TC", monospace;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: rgb(247, 180, 36);
+    height: 150px;
+    width: 900px;
+    
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, 0%);
+    justify-content: center;
+    vertical-align: middle; 
+    display: flex;
+}
+
+.place{
+    font-family: "Noto Sans TC", monospace;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: rgb(247, 180, 36);
+    height: 150px;
+    width: 900px;
+    
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, 0%);
+    justify-content: center;
+    display: flex;
+    vertical-align: middle; 
+
+}
+
+.placetitle{
+    font-family: "Noto Sans TC", monospace;
+    font-size: 48px;
+    color:rgb(0, 0, 0);
+    text-align: center;
+    position: absolute;
+    left: 75px;
+    top: 32px;
+    display: flex;
+    transform: translate(0%, -50%);
+}
+
+.schoolicon{
+    font-family: "Noto Sans TC", monospace;
+    height:130px;
+    width: 130px;
+    left: 750px;
+    top:10px;
+    position: absolute;
+    display: flex;
+
+}
+
+.timetitle{
+    font-family: "Noto Sans TC", monospace;
+    font-size: 48px;
+    color:rgb(0, 0, 0);
+    text-align: center;
+    position: absolute;
+    left: 75px;
+    top: 32px;
+    transform: translate(0%, -50%);
+    display: flex;
+}
+
+.time{
+    font-family: "Noto Sans TC", monospace;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: rgb(247, 180, 36);
+    height: 150px;
+    width: 900px;
+    
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, 0%);
+    justify-content: center;
+    vertical-align: middle; 
+    display: flex;
+}
+
+.clockicon{
+    font-family: "Noto Sans TC", monospace;
+    height:130px;
+    width: 130px;
+    left: 750px;
+    top:10px;
+    position: absolute;
+    display: flex;
+
+}
+
+.solo{
+    font-family: "Noto Sans TC", monospace;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: rgb(247, 180, 36);
+    height: 150px;
+    width: 900px;
+    
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    transform: translate(-50%, 0%);
+    justify-content: center;
+    vertical-align: middle; 
+    display: flex;
+}
+
+.solotitle{
+    font-family: "Noto Sans TC", monospace;
+    font-size: 48px;
+    color:rgb(0, 0, 0);
+    text-align: center;
+    position: absolute;
+    left: 75px;
+    top: 32px;
+    transform: translate(0%, -50%);
+    display: flex;
+}
+
+.soloicon{
+    font-family: "Noto Sans TC", monospace;
+    height:100px;
+    width: 100px;
+    left: 770px;
+    top:25px;
+    position: absolute;
+    display: flex;
+
+}
+
+.group{
+    font-family: "Noto Sans TC", monospace;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: rgb(247, 180, 36);
+    height: 150px;
+    width: 900px;
+    
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 105%;
+    transform: translate(-50%, 0%);
+    justify-content: center;
+    vertical-align: middle; 
+    display: flex;
+}
+
+.grouptitle{
+    font-family: "Noto Sans TC", monospace;
+    display: flex;
+    font-size: 48px;
+    color:rgb(0, 0, 0);
+    text-align: center;
+    position: absolute;
+    left: 75px;
+    top: 32px;
+    transform: translate(0%, -50%);
+}
+
+.groupicon{
+    font-family: "Noto Sans TC", monospace;
+    display: flex;
+    height:130px;
+    width: 130px;
+    left: 750px;
+    top:10px;
+    position: absolute;
+
+}
+
+.attend_button{
+    font-family: "Noto Sans TC", monospace;
+    font-size: 48px;
+    color:rgb(0, 0, 0);
+    display: flex;
+    transform: translate(0%, -50%);
+    border-radius: 20px;
+    border-style: solid;
+    border-color: rgb(247, 180, 36);
+    height: 75px;
+    width: 300px;
+    
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 125%;
+    transform: translate(-50%, 0%);
+    justify-content: center;
+    vertical-align: middle; 
 }
