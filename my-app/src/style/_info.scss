@@ -267,8 +267,11 @@
     //vertical-align: middle; 
 }
 @media screen and (max-width: 1050px) {
+    .info{
+        height:auto;
+    }
     .infotext{
-        font-size: auto;
+        font-size: 24px;
     }
     .dateicon{
         height:40px;
@@ -315,6 +318,22 @@
         top:10%;
         left: 10%;
     }
+    .date{
+        height:60px;
+    }
+    .group{
+        height:60px;
+    }
+    .time{
+        height:60px;
+    }
+    .place{
+        height:60px;
+    }
+    .solo{
+        height:60px;
+    }
+
   }
     
   
