@@ -266,3 +266,55 @@
     justify-content: center;
     //vertical-align: middle; 
 }
+@media screen and (max-width: 1050px) {
+    .infotext{
+        font-size: auto;
+    }
+    .dateicon{
+        height:40px;
+        width:40px;
+    }
+    .soloicon{
+        height:40px;
+        width:40px;
+    }
+    .groupicon{
+        height:40px;
+        width:40px;
+    }
+    .clockicon{
+        height:40px;
+        width:40px;
+    }
+    .schoolicon{
+        height:40px;
+        width:40px;
+    }
+    .datetitle{
+        font-size: 24px;
+        top:10%;
+        left: 10%;
+    }
+    .timetitle{
+        font-size: 24px;
+        top:10%;
+        left: 10%;
+    }
+    .solotitle{
+        font-size: 24px;
+        top:10%;
+        left: 10%;
+    }
+    .grouptitle{
+        font-size: 24px;
+        top:10%;
+        left: 10%;
+    }
+    .placetitle{
+        font-size: 24px;
+        top:10%;
+        left: 10%;
+    }
+  }
+    
+  
