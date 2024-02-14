@@ -1,6 +1,9 @@
 import React from "react";
 
 export const Info = () => {
+    function attend_click(){
+        window.location.replace('https://www.google.com.tw/')
+    }
   return (
     <div class="attend_info_">
         <div class="info">
@@ -9,7 +12,8 @@ export const Info = () => {
         
         <div class="date">
             <h2 class="datetitle">日期</h2>
-            <img src={require("../image/dateicon.jpg")} alt="date_icon" class="dateicon"></img>
+            <img src={require("../image/dateicon.jpg")} alt="date_icon" class="dateicon">
+                </img>
         </div>
     
         <div class="place">
@@ -31,7 +35,7 @@ export const Info = () => {
             <img src={require("../image/groupicon.png")} alt="group_icon" class="groupicon"></img>
         </div>
 
-        <button type="button" class="attend_button" onclick="location.href='https://www.google.com.tw/'">報名營隊</button>
+        <button type="button" class="attend_button" onClick={attend_click}>報名營隊</button>
 
     </div>
   );
