@@ -1,54 +1,36 @@
-
+.attend_info_{
+    display: absolute;
+    justify-content:center;
+    text-align: center;
+    
+}
 
 .infotext{
     font-size: 60px;
     text-align: center;
     justify-content: center;
-    vertical-align: middle;
+
+    ////vertical-align: middle;
     line-height: 48px;
     color: rgb(255, 255, 255);
     display: flex;
     font-family: "Noto Sans TC", monospace;
 }
 .info{
-
+    margin-top: 50px;
     height: 100px;
-    width: 700px;
+    width: 100%;
     display: flex;
     text-align: center;
-    position: absolute;
+    //position: absolute;
     left: 50%;
-    top: 8%;
-    transform: translate(-50%, 0%);
+    //top: 8%;
+    //transform: translate(-50%, 0%);
     justify-content: center;
-    vertical-align: middle;
+    ////vertical-align: middle;
     font-family: "Noto Sans TC", monospace;
+    
 }
-
-.datetitle{
-    font-family: "Noto Sans TC", monospace;
-    font-size: 48px;
-    color:rgb(0, 0, 0);
-    text-align: center;
-    position: absolute;
-    left: 75px;
-    top: 30px;
-    display: flex;
-    transform: translate(0%, -50%);
-
-}
-
-.dateicon{
-    font-family: "Noto Sans TC", monospace;
-    height:130px;
-    width: 130px;
-    left: 750px;
-    top:10px;
-    display: flex;
-    position: absolute;
-
-}
-
 
 .date{
     font-family: "Noto Sans TC", monospace;
@@ -56,18 +38,47 @@
     border-style: solid;
     border-color: rgb(247, 180, 36);
     height: 150px;
-    width: 900px;
+    width: 50%;
     
     background-color: rgb(255, 255, 255);
-    text-align: center;
-    position: absolute;
-    left: 50%;
-    top: 25%;
-    transform: translate(-50%, 0%);
+    
+    position: relative;
+    left: 25%;
+    //top: 100%;
+    //transform: translate(60%, 0%);
     justify-content: center;
-    vertical-align: middle; 
+    //vertical-align: middle; 
     display: flex;
+    margin-bottom: 50px;
+    
 }
+
+.datetitle{
+    font-family: "Noto Sans TC", monospace;
+    font-size: 48px;
+    color:rgb(0, 0, 0);
+    text-align: left;
+    position: absolute;
+    left: 70px;
+    top: 25%;
+    display: flex;
+    //transform: translate(0%, -50%);
+
+}
+
+.dateicon{
+
+    height:120px;
+    width: 120px;
+    left: 780px;
+    top:10px;
+    //display: flex;
+    position: absolute;
+
+}
+
+
+
 
 .place{
     font-family: "Noto Sans TC", monospace;
@@ -75,17 +86,17 @@
     border-style: solid;
     border-color: rgb(247, 180, 36);
     height: 150px;
-    width: 900px;
+    width: 50%;
     
     background-color: rgb(255, 255, 255);
-    text-align: center;
-    position: absolute;
-    left: 50%;
-    top: 45%;
-    transform: translate(-50%, 0%);
+    
+    position: relative;
+    left: 25%;
+    //top: 100%;
+    //transform: translate(60%, 0%);
     justify-content: center;
-    display: flex;
-    vertical-align: middle; 
+    //vertical-align: middle; 
+    display: flex;margin-bottom: 50px;
 
 }
 
@@ -93,22 +104,21 @@
     font-family: "Noto Sans TC", monospace;
     font-size: 48px;
     color:rgb(0, 0, 0);
-    text-align: center;
+    text-align: left;
     position: absolute;
-    left: 75px;
-    top: 32px;
+    left: 70px;
+    top: 25%;
     display: flex;
-    transform: translate(0%, -50%);
+    //transform: translate(0%, -50%);
 }
 
 .schoolicon{
-    font-family: "Noto Sans TC", monospace;
-    height:130px;
-    width: 130px;
-    left: 750px;
+    height:120px;
+    width: 120px;
+    left: 780px;
     top:10px;
+    //display: flex;
     position: absolute;
-    display: flex;
 
 }
 
@@ -116,12 +126,12 @@
     font-family: "Noto Sans TC", monospace;
     font-size: 48px;
     color:rgb(0, 0, 0);
-    text-align: center;
+    text-align: left;
     position: absolute;
-    left: 75px;
-    top: 32px;
-    transform: translate(0%, -50%);
+    left: 70px;
+    top: 25%;
     display: flex;
+    //transform: translate(0%, -50%);
 }
 
 .time{
@@ -130,46 +140,45 @@
     border-style: solid;
     border-color: rgb(247, 180, 36);
     height: 150px;
-    width: 900px;
+    width: 50%;margin-bottom: 50px;
     
     background-color: rgb(255, 255, 255);
-    text-align: center;
-    position: absolute;
-    left: 50%;
-    top: 65%;
-    transform: translate(-50%, 0%);
+    
+    position: relative;
+    left: 25%;
+    //top: 100%;
+    //transform: translate(60%, 0%);
     justify-content: center;
-    vertical-align: middle; 
+    //vertical-align: middle; 
     display: flex;
 }
 
 .clockicon{
-    font-family: "Noto Sans TC", monospace;
-    height:130px;
-    width: 130px;
-    left: 750px;
+    height:120px;
+    width: 120px;
+    left: 780px;
     top:10px;
+    //display: flex;
     position: absolute;
-    display: flex;
 
 }
 
 .solo{
     font-family: "Noto Sans TC", monospace;
-    border-radius: 20px;
+    border-radius: 20px;margin-bottom: 50px;
     border-style: solid;
     border-color: rgb(247, 180, 36);
     height: 150px;
-    width: 900px;
+    width: 50%;
     
     background-color: rgb(255, 255, 255);
-    text-align: center;
-    position: absolute;
-    left: 50%;
-    top: 85%;
-    transform: translate(-50%, 0%);
+    
+    position: relative;
+    left: 25%;
+    //top: 100%;
+    //transform: translate(60%, 0%);
     justify-content: center;
-    vertical-align: middle; 
+    //vertical-align: middle; 
     display: flex;
 }
 
@@ -177,63 +186,61 @@
     font-family: "Noto Sans TC", monospace;
     font-size: 48px;
     color:rgb(0, 0, 0);
-    text-align: center;
+    text-align: left;
     position: absolute;
-    left: 75px;
-    top: 32px;
-    transform: translate(0%, -50%);
+    left: 70px;
+    top: 25%;
     display: flex;
+    //transform: translate(0%, -50%);
 }
 
 .soloicon{
-    font-family: "Noto Sans TC", monospace;
-    height:100px;
-    width: 100px;
-    left: 770px;
-    top:25px;
+    height:120px;
+    width: 120px;
+    left: 780px;
+    top:10px;
+    //display: flex;
     position: absolute;
-    display: flex;
 
 }
 
 .group{
     font-family: "Noto Sans TC", monospace;
     border-radius: 20px;
-    border-style: solid;
+    border-style: solid;margin-bottom: 100px;
     border-color: rgb(247, 180, 36);
     height: 150px;
-    width: 900px;
+    width: 50%;
     
     background-color: rgb(255, 255, 255);
-    text-align: center;
-    position: absolute;
-    left: 50%;
-    top: 105%;
-    transform: translate(-50%, 0%);
+    
+    position: relative;
+    left: 25%;
+    //top: 100%;
+    //transform: translate(60%, 0%);
     justify-content: center;
-    vertical-align: middle; 
+    //vertical-align: middle; 
     display: flex;
 }
 
 .grouptitle{
     font-family: "Noto Sans TC", monospace;
-    display: flex;
     font-size: 48px;
     color:rgb(0, 0, 0);
-    text-align: center;
+    text-align: left;
     position: absolute;
-    left: 75px;
-    top: 32px;
-    transform: translate(0%, -50%);
+    left: 70px;
+    top: 25%;
+    display: flex;
+    //transform: translate(0%, -50%);
 }
 
 .groupicon{
-    font-family: "Noto Sans TC", monospace;
-    display: flex;
-    height:130px;
-    width: 130px;
-    left: 750px;
+    height:120px;
+    width: 120px;
+    left: 780px;
     top:10px;
+    //display: flex;
     position: absolute;
 
 }
@@ -242,8 +249,8 @@
     font-family: "Noto Sans TC", monospace;
     font-size: 48px;
     color:rgb(0, 0, 0);
-    display: flex;
-    transform: translate(0%, -50%);
+    display: relative;
+    transform: translate(0%, -50%);margin-bottom: 50px;
     border-radius: 20px;
     border-style: solid;
     border-color: rgb(247, 180, 36);
@@ -252,10 +259,10 @@
     
     background-color: rgb(255, 255, 255);
     text-align: center;
-    position: absolute;
+    //position: absolute;
     left: 50%;
-    top: 125%;
-    transform: translate(-50%, 0%);
+    //top: 125%;
+    //transform: translate(-50%, 0%);
     justify-content: center;
-    vertical-align: middle; 
+    //vertical-align: middle; 
 }
