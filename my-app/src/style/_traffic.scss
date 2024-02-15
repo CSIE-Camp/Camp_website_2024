@@ -6,14 +6,13 @@
 
 .traffic-info {
   width: 100%;
-}
-
-.traffic-info h1 {
-  display: flex;
-  position: static;
-  width: 100%;
-  padding-top: 150px;
-  padding-left: 50px;
+  h1 {
+    display: flex;
+    position: static;
+    width: 100%;
+    padding-top: 150px;
+    padding-left: 50px;
+  }
 }
 
 .map-content {
@@ -23,11 +22,10 @@
   justify-content: center;
   /* height: 100vh; */
   padding-top: 100px;
-}
-
-.map-content iframe {
-  width: 1200px;
-  height: 650px;
+  iframe {
+    width: 1200px;
+    height: 650px;
+  }
 }
 
 .navbar {
@@ -42,26 +40,24 @@
   text-align: center;
   padding: 14px 16px;
   border-radius: 20px;
-}
-
-.navbar a {
-  font-size: 16px;
-  width: 100px;
-  color: #000;
-  background-color: #19a6a2;
-  text-align: center;
-  /* padding: 14px 16px; */
-  text-decoration: none;
-  margin: 6px;
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.navbar a:hover {
-  background-color: #214d4b;
-  color: #fff;
+  a {
+    font-size: 16px;
+    width: 100px;
+    color: #000;
+    background-color: #19a6a2;
+    text-align: center;
+    /* padding: 14px 16px; */
+    text-decoration: none;
+    margin: 6px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  a:hover {
+    background-color: #214d4b;
+    color: #fff;
+  }
 }
 
 .ntnu-address {
@@ -135,12 +131,21 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.line-break {
-  white-space: nowrap; /* Prevents wrapping of the entire link text */
+.line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
 }
 
-.line-break br {
-  display: none; /* Hides the line break for non-CSS capable browsers */
+.straight-line {
+  margin: 20px;
+  height: 3px;
+  width: 70px;
+  border: 3px solid;
+  border-radius: 0.25rem;
+  border-color: black;
 }
 
 .metro-title {
@@ -163,6 +168,25 @@
 #tra-car {
   margin-top: 5%;
   display: none;
+  margin-bottom: 5%;
+}
+
+.traffic-car {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spot-block {
+  display: flex;
+  height: 100%;
+  width: fit-content;
+  text-align: center;
+  flex-direction: column;
+  gap: 2px;
+  border-radius: 0.75rem;
+  background-color: #ffd598;
+  padding: 20px;
 }
 
 @media screen and (max-width: 720px) {

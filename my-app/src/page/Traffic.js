@@ -77,13 +77,41 @@ const Traffic = () => {
           </div>
           <p></p>
         </div>
-        <div className="traffic-car" id="tra-car">
+        <div id="tra-car">
           <p style={{ fontSize: "30px", marginLeft: "18%", marginBottom: "3%" }}>
             <b>開車路線</b>
           </p>
-          <div style={{ display: "flex", justifyContent: "center", maxWidth: "100%" }}>
-            <div className="drive-method">
-              <p style={{ padding: "50px" }}>開車方式......</p>
+          <div className="traffic-car">
+            <div
+              style={{ display: "grid", placeItems: "center", gap: "4px", gridAutoFlow: "column" }}
+            >
+              <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+                <img src={require("../image/car.png")} width="45" height="50" alt="drive" />
+                <p class={{ textAlign: "center" }}>開車</p>
+              </div>
+            </div>
+            <div className="line">
+              <p>
+                <b>
+                  導航至
+                  <a href={"https://maps.app.goo.gl/ZCmo2pzEMXvfB4Sw9"}>
+                    國立臺灣師範大學 公館校區
+                  </a>
+                </b>
+              </p>
+              <div className="straight-line" style={{ width: "280px" }}></div>
+            </div>
+            <div className="spot-block">
+              國立臺灣師範大學 <br />
+              公館校區門口
+            </div>
+            <div className="line">
+              <p>步行至應用科學大樓</p>
+              <div className="straight-line" style={{ width: "150px" }}></div>
+            </div>
+            <div className="spot-block">
+              應用科學大樓 <br />
+              一樓集合地
             </div>
           </div>
         </div>
