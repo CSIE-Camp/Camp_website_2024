@@ -42,86 +42,102 @@ const Traffic = () => {
           ></iframe>
         </div>
         <div className="traffic-method">
-          <button className="traffic-btn" onClick={public_method}>
-            大眾運輸工具
-          </button>
-          <button className="traffic-btn" onClick={car}>
-            自行開車
-          </button>
+          <div className="traffic-block">
+            <button className="traffic-btn" onClick={public_method}>
+              大眾運輸工具
+            </button>
+            <button className="traffic-btn" onClick={car}>
+              自行開車
+            </button>
+          </div>
         </div>
-        <div className="traffic-public" id="tra-pub">
+        <div id="tra-pub">
+          <div
+            style={{
+              marginBottom: "30px",
+              justifyContent: "center",
+              fontSize: "30px",
+              marginLeft: "13%",
+              marginTop: "3%",
+            }}
+          >
+            <b>
+              <p className="metro-title">搭乘捷運</p>
+            </b>
+          </div>
           <div style={{ display: "flex", flexDirection: "column" }}>
-            <div style={{ marginBottom: "30px", justifyContent: "center" }}>
-              <b>
-                <p className="metro-title">搭乘捷運</p>
-              </b>
-            </div>
-            <div className="metro-method">
-              <div
-                style={{
-                  display: "grid",
-                  // placeItems: "center",
-                  gap: "4px",
-                  gridAutoFlow: "column",
-                }}
-              >
-                <img src={require("../image/metro.png")} className="metro-image" />
-                <div className="line">
-                  <p>搭乘綠線</p>
-                  <div className="straight-line" style={{ width: "150px" }}></div>
-                </div>
-                <div className="spot-block">捷運萬隆站</div>
-                <div className="line">
-                  <p>沿羅斯福路往北步行約10分鐘抵達</p>
-                  <div className="straight-line" style={{ width: "300px" }}></div>
-                </div>
-                <div className="spot-block">
-                  國立臺灣師範大學 <br />
-                  公館校區門口
-                </div>
-                <div className="line">
-                  <p>步行至應用科學大樓</p>
-                  <div className="straight-line" style={{ width: "150px" }}></div>
-                </div>
-                <div className="spot-block">
-                  應用科學大樓 <br />
-                  一樓集合地
+            <div className="traffic-public">
+              <div className="metro-method">
+                <div
+                  style={{
+                    display: "grid",
+                    // placeItems: "center",
+                    gap: "4px",
+                    gridAutoFlow: "column",
+                  }}
+                >
+                  <img src={require("../image/metro.png")} className="metro-image" />
+                  <div className="line">
+                    <p>搭乘綠線</p>
+                    <div className="straight-line" style={{ width: "150px" }}></div>
+                  </div>
+                  <div className="spot-block">捷運萬隆站</div>
+                  <div className="line">
+                    <p>沿羅斯福路往北步行約10分鐘抵達</p>
+                    <div className="straight-line" style={{ width: "300px" }}></div>
+                  </div>
+                  <div className="spot-block">
+                    國立臺灣師範大學 <br />
+                    公館校區門口
+                  </div>
+                  <div className="line">
+                    <p>步行至應用科學大樓</p>
+                    <div className="straight-line" style={{ width: "150px" }}></div>
+                  </div>
+                  <div className="spot-block">
+                    應用科學大樓 <br />
+                    一樓集合地
+                  </div>
                 </div>
               </div>
-              <div
-                style={{
-                  display: "grid",
-                  // placeItems: "center",
-                  gap: "4px",
-                  gridAutoFlow: "column",
-                }}
-              >
-                <img src={require("../image/metro.png")} className="metro-image" />
-                <div className="line">
-                  <p>搭乘綠線</p>
-                  <div className="straight-line" style={{ width: "150px" }}></div>
-                </div>
-                <div className="spot-block">捷運公館站</div>
-                <div className="line">
-                  <p>沿羅斯福路往南步行約11分鐘抵達</p>
-                  <div className="straight-line" style={{ width: "300px" }}></div>
-                </div>
-                <div className="spot-block">
-                  國立臺灣師範大學 <br />
-                  公館校區門口
-                </div>
-                <div className="line">
-                  <p>步行至應用科學大樓</p>
-                  <div className="straight-line" style={{ width: "150px" }}></div>
-                </div>
-                <div className="spot-block">
-                  應用科學大樓 <br />
-                  一樓集合地
+            </div>
+            <div className="traffic-public">
+              <div className="metro-method" style={{ marginTop: "50px", marginBottom: "50px" }}>
+                <div
+                  style={{
+                    display: "grid",
+                    // placeItems: "center",
+                    gap: "4px",
+                    gridAutoFlow: "column",
+                  }}
+                >
+                  <img src={require("../image/metro.png")} className="metro-image" />
+                  <div className="line">
+                    <p>搭乘綠線</p>
+                    <div className="straight-line" style={{ width: "150px" }}></div>
+                  </div>
+                  <div className="spot-block">捷運公館站</div>
+                  <div className="line">
+                    <p>沿羅斯福路往南步行約11分鐘抵達</p>
+                    <div className="straight-line" style={{ width: "300px" }}></div>
+                  </div>
+                  <div className="spot-block">
+                    國立臺灣師範大學 <br />
+                    公館校區門口
+                  </div>
+                  <div className="line">
+                    <p>步行至應用科學大樓</p>
+                    <div className="straight-line" style={{ width: "150px" }}></div>
+                  </div>
+                  <div className="spot-block">
+                    應用科學大樓 <br />
+                    一樓集合地
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div style={{ display: "flex", marginTop: "8%" }}>
+          {/* <div style={{ display: "flex", marginTop: "8%" }}>
             <div>
               <b>
                 <p className="bus-title">搭乘公車</p>
@@ -129,7 +145,7 @@ const Traffic = () => {
               <img src={require("../image/bus.png")} className="bus-image" />
             </div>
             <div className="bus-method"></div>
-          </div>
+          </div> */}
           <p></p>
         </div>
         <div id="tra-car">

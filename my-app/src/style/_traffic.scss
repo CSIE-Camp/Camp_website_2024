@@ -68,15 +68,22 @@
 
 .traffic-method {
   padding-top: 30px;
-  display: flex;
+  // display: flex;
   justify-content: space-around;
 }
 
 .traffic-btn {
   padding: 30px 150px;
-  background-color: #ff7a00;
+  // background-color: #ffead8;
   border-radius: 30px;
-  font-size: 20px;
+  // font-size: 20px;
+  background: none;
+  color: inherit;
+  border: none;
+  // padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 }
 
 .traffic-btn:hover {
@@ -84,11 +91,18 @@
   cursor: pointer;
 }
 
+.traffic-block {
+  background-color: #f5e1b4;
+  display: flex;
+  justify-content: space-around;
+}
+
 .traffic-public {
   /* display: grid; */
   display: flex;
   margin-top: 5%;
-  margin-left: 10%;
+  // margin-left: 10%;
+  justify-content: center;
   /* grid-template-rows: auto; */
   /* grid-auto-flow: row; */
   /* align-items: center; */
@@ -196,6 +210,34 @@
   border-radius: 0.75rem;
   background-color: #ffd598;
   padding: 20px;
+}
+
+@keyframes turn-icon-animation {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.4);
+  }
+  50% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(1.1);
+  }
+  80% {
+    transform: scale(1);
+  }
+  90% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.spot-block:hover {
+  animation: turn-icon-animation 1s;
 }
 
 @media screen and (max-width: 720px) {
