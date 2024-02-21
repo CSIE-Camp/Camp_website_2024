@@ -20,6 +20,14 @@ const Traffic = () => {
     }
     // content.style.display = "none";
   }
+
+  function loading() {
+    const load = document.getElementById("loading-ani");
+    load.addEventListener("mouseover", () => {
+      console.log("mouse");
+    });
+  }
+
   return (
     <>
       <div className="container">
@@ -78,8 +86,20 @@ const Traffic = () => {
                 >
                   <img src={require("../image/metro.png")} className="metro-image" />
                   <div className="line">
-                    <p>搭乘綠線</p>
-                    <div className="straight-line" style={{ width: "150px" }}></div>
+                    {/* <p>搭乘綠線</p> */}
+                    <div>
+                      <div
+                        className="straight-line"
+                        style={{ width: "150px", position: "relative" }}
+                      >
+                        <div id="loading-ani" style={{ position: "absolute", top: "-5px" }}></div>
+                        <div id="loading-ani" style={{ position: "absolute", top: "-5px" }}></div>
+                        <div id="loading-ani" style={{ position: "absolute", top: "-5px" }}></div>
+                        <div id="loading-ani" style={{ position: "absolute", top: "-5px" }}></div>
+                        <div id="loading-ani" style={{ position: "absolute", top: "-5px" }}></div>
+                        <div id="loading-ani" style={{ position: "absolute", top: "-5px" }}></div>
+                      </div>
+                    </div>
                   </div>
                   <div className="spot-block">捷運萬隆站</div>
                   <div className="line">
