@@ -1,3 +1,4 @@
+@charset "big5";
 @mixin registerButton() {
   button {
     margin-top: 1rem;
@@ -53,17 +54,17 @@ main {
         video {
           user-select: none;
           pointer-events: none; // prevent pulse or play 
-          width: 100%;
+          width: 50%;
           height: 100%;
           object-fit: cover;
         }
 
         video#v1 {
-          mix-blend-mode: lighten; // 透明背景
+          mix-blend-mode: lighten; // ������������
         }
 
         video#v2 {
-          mix-blend-mode: screen; // 透明背景
+          mix-blend-mode: screen; // ������������
         }
       }
     }
@@ -112,7 +113,7 @@ main {
           span.I {
             @include textBorder();
             color: $orange-2;
-            letter-spacing: 2rem; // 字寬
+            letter-spacing: 2rem; // 摮�撖�
           }
 
           span.E {
