@@ -1,21 +1,15 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Noto Sans TC", sans-serif;
-  //position: relative;
 }
-
-$orange-1: #DC6A0B;
-$orange-2: #DA5512;
-$yellow-1: #E7AE16;
-$blue-1: #083A75;
-$gray-bg1: rgba(217, 217, 217, 0.35);
 
 html,
 body,
-body>#root,
-#root>.App {
+body > #root,
+#root > .App {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
@@ -23,10 +17,10 @@ body>#root,
   padding: 0;
 }
 
-
-#root>.App {
+#root > .App {
   overflow-y: auto;
-  background-image: url(image/Purple_background.jpg);
+  /*background-image: url(image/Purple_background.jpg);*/
+  background-color:#ff7a00;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -36,54 +30,25 @@ body>#root,
 #bg {
   position: relative;
   top: 0;
-  //bottom: 0;
   left: 0;
-  //right: 0;
   width: 100%;
   height: 100%;
-  //z-index: -1;
   display: flex;
   flex-direction: column;
-  //align-content: space-between;
-  //background-image: url(image/Blue_background.png);
-  // background-size: 100% 100%;
-  // background-position: center center;
-  // background-repeat: no-repeat;
-  // background-attachment: fixed;
 }
-
-// #container{
-//   background-image: url(image/Blue_background.png);
-//   background-size: cover;
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   background-attachment: fixed;
-// }
 
 body {
   z-index: 1;
 }
 
-// @font-face {
-//   font-family: ToronoGlitchSans H1;
-//   src: local("ToronoGlitchSans H1"), url(./font/torono-glitch-sans/Torono_Glitch_SansH1.otf);
-// }
-
 @font-face {
   font-family: ToronoGlitchSans H2;
   src: local("ToronoGlitchSans H2"), url(./font/torono-glitch-sans/Torono_Glitch_SansH2.otf);
 }
-
-// @font-face {
-//   font-family: ToronoGlitchSans H3;
-//   src: local("ToronoGlitchSans H3"), url(./font/torono-glitch-sans/Torono_Glitch_SansH3.otf);
-// }
-
 @font-face {
   font-family: ToronoGlitchSans H4;
   src: local("ToronoGlitchSans H4"), url(./font/torono-glitch-sans/Torono_Glitch_SansH4.otf);
 }
-
 h1,
 h2,
 h3,
@@ -95,23 +60,2742 @@ h6 {
 
 a {
   text-decoration: none;
-  color: $yellow-1;
+  color: #E7AE16;
 }
 
+nav {
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  width: 100vw;
+  padding: 1rem 1rem;
+  margin: 2rem 0;
+}
+nav img {
+  width: 300px;
+}
+nav div.hamburgerFlex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+nav div.hamburgerFlex div#hamburger {
+  display: block;
+  margin-left: 0.5rem;
+  display: block;
+  width: 40px;
+  position: relative;
+  z-index: 1;
+  user-select: none;
+  outline: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+nav div.hamburgerFlex div#hamburger span {
+  display: block;
+  z-index: -1;
+  pointer-events: none;
+  width: 40px;
+  height: 4px;
+  position: relative;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  background-color: #E7AE16;
+  transform-origin: 0 0;
+  transition: all 0.7s;
+}
+nav div.hamburgerFlex div#hamburger.dropdown span:nth-child(1) {
+  transform: translate(0px, -2px) rotate(45deg);
+}
+nav div.hamburgerFlex div#hamburger.dropdown span:nth-child(2) {
+  transform: translateX(20px);
+  opacity: 0;
+}
+nav div.hamburgerFlex div#hamburger.dropdown span:nth-child(3) {
+  transform: translate(-3px, 3px) rotate(-45deg);
+}
+nav div.ulFlex {
+  display: flex;
+  justify-content: center;
+  /*
+  &:has(ul.show) {
+    // transform: translateY(0px);
+    //transition: all 0.3s linear;
+  }
 
-@import "./nav";
-@import "./home";
-@import "./footer";
-@import "./scrollbar";
-@import "./info";
-@import "./login";
-@import "./register";
-@import "./registerSuccess";
-@import "./about";
-@import "./forget";
-@import "./form";
-@import "./review";
-@import "./personal";
-@import "./admin";
-@import "./payment";
-@import "./exam";
+  &:has(ul.hide) {
+    // transform: translateY(-80px);
+    // transition: all 0.3s linear;
+  }*/
+}
+nav div.ulFlex ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+}
+nav div.ulFlex ul li {
+  padding: 0.5rem;
+}
+nav div.ulFlex ul li a {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  background: rgba(183, 183, 183, 0.3);
+  color: black;
+  font-weight: 800;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+  border-radius: 18px;
+}
+nav div.ulFlex ul li a:hover {
+  background: #000000;
+  color: #ffffff;
+}
+nav div.ulFlex ul li a.active {
+  background: #000000;
+  color: #ffffff;
+}
+nav div.ulFlex ul .show {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 1220px) {
+  nav {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 870px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  nav div.hamburgerFlex div#hamburger {
+    display: none;
+  }
+  nav div.ulFlex {
+    display: flex;
+  }
+  nav div.ulFlex ul.show {
+    flex-direction: row;
+  }
+  nav div.ulFlex ul.hide {
+    transition: max-height 0.3s ease-in;
+  }
+}
+@media screen and (max-width: 565px) {
+  nav div.ulFlex ul {
+    width: 90%;
+    flex-direction: column;
+  }
+  nav div.ulFlex ul.show {
+    overflow: auto;
+    max-height: 458px;
+    transition: max-height 0.3s ease-out;
+  }
+  nav div.ulFlex ul.hide {
+    overflow: auto;
+    max-height: 0px;
+    transition: max-height 0.3s ease-in;
+  }
+}
+@media screen and (max-width: 399px) {
+  nav img {
+    width: 250px;
+  }
+}
+
+a.active {
+  background: #000000;
+  color: #ffffff;
+}
+
+main h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+main div.card {
+  display: flex;
+  justify-content: center;
+}
+main div.card section.left {
+  margin: 1rem 1rem 5vw 1rem;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+main div.card section.left div.imgFlex {
+  display: flex;
+  width: 450px;
+}
+main div.card section.left div.imgFlex video {
+  user-select: none;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main div.card section.left div.imgFlex video#v1 {
+  mix-blend-mode: lighten;
+}
+main div.card section.left div.imgFlex video#v2 {
+  mix-blend-mode: screen;
+}
+main div.card section.right {
+  margin: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 400px;
+}
+main div.card section.right div.words {
+  align-items: flex-start;
+  display: flex;
+  flex-flow: column;
+}
+main div.card section.right div.words div.h1 {
+  font-family: "ToronoGlitchSans H4", sans-serif;
+  padding: 0.5rem 0;
+  font-weight: 900;
+  font-size: 2.5rem;
+  letter-spacing: 1rem;
+  color: #ffffff;
+}
+main div.card section.right div.words div.h1 span {
+  font-family: "ToronoGlitchSans H4", sans-serif;
+}
+main div.card section.right div.words div.h1 span.C {
+  text-shadow: -2px 0 #ffffff, 0 2px rgb(255, 255, 255), 2px 0 rgb(255, 255, 255), 0 -2px rgb(255, 255, 255);
+  border-color: #083A75;
+  color: #DC6A0B;
+}
+main div.card section.right div.words div.h1 span.S {
+  text-shadow: -2px 0 #ffffff, 0 2px rgb(255, 255, 255), 2px 0 rgb(255, 255, 255), 0 -2px rgb(255, 255, 255);
+  color: #E7AE16;
+}
+main div.card section.right div.words div.h1 span.I {
+  text-shadow: -2px 0 #ffffff, 0 2px rgb(255, 255, 255), 2px 0 rgb(255, 255, 255), 0 -2px rgb(255, 255, 255);
+  color: #DA5512;
+  letter-spacing: 2rem;
+}
+main div.card section.right div.words div.h1 span.E {
+  text-shadow: -2px 0 #ffffff, 0 2px rgb(255, 255, 255), 2px 0 rgb(255, 255, 255), 0 -2px rgb(255, 255, 255);
+  color: #083A75;
+  letter-spacing: 1.5rem;
+}
+main div.card section.right div.words div#subtitle {
+  width: 100%;
+  margin-top: 1rem;
+  text-align-last: center;
+  letter-spacing: 3px;
+  font-family: "Source Code Pro", monospace;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 44px;
+  color: #ffffff;
+}
+main div.card section.right div.registerButton a button {
+  margin-top: 1rem;
+  text-align: center;
+  padding: 1.5rem 1.5rem 1.5rem 2rem;
+  letter-spacing: 0.75rem;
+  font-family: "ToronoGlitchSans H2";
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.5rem;
+  background: rgba(217, 217, 217, 0.35);
+  border-radius: 30px;
+  border: 5px solid #d9d9d9;
+}
+main div.card section.right div.registerButton a button:hover {
+  color: #E7AE16;
+  background: black;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+  main div.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main div.card section.left {
+    order: 2;
+    width: 80vw;
+  }
+  main div.card section.left div.imgFlex {
+    width: fit-content;
+  }
+  main div.card section.right {
+    width: 90vw;
+    padding: 0;
+    order: 3;
+    transform: scale(0.9);
+  }
+  main div.card section.right div.words div.h1 {
+    font-size: 2rem;
+  }
+}
+footer {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+footer div#footerFlex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer div#footerFlex div#text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  top: 2rem;
+}
+footer div#footerFlex div#text h1 {
+  font-size: 2rem;
+  font-family: "ToronoGlitchSans H2";
+  color: #000;
+  z-index: 1;
+}
+footer div#footerFlex div#text #bar {
+  margin-top: 0.25rem;
+  border: 1px #000 dashed;
+}
+footer div#footerFlex div#text p {
+  font-family: "Noto Sans TC", monospace;
+  font-size: 1rem;
+  z-index: 1;
+  font-weight: 800;
+}
+footer #picture {
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  user-select: none;
+}
+footer .island {
+  position: relative;
+  bottom: 0;
+  display: flex;
+  margin: 0 20px;
+}
+footer #left {
+  top: 5rem;
+  max-width: 10rem;
+  height: 3rem;
+}
+footer #left2 {
+  top: 6rem;
+  max-width: 4rem;
+  height: 3rem;
+}
+footer #middle {
+  max-width: 20rem;
+  margin-right: 2.5rem;
+  margin-left: 1rem;
+  height: 150px;
+  right: 0;
+  left: 0;
+  margin-top: 2rem;
+}
+footer #right2 {
+  top: 5rem;
+  max-width: 4rem;
+  height: 3rem;
+}
+footer #right {
+  top: 7rem;
+  max-width: 4rem;
+  height: 3rem;
+}
+footer p {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+footer p.Copyright {
+  margin: 10px;
+  text-align: center;
+  font-family: "Noto Sans TC", monospace;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+footer div.icon {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  user-select: none;
+}
+footer div.icon a img {
+  width: 3rem;
+  padding: 0 0.5rem;
+}
+footer div.icon a:hover {
+  transform: scale(1.1);
+  translate: all 0.4s;
+}
+
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3091ff;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0c1794;
+}
+
+div.infoFlex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.infoFlex div.infoContent {
+  width: 65vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-family: "Noto Sans TC", monospace;
+}
+div.infoFlex div.infoContent h1.title {
+  padding: 1rem;
+  font-family: "ToronoGlitchSans H2", sans-serif;
+  font-size: 2.5rem;
+}
+div.infoFlex div.infoContent hr.bar {
+  width: 65%;
+  min-width: 580px;
+  padding: 0px 0px 0px 0px;
+  size: "1px";
+  margin: 0.5rem 0;
+}
+div.infoFlex div.infoContent .mainInfo {
+  font-size: 1rem;
+  margin: 0 1.5rem;
+  max-width: 65ch;
+  width: 100%;
+  position: relative;
+  line-height: 1.5rem;
+}
+div.infoFlex div.infoContent .mainInfo ol,
+div.infoFlex div.infoContent .mainInfo ul {
+  padding-left: 2rem;
+}
+div.infoFlex div.infoContent .mainInfo p {
+  margin-bottom: 1rem;
+}
+div.infoFlex div.infoContent table.important {
+  width: 80%;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+div.infoFlex div.infoContent table.important tr.contextImport {
+  text-align: left;
+}
+div.infoFlex div.infoContent table.important tr.contextImport a {
+  margin-left: 0.75rem;
+}
+div.infoFlex div.infoContent div.registerButton {
+  margin: 2.5rem 0;
+}
+div.infoFlex div.infoContent div.registerButton a button {
+  margin-top: 1rem;
+  text-align: center;
+  padding: 1.5rem 1.5rem 1.5rem 2rem;
+  letter-spacing: 0.75rem;
+  font-family: "ToronoGlitchSans H2";
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.5rem;
+  background: rgba(217, 217, 217, 0.35);
+  border-radius: 30px;
+  border: 5px solid #d9d9d9;
+}
+div.infoFlex div.infoContent div.registerButton a button:hover {
+  color: #E7AE16;
+  background: black;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 650px) {
+  div.infoFlex div.infoContent {
+    width: 90vw;
+  }
+  div.infoFlex div.infoContent hr.bar {
+    min-width: 450px;
+  }
+}
+form.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-family: "Noto Sans TC", monospace;
+  text-align: center;
+}
+form.login h1.title {
+  padding: 1rem 0px;
+  font-family: "ToronoGlitchSans H2", sans-serif;
+  font-size: 2.5rem;
+}
+form.login div.inputFlex {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+}
+form.login div.inputFlex input.loginMail {
+  text-align: left;
+  padding: 1rem;
+  border: 3px solid #d9d9d9;
+  color: #ffffff;
+  line-height: 36px;
+  font-size: 1.5rem;
+  background: rgba(217, 217, 217, 0.35);
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+form.login div.inputFlex input.loginMail::placeholder {
+  color: #ffffff;
+}
+form.login div.inputFlex input.loginMail:hover {
+  background: #000000;
+}
+form.login div.inputFlex input:hover {
+  color: #f7d967;
+  background: radial-gradient(149.95% 387.57% at 54.19% 45.2%, #000000 52.6%, rgba(255, 255, 255, 0.63) 100%);
+  cursor: auto;
+}
+form.login div.inputFlex div.pwd_container {
+  display: flex;
+  position: relative;
+}
+form.login div.inputFlex div.pwd_container input.loginPassword {
+  width: 100%;
+  text-align: left;
+  padding: 1rem;
+  border: 3px solid #d9d9d9;
+  color: #ffffff;
+  line-height: 36px;
+  font-size: 1.5rem;
+  background: rgba(217, 217, 217, 0.35);
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+form.login div.inputFlex div.pwd_container input.loginPassword::placeholder {
+  color: #ffffff;
+}
+form.login div.inputFlex div.pwd_container input.loginPassword:hover {
+  background: #000000;
+}
+form.login div.inputFlex div.pwd_container button.confirm {
+  border: 3px solid #d9d9d9;
+  color: #ffffff;
+  background: rgba(217, 217, 217, 0.35);
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+form.login div.inputFlex div.pwd_container button.confirm:hover {
+  background: radial-gradient(149.95% 387.57% at 54.19% 45.2%, #000000 52.6%, rgba(255, 255, 255, 0.63) 100%);
+  cursor: pointer;
+}
+form.login div.inputFlex div.pwd_container button.confirm span.arrow {
+  display: block;
+  margin: 0px auto;
+  width: 15px;
+  height: 15px;
+  border-top: 5px solid #d9d9d9;
+  border-left: 5px solid #d9d9d9;
+  transform: rotate(135deg);
+}
+form.login div.inputFlex div.pwd_container button.confirm span.arrow::after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 15px;
+  background-color: #d9d9d9;
+  transform: rotate(-45deg) translate(3px, 0px);
+  left: 0;
+  top: 0;
+}
+form.login div.helpFlex {
+  width: 100%;
+  padding: 0rem 0 3rem 0;
+  display: flex;
+  justify-content: center;
+}
+form.login div.helpFlex div.helpContent {
+  width: 50vw;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+form.login div.helpFlex a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #ffffff;
+}
+form.login div.helpFlex a:hover {
+  color: #E7AE16;
+}
+
+@media screen and (max-width: 600px) {
+  form.login div.inputFlex {
+    width: 75vw;
+  }
+}
+form.regist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-family: "Noto Sans TC", monospace;
+  text-align: center;
+  /*div.helpFlex {
+    width: 100%;
+    padding: 0rem 0 3rem 0;
+    display: flex;
+    justify-content: center;
+
+    div.helpContent {
+      width: 50vw;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    a {
+      font-size: 1rem;
+      padding-bottom: 0.5rem;
+      padding-right: 2rem;
+      text-decoration: none;
+      color: #ffffff;
+    }
+  }*/
+}
+form.regist h1.title {
+  padding: 1rem 0px;
+  font-family: "ToronoGlitchSans H2", sans-serif;
+  font-size: 2.5rem;
+}
+form.regist p {
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+  padding-right: 2rem;
+  text-decoration: none;
+  color: #ffffff;
+}
+form.regist div.inputFlex {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+}
+form.regist div.inputFlex input {
+  width: 100%;
+}
+form.regist div.inputFlex div.inputEmail {
+  position: relative;
+}
+form.regist div.inputFlex div.inputEmail input.loginMail {
+  text-align: left;
+  padding: 1rem;
+  border: 3px solid #d9d9d9;
+  color: #ffffff;
+  line-height: 36px;
+  font-size: 1.5rem;
+  background: rgba(217, 217, 217, 0.35);
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+form.regist div.inputFlex div.inputEmail input.loginMail::placeholder {
+  color: #ffffff;
+}
+form.regist div.inputFlex div.inputEmail input.loginMail:hover {
+  background: #000000;
+}
+form.regist div.inputFlex div.inputEmail button.confirm {
+  border: 3px solid #d9d9d9;
+  color: #ffffff;
+  background: rgba(217, 217, 217, 0.35);
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+form.regist div.inputFlex div.inputEmail button.confirm:hover {
+  background: radial-gradient(149.95% 387.57% at 54.19% 45.2%, #000000 52.6%, rgba(255, 255, 255, 0.63) 100%);
+  cursor: pointer;
+}
+form.regist div.inputFlex div.inputEmail button.confirm span.arrow {
+  display: block;
+  margin: 0px auto;
+  width: 15px;
+  height: 15px;
+  border-top: 5px solid #d9d9d9;
+  border-left: 5px solid #d9d9d9;
+  transform: rotate(135deg);
+}
+form.regist div.inputFlex div.inputEmail button.confirm span.arrow::after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 15px;
+  background-color: #d9d9d9;
+  transform: rotate(-45deg) translate(3px, 0px);
+  left: 0;
+  top: 0;
+}
+form.regist div.inputFlex ::placeholder {
+  color: #ffffff;
+}
+form.regist div.passwordFlex {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+form.regist div.passwordFlex *.forgetPassword {
+  text-align: left;
+  padding: 1rem;
+  border: 3px solid #d9d9d9;
+  color: #ffffff;
+  line-height: 36px;
+  font-size: 1.5rem;
+  background: rgba(217, 217, 217, 0.35);
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+form.regist div.passwordFlex *.forgetPassword::placeholder {
+  color: #ffffff;
+}
+form.regist div.passwordFlex *.forgetPassword:hover {
+  background: #000000;
+}
+form.regist div.passwordFlex div.pwd_container {
+  display: flex;
+  position: relative;
+}
+form.regist div.passwordFlex div.pwd_container input.forgetPassword {
+  width: 100%;
+}
+form.regist div.passwordFlex div.pwd_container button.confirm {
+  border: 3px solid #d9d9d9;
+  color: #ffffff;
+  background: rgba(217, 217, 217, 0.35);
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+form.regist div.passwordFlex div.pwd_container button.confirm:hover {
+  background: radial-gradient(149.95% 387.57% at 54.19% 45.2%, #000000 52.6%, rgba(255, 255, 255, 0.63) 100%);
+  cursor: pointer;
+}
+form.regist div.passwordFlex div.pwd_container button.confirm span.arrow {
+  display: block;
+  margin: 0px auto;
+  width: 15px;
+  height: 15px;
+  border-top: 5px solid #d9d9d9;
+  border-left: 5px solid #d9d9d9;
+  transform: rotate(135deg);
+}
+form.regist div.passwordFlex div.pwd_container button.confirm span.arrow::after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 15px;
+  background-color: #d9d9d9;
+  transform: rotate(-45deg) translate(3px, 0px);
+  left: 0;
+  top: 0;
+}
+
+@media screen and (max-width: 600px) {
+  form.regist div.inputFlex {
+    width: 75vw;
+  }
+  form.regist div.passwordFlex {
+    width: 75vw;
+  }
+}
+/*@mixin confirmArrow() {
+  border: 3px solid #d9d9d9;
+  color: #ffffff;
+  background: rgba(217, 217, 217, 0.35);
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+
+  &:hover {
+    // color: #f7d967;
+    background: radial-gradient(149.95% 387.57% at 54.19% 45.2%,
+        #000000 52.6%,
+        rgba(255, 255, 255, 0.63) 100%);
+
+    cursor: pointer;
+  }
+
+  //蝞剝�剖��蝡�
+  span.arrow {
+    display: block;
+    margin: 0px auto;
+    width: 15px;
+    height: 15px;
+    //border-radius: 3px;
+    border-top: 5px solid #d9d9d9;
+    border-left: 5px solid #d9d9d9;
+    transform: rotate(135deg); // transform: rotate(180deg);
+  }
+
+  //蝞剝�剖偏���
+  span.arrow::after {
+    content: "";
+    //border-radius: 3px;
+    display: block;
+    width: 5px;
+    height: 15px;
+    background-color: #d9d9d9;
+    transform: rotate(-45deg) translate(3px, 0px);
+    left: 0;
+    top: 0;
+  }
+}
+
+// main scss
+form.regist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-family: "Noto Sans TC", monospace;
+  text-align: center;
+
+  h1.title {
+    padding: 1rem 0px;
+    font-family: "ToronoGlitchSans H2", sans-serif;
+    font-size: 2.5rem;
+  }
+
+  div.inputFlex {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+
+    input {
+      width: 100%;
+    }
+
+    div.inputEmail {
+      position: relative;
+
+      input.loginMail {
+        @include inputStyle();
+      }
+
+      button.confirm {
+        @include confirmArrow();
+      }
+    }
+
+    ::placeholder {
+      // letter-spacing: 1rem;
+      //font-family: "ToronoGlitchSans H3";
+      color: #ffffff;
+    }
+
+    // div.pwd_container {
+    //   display: flex;
+    //   position: relative;
+
+    //   input {
+    //     width: 100%;
+    //   }
+
+    //   input.loginPassword {
+
+    //     @include inputStyle;
+
+
+    //   }
+    // }
+  }
+
+  div.helpFlex {
+    width: 100%;
+    padding: 0rem 0 3rem 0;
+    display: flex;
+    justify-content: center;
+
+    div.helpContent {
+      width: 50vw;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    a {
+      font-size: 1rem;
+      padding-bottom: 0.5rem;
+      padding-right: 2rem;
+      text-decoration: none;
+      color: #ffffff;
+    }
+  }
+
+  button:hover {
+    color: #f7d967;
+    background: radial-gradient(149.95% 387.57% at 54.19% 45.2%,
+        #000000 52.6%,
+        rgba(255, 255, 255, 0.63) 100%);
+
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width:600px) {
+  form.regist {
+    div.inputFlex {
+      width: 75vw;
+    }
+
+    div.passwordFlex {
+      width: 75vw;
+    }
+  }
+
+}*/
+div.aboutFlex {
+  display: flex;
+  justify-content: center;
+}
+div.aboutFlex img {
+  pointer-events: none;
+}
+div.aboutFlex div.aboutBox {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div.aboutFlex div.aboutBox h1 {
+  padding: 10px;
+  font-family: "ToronoGlitchSans H2";
+  font-style: normal;
+  font-weight: 900;
+  line-height: 48px;
+  font-size: 2.5rem;
+  color: #fff;
+}
+div.aboutFlex div.aboutBox div.intro {
+  width: 70%;
+  text-align: center;
+  color: #fff;
+}
+div.aboutFlex div.aboutBox div.intro div.secondTitle {
+  display: flex;
+  text-align: left;
+  background-color: #fff;
+  color: #000;
+  border-radius: 5px;
+  border: 2px solid #000;
+  padding: 0.5vh 0;
+}
+div.aboutFlex div.aboutBox div.intro div.secondTitle h2 {
+  padding: 10px;
+  font-style: normal;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  user-select: none;
+}
+div.aboutFlex div.aboutBox div.intro div.secondTitle h2 img.secondTitle {
+  width: 2.5rem;
+  height: 2rem;
+  margin: 0.5vh 1vw 0.5vh 0.5vh;
+}
+div.aboutFlex div.aboutBox div.intro div.courseList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+div.aboutFlex div.aboutBox div.intro div.courseList div.detail {
+  width: 95%;
+}
+div.aboutFlex div.aboutBox div.intro div.courseList div.detail div.summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+  height: auto;
+  width: 100%;
+  padding: 1% 1%;
+  margin: 10px 0;
+  cursor: pointer;
+  list-style: none;
+  border: #fff 3px groove;
+  background-color: #fff;
+  color: hsl(0, 0%, 0%);
+  border-radius: 30px;
+  transition: all 0.3s ease-out;
+  user-select: none;
+}
+div.aboutFlex div.aboutBox div.intro div.courseList div.detail div.summary img {
+  transition: all 0.3s ease-out;
+}
+div.aboutFlex div.aboutBox div.intro div.courseList div.detail div.summary img.summaryHead {
+  width: 2rem;
+  height: 1.2rem;
+}
+div.aboutFlex div.aboutBox div.intro div.courseList div.detail div.summary img.summary {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+div.aboutFlex div.aboutBox div.intro div.courseList div.detail div.summary.click-true {
+  border: #fff 3px groove;
+  background-color: #E7AE16;
+  background-color: #E7AE16;
+  color: #fff;
+  padding: 1% 1%;
+  font-size: 1.3rem;
+  border-radius: 15px;
+  width: 90%;
+  margin-left: 5%;
+  text-align: center;
+  transition: 0.3s ease-out;
+}
+div.aboutFlex div.aboutBox div.intro div.courseList div.detail div.summary.click-true ~ div.hidden {
+  opacity: 1;
+  width: 100%;
+  height: auto;
+  float: none;
+  border: 5px groove;
+  border-color: #E7AE16;
+  border-radius: 10px;
+  border-top: 0;
+  transform: rotateX(-1deg);
+  transition: width ease-in-out 1s;
+  position: relative;
+}
+div.aboutFlex div.aboutBox div.intro div.courseList div.detail div.summary.click-true img {
+  width: 3rem;
+  height: 1.8rem;
+  transform: rotateX(-360deg) rotateY(-180deg) rotateZ(-180deg);
+  transition-duration: 0.7s;
+}
+div.aboutFlex div.aboutBox div.intro div.courseList div.detail div.summary.click-true img.summary {
+  width: 2rem;
+  height: 2rem;
+  transform: rotate(-90deg) rotateY(-360deg);
+  transition-duration: 0.7s;
+}
+div.aboutFlex div.aboutBox div.intro div.courseList div.detail div.hidden {
+  opacity: 0;
+  overflow: hidden;
+  overflow-wrap: normal;
+  border-top: 0px;
+  width: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  position: absolute;
+  background: linear-gradient(to bottom right, hsla(0, 0%, 100%, 0.452), rgba(109, 113, 113, 0.226), 80%, rgba(44, 38, 44, 0.117));
+  color: #fff;
+}
+div.aboutFlex div.aboutBox div.intro div.courseList div.detail div.hidden div.hidden_text {
+  line-height: 1.5rem;
+  font-size: 16px;
+  position: relative;
+  height: auto;
+  width: 59vw;
+  padding-left: 1rem;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: left;
+}
+div.aboutFlex div.aboutBox div.intro div.courseList div.detail div.hidden div.hidden_text ul {
+  margin-left: 18px;
+}
+div.aboutFlex div.aboutBox div.intro div.courseList div.detail div.hidden div.hidden_text a {
+  font-weight: 900;
+  margin-top: 5px;
+  display: block;
+  text-align: center;
+}
+div.aboutFlex div.aboutBox div.intro div.courseList div.detail div.hidden div.hidden_text br {
+  display: block;
+  /* makes it have a width */
+  content: "";
+  /* clears default height */
+  margin-top: 10px;
+  /* change this to whatever height you want it */
+}
+div.aboutFlex p {
+  margin: 1rem;
+  text-align: left;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 770px) {
+  div.aboutFlex div.aboutBox div.intro {
+    width: 100%;
+  }
+  div.aboutFlex div.aboutBox div.intro div.courseList div.detail div.hidden div.hidden_text {
+    width: 85vw;
+  }
+}
+form.forget {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-family: "Noto Sans TC", monospace;
+  text-align: center;
+}
+form.forget h1.title {
+  padding: 1rem 0px;
+  font-family: "ToronoGlitchSans H2", sans-serif;
+  font-size: 2.5rem;
+}
+form.forget p {
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+  padding-right: 2rem;
+  text-decoration: none;
+  color: #ffffff;
+}
+form.forget div.inputFlex {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  position: relative;
+}
+form.forget div.inputFlex div.helpFlex {
+  width: 100%;
+  padding: 0rem 0 3rem 0;
+  display: flex;
+  justify-content: center;
+}
+form.forget div.inputFlex button.confirm {
+  border: 3px solid #d9d9d9;
+  color: #ffffff;
+  background: rgba(217, 217, 217, 0.35);
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+form.forget div.inputFlex button.confirm:hover {
+  background: radial-gradient(149.95% 387.57% at 54.19% 45.2%, #000000 52.6%, rgba(255, 255, 255, 0.63) 100%);
+  cursor: pointer;
+}
+form.forget div.inputFlex button.confirm span.arrow {
+  display: block;
+  margin: 0px auto;
+  width: 15px;
+  height: 15px;
+  border-top: 5px solid #d9d9d9;
+  border-left: 5px solid #d9d9d9;
+  transform: rotate(135deg);
+}
+form.forget div.inputFlex button.confirm span.arrow::after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 15px;
+  background-color: #d9d9d9;
+  transform: rotate(-45deg) translate(3px, 0px);
+  left: 0;
+  top: 0;
+}
+form.forget input.forgetMail {
+  text-align: left;
+  padding: 1rem;
+  border: 3px solid #d9d9d9;
+  color: #ffffff;
+  line-height: 36px;
+  font-size: 1.5rem;
+  background: rgba(217, 217, 217, 0.35);
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+form.forget input.forgetMail::placeholder {
+  color: #ffffff;
+}
+form.forget input.forgetMail:hover {
+  background: #000000;
+}
+form.forget div.passwordFlex {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+form.forget div.passwordFlex *.forgetPassword {
+  text-align: left;
+  padding: 1rem;
+  border: 3px solid #d9d9d9;
+  color: #ffffff;
+  line-height: 36px;
+  font-size: 1.5rem;
+  background: rgba(217, 217, 217, 0.35);
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+form.forget div.passwordFlex *.forgetPassword::placeholder {
+  color: #ffffff;
+}
+form.forget div.passwordFlex *.forgetPassword:hover {
+  background: #000000;
+}
+form.forget div.passwordFlex div.pwd_container {
+  display: flex;
+  position: relative;
+}
+form.forget div.passwordFlex div.pwd_container input.forgetPassword {
+  width: 100%;
+}
+form.forget div.passwordFlex div.pwd_container button.confirm {
+  border: 3px solid #d9d9d9;
+  color: #ffffff;
+  background: rgba(217, 217, 217, 0.35);
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+form.forget div.passwordFlex div.pwd_container button.confirm:hover {
+  background: radial-gradient(149.95% 387.57% at 54.19% 45.2%, #000000 52.6%, rgba(255, 255, 255, 0.63) 100%);
+  cursor: pointer;
+}
+form.forget div.passwordFlex div.pwd_container button.confirm span.arrow {
+  display: block;
+  margin: 0px auto;
+  width: 15px;
+  height: 15px;
+  border-top: 5px solid #d9d9d9;
+  border-left: 5px solid #d9d9d9;
+  transform: rotate(135deg);
+}
+form.forget div.passwordFlex div.pwd_container button.confirm span.arrow::after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 15px;
+  background-color: #d9d9d9;
+  transform: rotate(-45deg) translate(3px, 0px);
+  left: 0;
+  top: 0;
+}
+form.forget input.button {
+  margin: 0px 0px 20px 0px;
+}
+
+@media screen and (max-width: 600px) {
+  form.forget div.inputFlex {
+    width: 75vw;
+  }
+  form.forget div.passwordFlex {
+    width: 75vw;
+  }
+}
+div#formPage h1 {
+  padding: 10px;
+  font-family: "ToronoGlitchSans H2";
+  font-size: 2rem;
+}
+div#formPage h2 {
+  padding: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+div#formPage h4 {
+  font-weight: bold;
+}
+div#formPage hr.bar {
+  margin: 0 2rem;
+  padding: 0px 0px 0px 0px;
+  size: "1px";
+  left: 3%;
+}
+div#formPage hr.field {
+  padding: 0 0 0 0;
+  size: 1px;
+  width: 100%;
+}
+div#formPage div.registerContain {
+  color: #fff;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.231372549);
+}
+div#formPage form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+}
+div#formPage form fieldset {
+  border: 0px;
+  width: 50%;
+  text-align: left;
+  margin: 10px 0;
+}
+div#formPage form fieldset legend {
+  font-size: 1.25rem;
+  padding-bottom: 10px;
+}
+div#formPage form fieldset label {
+  display: block;
+  font-size: 1.1rem;
+}
+div#formPage form fieldset input {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+div#formPage form input[type=text],
+div#formPage form input[type=date],
+div#formPage input[type=tel],
+div#formPage input[type=url] {
+  padding-left: 20px;
+  width: 45%;
+  left: 0%;
+  border: 2px solid #fff;
+  border-radius: 15px;
+  background: rgba(217, 217, 217, 0.35);
+  height: 3rem;
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+}
+div#formPage form input:focus {
+  color: #E7AE16;
+  background: radial-gradient(149.95% 387.57% at 54.19% 45.2%, #000000 52.6%, rgba(255, 255, 255, 0.63) 100%);
+}
+div#formPage form input[type=file] {
+  display: none;
+}
+div#formPage ::placeholder {
+  color: #fff;
+}
+div#formPage form input:hover {
+  border: 3px solid #E7AE16;
+  color: #f7d967;
+  background: #000000;
+}
+div#formPage input[type=radio] {
+  font-size: 1rem;
+  color: #f2a2f2;
+  margin: 0 0 0 20px;
+  width: 18px;
+  height: 18px;
+}
+div#formPage select {
+  background: rgba(217, 217, 217, 0.35);
+  color: #fff;
+  height: 2rem;
+  padding-left: 10px;
+  border-radius: 7px;
+  font-size: 1rem;
+}
+div#formPage select > option {
+  font-size: 1rem;
+  color: #fff;
+}
+div#formPage textarea {
+  font-size: 1rem;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: rgba(217, 217, 217, 0.35);
+  color: #fff;
+  border-radius: 7px;
+}
+div#formPage textarea:hover {
+  border: 3px solid #DA5512;
+}
+div#formPage textarea:focus {
+  color: #f7d967;
+  background: radial-gradient(149.95% 387.57% at 54.19% 45.2%, #000000 52.6%, rgba(255, 255, 255, 0.63) 100%);
+  border: 5px solid #DA5512;
+}
+div#formPage .experience {
+  font-size: 0.8rem;
+}
+div#formPage .self {
+  width: 2rem;
+  height: 2rem;
+  float: left;
+}
+div#formPage #presentFile {
+  display: inline-block;
+}
+div#formPage div.registerButton {
+  display: flex;
+  justify-content: center;
+}
+div#formPage div.registerButton a button {
+  margin-top: 1rem;
+  text-align: center;
+  padding: 1.5rem 1.5rem 1.5rem 2rem;
+  letter-spacing: 0.75rem;
+  font-family: "ToronoGlitchSans H2";
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.5rem;
+  background: rgba(217, 217, 217, 0.35);
+  border-radius: 30px;
+  border: 5px solid #d9d9d9;
+}
+div#formPage div.registerButton a button:hover {
+  color: #E7AE16;
+  background: black;
+  cursor: pointer;
+}
+div#formPage div.picture {
+  background: rgba(6, 48, 255, 0.2156862745);
+  border: 3px solid #fff;
+  border-radius: 15px;
+  padding: 10px;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 2rem;
+}
+div#formPage div.picture label {
+  display: inline;
+  padding-top: 5px;
+  cursor: pointer;
+}
+div#formPage div.picture label input {
+  margin-top: 10px;
+}
+@media screen and (max-width: 900px) {
+  div#formPage form fieldset {
+    width: 80%;
+  }
+}
+
+div#page_review {
+  --npr--photo_width: 60vw;
+  --npr--photo_height: calc(var(--npr--photo_width) * 2 / 3);
+  --npr--photo_xd: 4vw;
+  --npr--photo_yd: 3vw;
+  --npr--arrow_width: 6vw;
+  --npr--arrow_height: 5vw;
+  --npr--dotbar_height: 7vw;
+  margin: 1rem 1vw 1rem 1vw;
+  width: 98vw;
+  height: calc(var(--npr--photo_height) + var(--npr--photo_yd) * 2 + var(--npr--dotbar_height) + 50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+@media (max-width: 600px) {
+  div#page_review {
+    --npr--photo_width: 80vw;
+  }
+  div#page_review div.pageReviewFlex div#page_review_down {
+    width: 100%;
+  }
+}
+@media (max-width: 1100px) {
+  div#page_review {
+    height: calc(var(--npr--photo_height) + var(--npr--photo_yd) * 2 + var(--npr--dotbar_height) + 50%);
+  }
+}
+div#page_review div.pageReviewFlex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80vw;
+}
+div#page_review div#page_review_down {
+  width: 80%;
+  min-width: 300px;
+  padding: 0 0 0 1vw;
+  margin-bottom: 5vh;
+  display: flex;
+  flex-direction: column;
+}
+div#page_review div#page_review_down div#rt_title {
+  font-family: "ToronoGlitchSans H2";
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+div#page_review div#page_review_down div#rt_content {
+  font-size: 1.25rem;
+  color: white;
+}
+div#page_review div#page_review_up {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div#page_review div#page_review_up div#ri_up_1 {
+  width: calc(var(--npr--photo_width) + var(--npr--photo_xd) * 2 + var(--npr--arrow_width) * 2);
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+div#page_review div#page_review_up div#ri_up_1 div.ri_arrow_c {
+  width: var(--npr--arrow_width);
+  height: var(--npr--arrow_height);
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+div#page_review div#page_review_up div#ri_up_1 div.ri_arrow_c:hover > div#ri_arrow_m1 {
+  right: 5px;
+  border-color: #DA5512;
+}
+div#page_review div#page_review_up div#ri_up_1 div.ri_arrow_c:hover > div#ri_arrow_m2 {
+  right: 20px;
+  border-color: #DA5512;
+}
+div#page_review div#page_review_up div#ri_up_1 div.ri_arrow_c:hover > div#ri_arrow_m3 {
+  right: 35px;
+  border-color: #DA5512;
+}
+div#page_review div#page_review_up div#ri_up_1 div.ri_arrow_c:active > div.ri_arrow_m {
+  border-color: #DA5512;
+}
+div#page_review div#page_review_up div#ri_up_1 div.ri_arrow_c div.ri_arrow_m {
+  width: calc(var(--npr--arrow_width) / 2);
+  height: calc(var(--npr--arrow_width) / 2);
+  position: absolute;
+  rotate: 45deg;
+  border-bottom: 5px solid white;
+  border-left: 5px solid white;
+  border-radius: 5px;
+}
+div#page_review div#page_review_up div#ri_up_1 div.ri_arrow_c div#ri_arrow_m1 {
+  right: -10px;
+  transition: right 0.1s ease 0.2s;
+}
+div#page_review div#page_review_up div#ri_up_1 div.ri_arrow_c div#ri_arrow_m2 {
+  right: 5px;
+  transition: right 0.1s ease 0.1s;
+}
+div#page_review div#page_review_up div#ri_up_1 div.ri_arrow_c div#ri_arrow_m3 {
+  right: 20px;
+  transition: right 0.1s ease;
+}
+@media (max-width: 600px) {
+  div#page_review div#page_review_up div#ri_up_1 div.ri_arrow_c {
+    opacity: 0;
+  }
+}
+div#page_review div#page_review_up div#ri_up_1 div#ri_img_container {
+  width: calc(var(--npr--photo_width) + var(--npr--photo_xd) * 2);
+  height: calc(var(--npr--photo_height) + var(--npr--photo_yd) * 2);
+  position: relative;
+  user-select: none;
+}
+div#page_review div#page_review_up div#ri_up_1 div#ri_img_container div#ri_img_touch_left {
+  width: 40%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  z-index: 5;
+}
+div#page_review div#page_review_up div#ri_up_1 div#ri_img_container div#ri_img_touch_right {
+  width: 60%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  z-index: 5;
+}
+div#page_review div#page_review_up div#ri_up_1 div#ri_img_container img {
+  width: var(--npr--photo_width);
+  height: var(--npr--photo_height);
+  border-radius: 10%;
+  position: absolute;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+div#page_review div#page_review_up div#ri_up_1 div#ri_arrow_r {
+  rotate: 180deg;
+}
+div#page_review div#page_review_up div#ri_up_2 {
+  width: auto;
+  height: auto;
+  position: relative;
+}
+div#page_review div#page_review_up div#ri_up_2 div#ri_img_dotbar {
+  width: calc(var(--npr--photo_width) + var(--npr--photo_xd) * 2);
+  height: var(--npr--dotbar_height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div#page_review div#page_review_up div#ri_up_2 div#ri_img_dotbar div.review_up_dot {
+  width: 20px;
+  height: 20px;
+  min-width: 10px;
+  margin: 10px;
+  border: 3px white solid;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+div#page_review div#page_review_up div#ri_up_2 div#ri_img_dotbar div.review_up_dot:hover {
+  cursor: pointer;
+  background-color: rgb(218, 85, 18);
+}
+@media (max-width: 600px) {
+  div#page_review div#page_review_up div#ri_up_2 div#ri_img_dotbar div.review_up_dot {
+    width: 10px;
+    height: 10px;
+    box-sizing: border-box;
+    border: 5px white solid;
+  }
+}
+
+div#page_personal {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+div#page_personal div#page_personal_derror {
+  position: absolute;
+  top: -40px;
+  color: red;
+  font-size: 40px;
+  overflow: hidden;
+}
+div#page_personal div#p_personal_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80vw;
+}
+div#page_personal div#p_personal_container div#pp_account_name {
+  width: 70vw;
+  height: 14vh;
+}
+div#page_personal div#p_personal_container div#pp_account_name div#pp_an_up,
+div#page_personal div#p_personal_container div#pp_account_name div#pp_an_down {
+  width: 100%;
+  height: 7vh;
+  font-size: 30px;
+  overflow-wrap: break-word;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div#page_personal div#p_personal_container div#pp_account_field {
+  width: 70vw;
+  min-width: 300px;
+  max-width: 1000px;
+  height: 20vh;
+  margin: 3vh 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: unset;
+  align-items: normal;
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_information,
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_quiz,
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_github {
+  width: 20vw;
+  max-width: 300px;
+  height: 20vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_information div#ppa_inside_text,
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_quiz div#ppa_inside_text,
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_github div#ppa_inside_text {
+  width: calc(100% - 10vh);
+  height: 10vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  padding: 6%;
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_information div#ppa_inside_state,
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_quiz div#ppa_inside_state,
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_github div#ppa_inside_state {
+  position: absolute;
+  right: 1vh;
+  top: 1vh;
+  width: 8vh;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6vh;
+  border-radius: 10vh;
+  user-select: none;
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_information div#ppa_inside_button,
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_quiz div#ppa_inside_button,
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_github div#ppa_inside_button {
+  width: 80%;
+  height: 8vh;
+  font-size: 23px;
+  border-radius: 1.2vw;
+  box-sizing: border-box;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-top: 2vh;
+  margin-left: 10%;
+  border: 2px white solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_information div#ppa_inside_button a,
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_quiz div#ppa_inside_button a,
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_github div#ppa_inside_button a {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_information.ppaib_close div#ppa_inside_button {
+  opacity: 0.5;
+  background-color: rgba(200, 200, 200, 0.2);
+  border: 2px gray solid;
+  color: gray;
+  cursor: not-allowed;
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_information.ppaib_close div#ppa_inside_button::before {
+  content: "撠���芷�����";
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_information.ppaib_close div#ppa_inside_state {
+  border: 0.25vh solid red;
+  color: red;
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_information.ppaib_close div#ppa_inside_state::before {
+  content: "���";
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_information.ppaib_open div#ppa_inside_button {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 2px white solid;
+  color: white;
+  transition: box-shadow 0.4s ease;
+  cursor: pointer;
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_information.ppaib_open div#ppa_inside_button:hover {
+  box-shadow: 0px 0px 5px 2px white;
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_information.ppaib_open div#ppa_inside_button::before {
+  content: "暺�甇文‵撖�";
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_information.ppaib_open div#ppa_inside_state {
+  border: 0.25vh solid red;
+  color: red;
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_information.ppaib_open div#ppa_inside_state::before {
+  content: "���";
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_information.ppaib_finish div#ppa_inside_button {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 2px white solid;
+  color: white;
+  transition: box-shadow 0.4s ease;
+  cursor: pointer;
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_information.ppaib_finish div#ppa_inside_button:hover {
+  box-shadow: 0px 0px 5px 2px white;
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_information.ppaib_finish div#ppa_inside_button::before {
+  content: "靽格�寡�����";
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_information.ppaib_finish div#ppa_inside_state {
+  border: 0.25vh solid chartreuse;
+  color: chartreuse;
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_information.ppaib_finish div#ppa_inside_state::before {
+  content: "���";
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_information.ppaib_registered div#ppa_inside_button {
+  background-color: rgba(100, 100, 100, 0.5);
+  border: 2px gray solid;
+  color: gray;
+  cursor: default;
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_information.ppaib_registered div#ppa_inside_button::before {
+  content: "撌脣�������勗��雿�璆�";
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_information.ppaib_registered div#ppa_inside_state {
+  border: 0.25vh solid chartreuse;
+  color: chartreuse;
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_information.ppaib_registered div#ppa_inside_state::before {
+  content: "���";
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_information.ppaib_error div#ppa_inside_button {
+  background-color: rgba(100, 100, 100, 0.5);
+  border: 2px red solid;
+  color: red;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: help;
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_information.ppaib_error div#ppa_inside_button::before {
+  content: "��航炊��潛��";
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_information.ppaib_error div#ppa_inside_button:hover::before {
+  font-size: 25px;
+  content: "隢���舐窗������鈭箏��";
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_information.ppaib_error div#ppa_inside_state {
+  border: 0.25vh solid darkorange;
+  color: darkorange;
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_information.ppaib_error div#ppa_inside_state::before {
+  content: "嚗�";
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_quiz.ppaib_close div#ppa_inside_button {
+  opacity: 0.5;
+  background-color: rgba(200, 200, 200, 0.2);
+  border: 2px gray solid;
+  color: gray;
+  cursor: not-allowed;
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_quiz.ppaib_close div#ppa_inside_button::before {
+  content: "撠���芷�����";
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_quiz.ppaib_close div#ppa_inside_state {
+  border: 0.25vh solid red;
+  color: red;
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_quiz.ppaib_close div#ppa_inside_state::before {
+  content: "���";
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_quiz.ppaib_open div#ppa_inside_button {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 2px white solid;
+  color: white;
+  transition: box-shadow 0.4s ease;
+  cursor: pointer;
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_quiz.ppaib_open div#ppa_inside_button:hover {
+  box-shadow: 0px 0px 5px 2px white;
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_quiz.ppaib_open div#ppa_inside_button::before {
+  content: "暺�甇斗葫撽�";
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_quiz.ppaib_open div#ppa_inside_state {
+  border: 0.25vh solid red;
+  color: red;
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_quiz.ppaib_open div#ppa_inside_state::before {
+  content: "���";
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_quiz.ppaib_finish div#ppa_inside_button {
+  background-color: rgba(100, 100, 100, 0.5);
+  border: 2px gray solid;
+  color: gray;
+  cursor: default;
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_quiz.ppaib_finish div#ppa_inside_button::before {
+  content: "撌脣�����皜祇��";
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_quiz.ppaib_finish div#ppa_inside_state {
+  border: 0.25vh solid chartreuse;
+  color: chartreuse;
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_quiz.ppaib_finish div#ppa_inside_state::before {
+  content: "���";
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_quiz.ppaib_registered div#ppa_inside_button {
+  background-color: rgba(100, 100, 100, 0.5);
+  border: 2px gray solid;
+  color: gray;
+  cursor: default;
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_quiz.ppaib_registered div#ppa_inside_button::before {
+  content: "撌脣�������勗��雿�璆�";
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_quiz.ppaib_registered div#ppa_inside_state {
+  border: 0.25vh solid chartreuse;
+  color: chartreuse;
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_quiz.ppaib_registered div#ppa_inside_state::before {
+  content: "���";
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_quiz.ppaib_error div#ppa_inside_button {
+  background-color: rgba(100, 100, 100, 0.5);
+  border: 2px red solid;
+  color: red;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: help;
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_quiz.ppaib_error div#ppa_inside_button::before {
+  content: "��航炊��潛��";
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_quiz.ppaib_error div#ppa_inside_button:hover::before {
+  font-size: 25px;
+  content: "隢���舐窗������鈭箏��";
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_quiz.ppaib_error div#ppa_inside_state {
+  border: 0.25vh solid darkorange;
+  color: darkorange;
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_quiz.ppaib_error div#ppa_inside_state::before {
+  content: "嚗�";
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_github.ppaib_close div#ppa_inside_button {
+  opacity: 0.5;
+  background-color: rgba(200, 200, 200, 0.2);
+  border: 2px gray solid;
+  color: gray;
+  cursor: not-allowed;
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_github.ppaib_close div#ppa_inside_button::before {
+  content: "撠���芷�����";
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_github.ppaib_close div#ppa_inside_state {
+  border: 0.25vh solid red;
+  color: red;
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_github.ppaib_close div#ppa_inside_state::before {
+  content: "���";
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_github.ppaib_open div#ppa_inside_button {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 2px white solid;
+  color: white;
+  transition: box-shadow 0.4s ease;
+  cursor: pointer;
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_github.ppaib_open div#ppa_inside_button:hover {
+  box-shadow: 0px 0px 5px 2px white;
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_github.ppaib_open div#ppa_inside_button::before {
+  content: "暺�甇斤��摰�";
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_github.ppaib_open div#ppa_inside_state {
+  border: 0.25vh solid red;
+  color: red;
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_github.ppaib_open div#ppa_inside_state::before {
+  content: "���";
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_github.ppaib_finish div#ppa_inside_button {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 2px white solid;
+  color: white;
+  transition: box-shadow 0.4s ease;
+  cursor: pointer;
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_github.ppaib_finish div#ppa_inside_button:hover {
+  box-shadow: 0px 0px 5px 2px white;
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_github.ppaib_finish div#ppa_inside_button::before {
+  content: "暺�甇日����啁��摰�";
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_github.ppaib_finish div#ppa_inside_state {
+  border: 0.25vh solid chartreuse;
+  color: chartreuse;
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_github.ppaib_finish div#ppa_inside_state::before {
+  content: "���";
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_github.ppaib_registered div#ppa_inside_button {
+  background-color: rgba(100, 100, 100, 0.5);
+  border: 2px gray solid;
+  color: gray;
+  cursor: default;
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_github.ppaib_registered div#ppa_inside_button::before {
+  content: "撌脣�������勗��雿�璆�";
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_github.ppaib_registered div#ppa_inside_state {
+  border: 0.25vh solid chartreuse;
+  color: chartreuse;
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_github.ppaib_registered div#ppa_inside_state::before {
+  content: "���";
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_github.ppaib_error div#ppa_inside_button {
+  background-color: rgba(100, 100, 100, 0.5);
+  border: 2px red solid;
+  color: red;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: help;
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_github.ppaib_error div#ppa_inside_button::before {
+  content: "��航炊��潛��";
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_github.ppaib_error div#ppa_inside_button:hover::before {
+  font-size: 25px;
+  content: "隢���舐窗������鈭箏��";
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_github.ppaib_error div#ppa_inside_state {
+  border: 0.25vh solid darkorange;
+  color: darkorange;
+}
+div#page_personal div#p_personal_container div#pp_account_field div#ppa_github.ppaib_error div#ppa_inside_state::before {
+  content: "嚗�";
+}
+@media (max-width: 1000px) {
+  div#page_personal div#p_personal_container div#pp_account_field {
+    height: 63vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: normal;
+  }
+  div#page_personal div#p_personal_container div#pp_account_field div#ppa_information,
+  div#page_personal div#p_personal_container div#pp_account_field div#ppa_quiz,
+  div#page_personal div#p_personal_container div#pp_account_field div#ppa_github {
+    margin: 0.5vh 0;
+    width: 100%;
+  }
+}
+div#page_personal div#p_personal_container div#pp_register {
+  width: 60vw;
+  height: 30vh;
+  margin-top: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div#page_personal div#p_personal_container div#pp_register div#ppr_button {
+  width: 30vw;
+  min-width: 300px;
+  max-width: 400px;
+  height: 10vh;
+  border-radius: 3vh;
+  margin: 1vh;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+div#page_personal div#p_personal_container div#pp_register div#ppr_button a {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+div#page_personal div#p_personal_container div#pp_register div#ppr_center {
+  width: 100%;
+  min-width: 320px;
+  max-width: 450px;
+  height: 16vh;
+  margin: 1vh;
+  display: flex;
+  align-items: center;
+}
+div#page_personal div#p_personal_container div#pp_register div#ppr_center div#ppr_state {
+  width: 8vh;
+  height: 8vh;
+  margin: 1vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6vh;
+  border-radius: 10vh;
+  user-select: none;
+}
+div#page_personal div#p_personal_container div#pp_register div#ppr_center div#ppr_text {
+  width: calc(100% - 10vh);
+  height: 100%;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+}
+div#page_personal div#p_personal_container div#pp_register.pprb_close div#ppr_button {
+  opacity: 0.5;
+  background-color: rgba(200, 200, 200, 0.2);
+  border: 2px gray solid;
+  color: gray;
+  cursor: not-allowed;
+}
+div#page_personal div#p_personal_container div#pp_register.pprb_close div#ppr_button::before {
+  content: "撠���芷�������勗��";
+}
+div#page_personal div#p_personal_container div#pp_register.pprb_close div#ppr_center div#ppr_state {
+  border: 0.25vh solid red;
+  color: red;
+}
+div#page_personal div#p_personal_container div#pp_register.pprb_close div#ppr_center div#ppr_state::before {
+  content: "���";
+}
+div#page_personal div#p_personal_container div#pp_register.pprb_close div#ppr_center div#ppr_text {
+  color: red;
+}
+div#page_personal div#p_personal_container div#pp_register.pprb_close div#ppr_center div#ppr_text::before {
+  content: "��芸�������勗��";
+}
+div#page_personal div#p_personal_container div#pp_register.pprb_open div#ppr_button {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 2px white solid;
+  color: white;
+  transition: box-shadow 0.4s ease;
+  cursor: pointer;
+}
+div#page_personal div#p_personal_container div#pp_register.pprb_open div#ppr_button:hover {
+  box-shadow: 0px 0px 5px 2px white;
+}
+div#page_personal div#p_personal_container div#pp_register.pprb_open div#ppr_button::before {
+  content: "暺������勗��";
+}
+div#page_personal div#p_personal_container div#pp_register.pprb_open div#ppr_button::before {
+  font-size: 40px;
+}
+div#page_personal div#p_personal_container div#pp_register.pprb_open div#ppr_center div#ppr_state {
+  border: 0.25vh solid red;
+  color: red;
+}
+div#page_personal div#p_personal_container div#pp_register.pprb_open div#ppr_center div#ppr_state::before {
+  content: "���";
+}
+div#page_personal div#p_personal_container div#pp_register.pprb_open div#ppr_center div#ppr_text {
+  color: red;
+}
+div#page_personal div#p_personal_container div#pp_register.pprb_open div#ppr_center div#ppr_text::before {
+  content: "��芸�������勗��";
+}
+div#page_personal div#p_personal_container div#pp_register.pprb_finish div#ppr_button {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 2px white solid;
+  color: white;
+  transition: box-shadow 0.4s ease;
+  cursor: pointer;
+}
+div#page_personal div#p_personal_container div#pp_register.pprb_finish div#ppr_button:hover {
+  box-shadow: 0px 0px 5px 2px white;
+}
+div#page_personal div#p_personal_container div#pp_register.pprb_finish div#ppr_button::before {
+  content: "���瘨���勗��";
+}
+div#page_personal div#p_personal_container div#pp_register.pprb_finish div#ppr_center div#ppr_state {
+  border: 0.25vh solid chartreuse;
+  color: chartreuse;
+}
+div#page_personal div#p_personal_container div#pp_register.pprb_finish div#ppr_center div#ppr_state::before {
+  content: "���";
+}
+div#page_personal div#p_personal_container div#pp_register.pprb_finish div#ppr_center div#ppr_text {
+  color: chartreuse;
+}
+div#page_personal div#p_personal_container div#pp_register.pprb_finish div#ppr_center div#ppr_text::before {
+  content: "撌脣�������勗��";
+}
+div#page_personal div#p_personal_container div#pp_register.pprb_registered div#ppr_button {
+  background-color: rgba(100, 100, 100, 0.5);
+  border: 2px gray solid;
+  color: gray;
+  cursor: default;
+}
+div#page_personal div#p_personal_container div#pp_register.pprb_registered div#ppr_button::before {
+  content: "撌脣�������勗��";
+}
+div#page_personal div#p_personal_container div#pp_register.pprb_registered div#ppr_center div#ppr_state {
+  border: 0.25vh solid chartreuse;
+  color: chartreuse;
+}
+div#page_personal div#p_personal_container div#pp_register.pprb_registered div#ppr_center div#ppr_state::before {
+  content: "���";
+}
+div#page_personal div#p_personal_container div#pp_register.pprb_registered div#ppr_center div#ppr_text {
+  color: chartreuse;
+}
+div#page_personal div#p_personal_container div#pp_register.pprb_registered div#ppr_center div#ppr_text::before {
+  content: "撌脣�������勗��";
+}
+div#page_personal div#p_personal_container div#pp_register.pprb_error div#ppr_button {
+  background-color: rgba(100, 100, 100, 0.5);
+  border: 2px red solid;
+  color: red;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: help;
+}
+div#page_personal div#p_personal_container div#pp_register.pprb_error div#ppr_button::before {
+  content: "��潛����航炊";
+}
+div#page_personal div#p_personal_container div#pp_register.pprb_error div#ppr_button:hover::before {
+  font-size: 25px;
+  content: "隢���舐窗������鈭箏��";
+}
+div#page_personal div#p_personal_container div#pp_register.pprb_error div#ppr_center div#ppr_state {
+  border: 0.25vh solid darkorange;
+  color: darkorange;
+}
+div#page_personal div#p_personal_container div#pp_register.pprb_error div#ppr_center div#ppr_state::before {
+  content: "嚗�";
+}
+div#page_personal div#p_personal_container div#pp_register.pprb_error div#ppr_center div#ppr_text {
+  color: darkorange;
+}
+div#page_personal div#p_personal_container div#pp_register.pprb_error div#ppr_center div#ppr_text::before {
+  content: "�����潛����航炊";
+}
+div#page_personal div#p_personal_container div#pp_isadmission {
+  width: 60vw;
+  margin: 3vh 0;
+}
+div#page_personal div#p_personal_container div#pp_isadmission div#ppia_top {
+  color: white;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+div#page_personal div#p_personal_container div#pp_isadmission div#ppia_result_field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div#page_personal div#p_personal_container div#pp_isadmission div#ppia_result_field div#ppia_result {
+  width: 60%;
+  min-width: 300px;
+  height: 15vh;
+  font-size: 90px;
+  line-height: normal;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+div#page_personal div#p_personal_container div#pp_isadmission div#ppia_result_field div#ppia_back_is {
+  width: 60%;
+  min-width: 300px;
+  height: 6vh;
+  font-size: 4vh;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+div#page_personal div#p_personal_container div#pp_isadmission.ppiar_accept div#ppia_result_field div#ppia_result::before {
+  color: chartreuse;
+  content: "甇����";
+}
+div#page_personal div#p_personal_container div#pp_isadmission.ppiar_accept div#ppia_result_field div#ppia_back_is {
+  height: 0;
+}
+div#page_personal div#p_personal_container div#pp_isadmission.ppiar_waiting ~ div#pp_admitted {
+  display: none;
+}
+div#page_personal div#p_personal_container div#pp_isadmission.ppiar_waiting div#ppia_result_field div#ppia_result::before {
+  color: yellow;
+  content: "������";
+}
+div#page_personal div#p_personal_container div#pp_isadmission.ppiar_waiting div#ppia_result_field div#ppia_back_is::before {
+  color: yellow;
+  content: "���鋆�������嚗�蝑�敺�銝�";
+}
+div#page_personal div#p_personal_container div#pp_isadmission.ppiar_wait_finish div#ppia_result_field div#ppia_result::before {
+  color: yellow;
+  content: "������";
+}
+div#page_personal div#p_personal_container div#pp_isadmission.ppiar_wait_finish div#ppia_result_field div#ppia_back_is::before {
+  color: chartreuse;
+  content: "���鋆�������嚗�������";
+}
+div#page_personal div#p_personal_container div#pp_isadmission.ppiar_not_pass ~ div#pp_admitted {
+  display: none;
+}
+div#page_personal div#p_personal_container div#pp_isadmission.ppiar_not_pass div#ppia_result_field div#ppia_result::before {
+  color: red;
+  content: "��芷�����";
+}
+div#page_personal div#p_personal_container div#pp_isadmission.ppiar_not_pass div#ppia_result_field div#ppia_back_is {
+  height: 0;
+}
+div#page_personal div#p_personal_container div#pp_admitted {
+  width: 60vw;
+  height: 20vh;
+  margin-bottom: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+div#page_personal div#p_personal_container div#pp_admitted div#ppad_pay,
+div#page_personal div#p_personal_container div#pp_admitted div#ppad_agreement {
+  width: 40%;
+  min-width: 300px;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+div#page_personal div#p_personal_container div#pp_admitted div#ppad_pay div#ppad_text,
+div#page_personal div#p_personal_container div#pp_admitted div#ppad_agreement div#ppad_text {
+  width: 60%;
+  height: 50%;
+  padding-left: 5%;
+  color: white;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+}
+div#page_personal div#p_personal_container div#pp_admitted div#ppad_pay div#ppad_state,
+div#page_personal div#p_personal_container div#pp_admitted div#ppad_agreement div#ppad_state {
+  width: 40%;
+  height: 50%;
+  font-size: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div#page_personal div#p_personal_container div#pp_admitted div#ppad_pay div#ppad_button,
+div#page_personal div#p_personal_container div#pp_admitted div#ppad_agreement div#ppad_button {
+  width: 80%;
+  height: 50%;
+  border-radius: 2vh;
+  font-size: 25px;
+  margin-left: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+div#page_personal div#p_personal_container div#pp_admitted div#ppad_cancel {
+  background-color: rgba(100, 100, 100, 0.5);
+  border: 2px gray solid;
+  color: gray;
+  cursor: default;
+  width: 15vw;
+  min-width: 200px;
+  height: 5vh;
+  border-radius: 1vh;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+div#page_personal div#p_personal_container div#pp_admitted div#ppad_cancel::before {
+  content: "(��潔��敺�撌脣�����銝�)���瘨���勗��";
+}
+div#page_personal div#p_personal_container div#pp_admitted div#ppad_pay div#ppad_text::before {
+  content: "蝜唾祥������";
+}
+div#page_personal div#p_personal_container div#pp_admitted div#ppad_pay.ppadp_no div#ppad_state::before {
+  font-weight: bold;
+  color: red;
+  content: "��芰像鞎�";
+}
+div#page_personal div#p_personal_container div#pp_admitted div#ppad_pay.ppadp_no div#ppad_button {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 2px white solid;
+  color: white;
+  transition: box-shadow 0.4s ease;
+  cursor: pointer;
+}
+div#page_personal div#p_personal_container div#pp_admitted div#ppad_pay.ppadp_no div#ppad_button:hover {
+  box-shadow: 0px 0px 5px 2px white;
+}
+div#page_personal div#p_personal_container div#pp_admitted div#ppad_pay.ppadp_no div#ppad_button::before {
+  content: "暺�甇斤像鞎�";
+}
+div#page_personal div#p_personal_container div#pp_admitted div#ppad_pay.ppadp_check div#ppad_state::before {
+  font-weight: bold;
+  color: yellow;
+  content: "蝣箄��銝�";
+}
+div#page_personal div#p_personal_container div#pp_admitted div#ppad_pay.ppadp_check div#ppad_button {
+  background-color: rgba(100, 100, 100, 0.5);
+  border: 2px gray solid;
+  color: gray;
+  cursor: default;
+}
+div#page_personal div#p_personal_container div#pp_admitted div#ppad_pay.ppadp_check div#ppad_button::before {
+  content: "蝣箄��銝�";
+}
+div#page_personal div#p_personal_container div#pp_admitted div#ppad_pay.ppadp_yes div#ppad_state::before {
+  font-weight: bold;
+  color: chartreuse;
+  content: "������";
+}
+div#page_personal div#p_personal_container div#pp_admitted div#ppad_pay.ppadp_yes div#ppad_button {
+  opacity: 0.5;
+  background-color: rgba(200, 200, 200, 0.2);
+  border: 2px gray solid;
+  color: gray;
+  cursor: not-allowed;
+}
+div#page_personal div#p_personal_container div#pp_admitted div#ppad_pay.ppadp_yes div#ppad_button::before {
+  content: "蝜唾祥������";
+}
+div#page_personal div#p_personal_container div#pp_admitted div#ppad_pay.ppadp_error div#ppad_state::before {
+  font-weight: bold;
+  color: red;
+  content: "隢�蝡���唾�舐窗������";
+}
+div#page_personal div#p_personal_container div#pp_admitted div#ppad_pay.ppadp_error div#ppad_button {
+  background-color: rgba(100, 100, 100, 0.5);
+  border: 2px red solid;
+  color: red;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: help;
+}
+div#page_personal div#p_personal_container div#pp_admitted div#ppad_pay.ppadp_error div#ppad_button::before {
+  content: "��潛����啣虜";
+}
+div#page_personal div#p_personal_container div#pp_admitted div#ppad_pay.ppadp_error div#ppad_button:hover::before {
+  font-size: 25px;
+  content: "隢���舐窗������鈭箏��";
+}
+div#page_personal div#p_personal_container div#pp_admitted div#ppad_agreement div#ppad_text::before {
+  content: "摰園�瑕��������";
+}
+div#page_personal div#p_personal_container div#pp_admitted div#ppad_agreement.ppada_no div#ppad_state::before {
+  font-weight: bold;
+  color: red;
+  content: "��芯�����";
+}
+div#page_personal div#p_personal_container div#pp_admitted div#ppad_agreement.ppada_no div#ppad_button {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 2px white solid;
+  color: white;
+  transition: box-shadow 0.4s ease;
+  cursor: pointer;
+}
+div#page_personal div#p_personal_container div#pp_admitted div#ppad_agreement.ppada_no div#ppad_button:hover {
+  box-shadow: 0px 0px 5px 2px white;
+}
+div#page_personal div#p_personal_container div#pp_admitted div#ppad_agreement.ppada_no div#ppad_button::before {
+  content: "暺�甇支�����";
+}
+div#page_personal div#p_personal_container div#pp_admitted div#ppad_agreement.ppada_check div#ppad_state::before {
+  font-weight: bold;
+  color: yellow;
+  content: "蝣箄��銝�";
+}
+div#page_personal div#p_personal_container div#pp_admitted div#ppad_agreement.ppada_check div#ppad_button {
+  background-color: rgba(100, 100, 100, 0.5);
+  border: 2px gray solid;
+  color: gray;
+  cursor: default;
+}
+div#page_personal div#p_personal_container div#pp_admitted div#ppad_agreement.ppada_check div#ppad_button::before {
+  content: "蝣箄��銝�";
+}
+div#page_personal div#p_personal_container div#pp_admitted div#ppad_agreement.ppada_yes div#ppad_state::before {
+  font-weight: bold;
+  color: chartreuse;
+  content: "撌脤�����";
+}
+div#page_personal div#p_personal_container div#pp_admitted div#ppad_agreement.ppada_yes div#ppad_button {
+  opacity: 0.5;
+  background-color: rgba(200, 200, 200, 0.2);
+  border: 2px gray solid;
+  color: gray;
+  cursor: not-allowed;
+}
+div#page_personal div#p_personal_container div#pp_admitted div#ppad_agreement.ppada_yes div#ppad_button::before {
+  content: "銝���單�����";
+}
+div#page_personal div#p_personal_container div#pp_admitted div#ppad_agreement.ppada_fail div#ppad_state::before {
+  font-weight: bold;
+  color: red;
+  content: "��芷�����";
+}
+div#page_personal div#p_personal_container div#pp_admitted div#ppad_agreement.ppada_fail div#ppad_button {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 2px white solid;
+  color: white;
+  transition: box-shadow 0.4s ease;
+  cursor: pointer;
+}
+div#page_personal div#p_personal_container div#pp_admitted div#ppad_agreement.ppada_fail div#ppad_button:hover {
+  box-shadow: 0px 0px 5px 2px white;
+}
+div#page_personal div#p_personal_container div#pp_admitted div#ppad_agreement.ppada_fail div#ppad_button::before {
+  content: "�����唬�����";
+}
+div#page_personal div#p_personal_container div#pp_admitted div#ppad_agreement.ppada_error div#ppad_state::before {
+  font-weight: bold;
+  color: red;
+  content: "隢�蝡���唾�舐窗������";
+}
+div#page_personal div#p_personal_container div#pp_admitted div#ppad_agreement.ppada_error div#ppad_button {
+  background-color: rgba(100, 100, 100, 0.5);
+  border: 2px red solid;
+  color: red;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: help;
+}
+div#page_personal div#p_personal_container div#pp_admitted div#ppad_agreement.ppada_error div#ppad_button::before {
+  content: "��潛����航炊";
+}
+div#page_personal div#p_personal_container div#pp_admitted div#ppad_agreement.ppada_error div#ppad_button:hover::before {
+  font-size: 25px;
+  content: "隢���舐窗������鈭箏��";
+}
+@media (max-width: 1000px) {
+  div#page_personal div#p_personal_container div#pp_admitted {
+    flex-direction: column;
+    align-items: center;
+    justify-content: normal;
+    height: 44vh;
+    margin-bottom: 10vh;
+  }
+  div#page_personal div#p_personal_container div#pp_admitted div#ppad_pay,
+  div#page_personal div#p_personal_container div#pp_admitted div#ppad_agreement {
+    width: 60%;
+    margin: 1vh 0;
+  }
+}
+div#page_personal div#p_personal_container div#pp_admitted.pp_admitted_close {
+  display: none;
+}
+
+div.adminFlex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+div.adminFlex h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+div.adminFlex div.adminSystemSwitch {
+  display: flex;
+  width: 75vw;
+  justify-content: center;
+}
+div.adminFlex div.adminSystemSwitch div {
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+div.adminFlex div.adminSystemSwitch div.left {
+  color: white;
+}
+div.adminFlex div.adminSystemSwitch div.left span {
+  color: #4DFF5E;
+}
+div.adminFlex div.adminSystemSwitch div.right {
+  color: white;
+}
+div.adminFlex div.adminSystemSwitch div.right span {
+  color: #FF0101;
+}
+div.adminFlex div.adminPaymentStatus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+div.adminFlex div.adminPaymentStatus h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+div.adminFlex div.adminPaymentStatus div.adminSearchFilter button {
+  text-align: center;
+  padding: 0.25rem 0.5rem;
+  margin: 0.5rem;
+  border: 3px solid #d9d9d9;
+  color: #ffffff;
+  line-height: 36px;
+  font-size: 1rem;
+  background: rgba(217, 217, 217, 0.35);
+  border-radius: 18px;
+}
+div.adminFlex div.adminPaymentStatus div.adminSearchFilter button:hover {
+  cursor: pointer;
+  background: #000000;
+}
+div.adminFlex form.adminSearch {
+  display: flex;
+  justify-content: center;
+  width: 75%;
+  padding: 1rem;
+}
+div.adminFlex form.adminSearch img {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  left: 10px;
+}
+div.adminFlex form.adminSearch input {
+  width: 100vw;
+}
+div.adminFlex form.adminSearch input::placeholder {
+  color: #ffffff;
+}
+div.adminFlex form.adminSearch input:hover {
+  background: #000000;
+}
+div.adminFlex div.table {
+  border-collapse: separate;
+  padding: 0.5rem;
+  width: 75vw;
+}
+div.adminFlex div.table div.tr {
+  display: flex;
+  justify-content: center;
+}
+div.adminFlex div.table div.tr div.th {
+  background: #68B9B8;
+  width: 150px;
+  margin: 0.5rem 1rem 0 1rem;
+  padding: 0.25rem;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 3px;
+  overflow: hidden;
+  background: #68B9B8;
+}
+div.adminFlex div.table div.tr div.th:hover {
+  scale: 1.1;
+  transition: 0.5s ease-in-out all;
+  cursor: pointer;
+}
+div.adminFlex div.table div.tr div.td {
+  background: #ffffff;
+  width: 150px;
+  margin: 0.5rem 1rem 0 1rem;
+  padding: 0.25rem;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 3px;
+  overflow: hidden;
+}
+div.adminFlex div.table div.tr div.td:hover {
+  scale: 1.1;
+  transition: 0.5s ease-in-out all;
+  cursor: pointer;
+}
+
+div#payment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+div#payment div.paymentText h3 {
+  padding: 1rem;
+}
+div#payment div.paymentText p,
+div#payment div.paymentText h3 {
+  margin-bottom: 0.5rem;
+  text-align: center;
+  color: #fff;
+}
+div#payment form.paymentFlex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div#payment form.paymentFlex label {
+  font-size: 1rem;
+  color: #fff;
+}
+div#payment form.paymentFlex input {
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+div#examPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+div#examPage h1 {
+  color: #ffffff;
+  font-family: "Inter";
+}
+div#examPage form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+}
+div#examPage form div.question {
+  padding: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: white;
+}
+div#examPage form div.question label {
+  margin-top: 0.5rem;
+}
+div#examPage form button {
+  align-self: center;
+  margin: 1rem 0rem;
+  padding: 0.5rem 3rem;
+  color: #ffffff;
+  font-size: 1rem;
+  font-size: 1.25rem;
+  background: none;
+  border-radius: 30px;
+  border: 3px solid #d9d9d9;
+}
+div#examPage form button:hover {
+  background: radial-gradient(149.95% 387.57% at 54.19% 45.2%, #000000 52.6%, rgba(255, 255, 255, 0.63) 100%);
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
