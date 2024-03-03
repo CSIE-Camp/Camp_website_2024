@@ -1,10 +1,13 @@
 div#page_faq {
+  .comment {
+    color: white;
+  }
   .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 15px;
-    padding-top: 60px;
+    padding-top: 30px;
     padding-left: 270px;
     padding-right: 270px;
     padding-bottom: 60px;
@@ -21,16 +24,16 @@ div#page_faq {
 
   /* 左侧的样式 */
   .grid-item.wide {
-    width: 450px;
+    width: 550px;
   }
 
   .grid-item.wide.s {
-    width: 450px;
-    margin-left: -170px;
+    width: 550px;
+    margin-left: -210px;
   }
 
   /* 右侧的样式 */
   .grid-item.narrow {
-    width: 280px;
+    width: 340px;
   }
 }
