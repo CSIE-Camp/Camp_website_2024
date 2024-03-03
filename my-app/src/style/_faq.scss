@@ -2,6 +2,7 @@ div#page_faq {
   .comment {
     color: white;
   }
+
   .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -22,7 +23,6 @@ div#page_faq {
     height: 170px;
   }
 
-  /* 左侧的样式 */
   .grid-item.wide {
     width: 550px;
   }
@@ -32,7 +32,6 @@ div#page_faq {
     margin-left: -210px;
   }
 
-  /* 右侧的样式 */
   .grid-item.narrow {
     width: 340px;
   }
