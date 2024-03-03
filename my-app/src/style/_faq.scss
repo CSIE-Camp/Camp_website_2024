@@ -1,0 +1,36 @@
+div#page_faq {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
+    padding-top: 60px;
+    padding-left: 270px;
+    padding-right: 270px;
+    padding-bottom: 60px;
+    justify-content: center;
+  }
+
+  .grid-item {
+    background-color: #f0f0f0;
+    padding: 30px;
+    border-radius: 25px;
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+    height: 170px;
+  }
+
+  /* 左侧的样式 */
+  .grid-item.wide {
+    width: 450px;
+  }
+
+  .grid-item.wide.s {
+    width: 450px;
+    margin-left: -170px;
+  }
+
+  /* 右侧的样式 */
+  .grid-item.narrow {
+    width: 280px;
+  }
+}

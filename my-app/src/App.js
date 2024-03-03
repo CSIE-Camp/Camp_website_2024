@@ -16,6 +16,7 @@ import Admin from "./page/Admin";
 import Personal from "./page/Personal";
 import Payment from "./page/Payment";
 import Exam from "./page/Exam";
+import FAQ from "./page/FAQ";
 
 const App = () => {
   return (
@@ -38,6 +39,7 @@ const App = () => {
             <Route path="/personal" element={<Personal />} />
             <Route path="/payment" element={<Payment />} />
             <Route path="/exam" element={<Exam />} />
+            <Route path="/faq" element={<FAQ />} />
           </Routes>
         </div>
         <Footer />
