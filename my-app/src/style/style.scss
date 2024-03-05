@@ -6,16 +6,16 @@
   //position: relative;
 }
 
-$orange-1: #DC6A0B;
-$orange-2: #DA5512;
-$yellow-1: #E7AE16;
-$blue-1: #083A75;
+$orange-1: #dc6a0b;
+$orange-2: #da5512;
+$yellow-1: #e7ae16;
+$blue-1: #083a75;
 $gray-bg1: rgba(217, 217, 217, 0.35);
 
 html,
 body,
-body>#root,
-#root>.App {
+body > #root,
+#root > .App {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
@@ -23,8 +23,7 @@ body>#root,
   padding: 0;
 }
 
-
-#root>.App {
+#root > .App {
   overflow-y: auto;
   // background-image: url(image/Purple_background.jpg);
   background-color:#ff7a00;
@@ -99,7 +98,6 @@ a {
   color: $yellow-1;
 }
 
-
 @import "./nav";
 @import "./home";
 @import "./footer";
@@ -116,3 +114,4 @@ a {
 @import "./admin";
 @import "./payment";
 @import "./exam";
+@import "./faq";

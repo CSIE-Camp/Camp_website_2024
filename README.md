@@ -29,18 +29,18 @@ modify test
 > 
 > 之後會在預設瀏覽器開啟網頁，即完成環境架設。
 > 
-> - 所有要編輯的都方在 `src` 裡面，其他資料夾盡量不要動。
+> - 所有要編輯的都放在 `src` 裡面，其他資料夾盡量不要動。
 > 
 > - 要寫的 html 會放在 `App.js` 的 `div` 標籤裡面，div container 純粹用來包住 `html` 。
 > 
 > # Git
 > branch name: `Panda`, `NingQung`, `othsueh`, `Danny` 
-> >要開始寫之前，記得checkout 到自己的`branch`
+> >要開始寫之前，記得 checkout 到自己的 `branch`
 > ```
 > git checkout name
 > ```
 > # 連結
-> react 語法 須加上require
+> react 語法須加上 require
 > ```
 > <img src={require("./image/Photos.png")} title="歷屆資工營照片" alt="Photo Wall"/>
 > ```
@@ -52,7 +52,7 @@ modify test
 > # Rafc
 > VScode Extension: [**rafc**](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
 > 
-> 在.js檔中產生react模板
+> 在 .js 檔中產生 react 模板
 > 
 > - 報名按鈕的位置
 > - CSIE 的字樣對齊
