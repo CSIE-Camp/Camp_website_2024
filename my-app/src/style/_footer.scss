@@ -1,138 +1,112 @@
+$black: #000000;
+$white: #ffffff;
+$orange: #ff7a00;
+$light_orange: #ffead8;
+$red: #ff0000;
+$blue-green: #19a6a2;
+$brown: #794221;
+
 footer {
-  background-color: #fff;
+  display: flex;
   width: 100%;
-  height: 100%;
-  position: relative;
+  // position: absolute;
+  // left: 0;
+  background: $orange;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: center;
+}
 
+.contact {
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  padding: 10px 32px;
+  background: $light_orange;
+  border: 15px solid $brown;
+  border-radius: 8px;
+  margin: 5px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  animation-name: contact_animation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
 
+.contact_text {
+  margin: 0;
+  text-align: center;
+}
 
+.contact_title {
+  // font-size: 24px;
+  font-weight: bolder;
+  line-height: 30px;
+  color: $black;
+  line-height: 1.5em;
+}
 
-  div#footerFlex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.contact_content {
+  font-size: 14px;
+  line-height: 20px;
+  color: $black;
+  line-height: 1.5em;
+}
 
-    div#text {
-      position: absolute;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 350px;
-      top: 2rem;
+.social_media {
+  display: flex;
+  justify-content: center;
 
-      h1 {
-        font-size: 2rem;
-        font-family: "ToronoGlitchSans H2";
-        color: #000;
-        z-index: 1;
-      }
-
-      #bar {
-        margin-top: 0.25rem;
-        border: 1px #000 dashed;
-      }
-
-      // 總籌 信箱 連絡電話
-      p {
-        font-family: "Noto Sans TC", monospace;
-        font-size: 1rem;
-        z-index: 1;
-        font-weight: 800;
-
-        // span {
-        //   font-size: 800;
-        // }
-      }
-
-    }
-
+  .social_media_icon {
+    width: 32px;
+    height: 32px;
+    margin: 4px;
+    filter: brightness(0);
   }
 
-  //Images
-  #picture {
-    justify-content: center;
-    display: flex;
-    width: 100%;
-    user-select: none;
+  .facebook_icon:hover {
+    filter: invert(100%);
   }
 
-  .island {
-    position: relative;
-    bottom: 0;
-    display: flex;
-    margin: 0 20px;
+  .instagram_icon:hover {
+    filter: invert(100%);
   }
 
-  #left {
-    top: 5rem;
-    max-width: 10rem;
-    height: 3rem;
-  }
-
-  #left2 {
-    top: 6rem;
-    max-width: 4rem;
-    height: 3rem;
-  }
-
-  #middle {
-    max-width: 20rem;
-    margin-right: 2.5rem;
-    margin-left: 1rem;
-    height: 150px;
-    right: 0;
-    left: 0;
-    margin-top: 2rem;
-  }
-
-  #right2 {
-    top: 5rem;
-    max-width: 4rem;
-    height: 3rem;
-  }
-
-  #right {
-    top: 7rem;
-    max-width: 4rem;
-    height: 3rem;
-  }
-
-  p {
-
-    font-weight: 400;
-    font-size: 1.5rem;
-  }
-
-  p.Copyright {
-    margin: 10px;
-    text-align: center;
-    font-family: "Noto Sans TC", monospace;
-    font-size: 1rem;
-    line-height: 1rem;
-  }
-
-  div.icon {
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    user-select: none;
-
-    a {
-      img {
-        width: 3rem;
-        padding: 0 0.5rem;
-      }
-
-      &:hover {
-        transform: scale(1.1);
-
-        translate: all 0.4s;
-      }
-    }
+  .messenger_icon:hover {
+    filter: brightness(0) invert(100%);
   }
 }
 
-// @media screen and (max-width:650px) {
-//   footer {}
+// @media screen and (width<= 620px) {
+
 // }
+@media screen and (width: 980px) and (min-height: 1700px) {
+  // .contact {
+  //     // width: 300px;
+  // }
+  .contact_title {
+    font-size: 36px;
+  }
+
+  .contact_content {
+    font-size: 18px;
+  }
+}
+
+@keyframes contact_animation {
+  0% {
+    background-color: $light_orange;
+    transform: translateY(-2px);
+  }
+
+  50% {
+    background-color: $white;
+    transform: translateY(8px);
+  }
+
+  100% {
+    background-color: $light_orange;
+    transform: translateY(-2px);
+  }
+}
