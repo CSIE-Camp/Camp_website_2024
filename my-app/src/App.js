@@ -11,6 +11,7 @@ import Form from "./page/Form";
 import Forget from "./page/Forget";
 import Register from "./page/Register";
 import RegisterSuccess from "./page/RegisterSuccess";
+import Traffic from "./page/Traffic";
 import Review from "./page/Review";
 import Admin from "./page/Admin";
 import Personal from "./page/Personal";
@@ -34,6 +35,7 @@ const App = () => {
             <Route path="/register" element={<Register />} />
             <Route path="/registerSuccess" element={<RegisterSuccess />} />
             <Route path="/form" element={<Form />} />
+            <Route path="/traffic" element={<Traffic />} />
             <Route path="/review" element={<Review />} />
             <Route path="/admin" element={<Admin />} />
             <Route path="/personal" element={<Personal />} />

@@ -26,7 +26,7 @@ body > #root,
 #root > .App {
   overflow-y: auto;
   // background-image: url(image/Purple_background.jpg);
-  background-color:#ff7a00;
+  background-color: #ff7a00;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -115,3 +115,5 @@ a {
 @import "./payment";
 @import "./exam";
 @import "./faq";
+
+@import "./traffic";

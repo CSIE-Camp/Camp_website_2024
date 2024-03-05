@@ -31,43 +31,48 @@ const Nav = () => {
   //   ulChange.remove("show");
   // }
   return (
-    <nav class="banner banner_background">
-      <ul class="nav_ul">
-        <a href="#" class="home_link">
-          <img src={require("./image/logo_circle.png")} alt="logo" class="banner_logo"></img>
-        </a>
-        <li class="banner_button">
-          <a href="login" class="login_button ">
-            立即報名
-          </a>
-        </li>
-        <li class="banner_button">
-          <a href="#review" class="review_button">
-            歷屆回顧
-          </a>
-        </li>
-        <li class="banner_button">
-          <a href="#traffic" class="traffic_button">
-            交通資訊
-          </a>
-        </li>
-        <li class="banner_button">
-          <a href="#faq" class="faq_button">
-            常見問題
-          </a>
-        </li>
-        <li class="banner_button">
-          <a href="#info" class="info_button">
-            報名資訊
-          </a>
-        </li>
-        <li class="banner_button">
-          <a href="#about" class="about_button">
-            營隊介紹
-          </a>
-        </li>
-      </ul>
-    </nav>
+    <div>
+      <header>
+        <nav>
+          <div className="hamburgerFlex">
+            <div class="logo">
+              <Link to="/">
+                <img src={require("./image/Logo.png")} alt="Background" />
+              </Link>
+            </div>
+
+            <div id="hamburger" aria-label="Menu" onClick={handleClick}>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <div className="ulFlex">
+            <ul className={navbarShow === "active" ? "show" : "hide"}>
+              <li>
+                <Link to="/about" className="about_test" onClick={handleClickA}>
+                  營隊介紹
+                </Link>
+              </li>
+              <li>
+                <Link to="/info" onClick={handleClickA}>
+                  報名資訊
+                </Link>
+              </li>
+              <li>
+                <Link to="/review" onClick={handleClickA}>
+                  歷屆回顧{" "}
+                </Link>
+              </li>
+              <li>
+                <Link to="https://camp-app.csie.cool/">立即報名</Link>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+    </div>
   );
 };
 
