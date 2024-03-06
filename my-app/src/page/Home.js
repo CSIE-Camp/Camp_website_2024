@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import video from "../video/3Disland.mp4";
-import RegistrationInformation from "../image/Registration Information.jpg";
-import FAQimg from "../image/FAQ.jpg";
-import TrafficInformation from "../image/Traffic Information.jpg";
-import Reviewimg from "../image/Review.jpg";
-import Logo from "../image/logo2024_.jpg";
+import RegistrationInformation from "../image/Registration_Information.png";
+import FAQimg from "../image/FAQ.png";
+import TrafficInformation from "../image/Traffic_Information.png";
+import Reviewimg from "../image/review.png";
+import Logo from "../image/logo2024_.png";
 import About from "./About";
 import Info from "./Info";
 import FAQ from "./FAQ";
