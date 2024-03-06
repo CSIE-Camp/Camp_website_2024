@@ -29,7 +29,7 @@ const Home = () => {
   };
 
   return (
-    <div id="main" style={{ margin: "0 15%" }}>
+    <div id="main" style={{ margin: "0 0%" }}>
       <header style={{ textAlign: "center" }} id="header">
         <img src={Logo} alt="Logo" style={{ width: "100%" }} />
       </header>

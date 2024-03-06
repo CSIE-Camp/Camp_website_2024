@@ -14,8 +14,8 @@ const About = () => {
       <h1 className="text-h1">課程介紹</h1>
       <section className="lesson">
         <div>
-          <h2>Python基礎</h2>
-          <p>學習Python程式語言的基礎知識，包括語法、變數、迴圈等。</p>
+          <h2>Python 基礎</h2>
+          <p>學習 Python 程式語言的基礎知識，包括語法、變數、迴圈等。</p>
         </div>
 
         <div className="image">
@@ -25,7 +25,7 @@ const About = () => {
 
       <section className="lesson">
         <div>
-          <h2>ML教學</h2>
+          <h2>ML 教學</h2>
           <p>深入了解機器學習的基本概念，並實際應用在問題解決上。</p>
         </div>
 
@@ -36,8 +36,8 @@ const About = () => {
 
       <section className="lesson">
         <div>
-          <h2>Python進階</h2>
-          <p>進階Python程式設計，包括函式式程式設計、物件導向等進階主題。</p>
+          <h2>Python 進階</h2>
+          <p>進階 Python 程式設計，包括函式式程式設計、物件導向等進階主題。</p>
         </div>
 
         <div className="image">
@@ -47,8 +47,8 @@ const About = () => {
 
       <section className="lesson">
         <div>
-          <h2>Pygame遊戲設計</h2>
-          <p>使用Pygame框架開發簡單的遊戲，學習遊戲開發的基本原理。</p>
+          <h2>Pygame 遊戲設計</h2>
+          <p>使用 Pygame 框架開發簡單的遊戲，學習遊戲開發的基本原理。</p>
         </div>
 
         <div className="image">
