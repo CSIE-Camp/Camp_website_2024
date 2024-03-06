@@ -188,12 +188,6 @@ export const Review = () => {
   return (
     <div id="page_review">
       <div className="pageReviewFlex">
-        {/* 標題 */}
-        <div id="page_review_title">
-          <img src={require("../image/review.png")} alt="review_logo" />
-          <div id="rt_title">歷屆回顧</div>
-        </div>
-
         {/* 歷屆 logo */}
         <div id="page_review_year">
           <div id="year_logo" onClick={() => change_year(2023)}>

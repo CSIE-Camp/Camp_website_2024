@@ -29,7 +29,7 @@ const Home = () => {
   };
 
   return (
-    <div id="main" style={{ margin: "0 0%" }}>
+    <div id="main" style={{ margin: "59px 0%" }}>
       <header style={{ textAlign: "center" }} id="header">
         <img src={Logo} alt="Logo" style={{ width: "100%" }} />
       </header>
@@ -37,11 +37,6 @@ const Home = () => {
         <div>
           <div>
             <section>
-              <h2>
-                <font color="#ffead8" id="about">
-                  營隊介紹
-                </font>
-              </h2>
               <p>
                 <About />
               </p>
