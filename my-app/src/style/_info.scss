@@ -10,7 +10,7 @@
     text-align: center;
     justify-content: center;
 
-    ////vertical-align: middle;
+
     line-height: 48px;
     color: rgb(255, 255, 255);
     display: flex;
@@ -22,12 +22,11 @@
     width: 100%;
     display: flex;
     text-align: center;
-    //position: absolute;
+
     left: 50%;
-    //top: 8%;
-    //transform: translate(-50%, 0%);
+
     justify-content: center;
-    ////vertical-align: middle;
+
     font-family: "Noto Sans TC", monospace;
     
 }
@@ -44,10 +43,9 @@
     
     position: relative;
     left: 25%;
-    //top: 100%;
-    //transform: translate(60%, 0%);
+
     justify-content: center;
-    //vertical-align: middle; 
+; 
     display: flex;
     margin-bottom: 50px;
     
@@ -55,24 +53,24 @@
 
 .datetitle{
     font-family: "Noto Sans TC", monospace;
-    font-size: 48px;
+    font-size: 200%;
     color:rgb(0, 0, 0);
     text-align: left;
     position: absolute;
-    left: 70px;
+    left: 5%;
     top: 25%;
     display: flex;
-    //transform: translate(0%, -50%);
+
 
 }
 
 .dateicon{
 
-    height:120px;
-    width: 120px;
+    height:80%;
+    width: 16%;
     margin-left: 75%;
-    top:10px;
-    //display: flex;
+    top:10%;
+
     position: absolute;
 
 }
@@ -92,46 +90,44 @@
     
     position: relative;
     left: 25%;
-    //top: 100%;
-    //transform: translate(60%, 0%);
+
     justify-content: center;
-    //vertical-align: middle; 
+
     display: flex;margin-bottom: 50px;
 
 }
 
 .placetitle{
     font-family: "Noto Sans TC", monospace;
-    font-size: 48px;
+    font-size: 200%;
     color:rgb(0, 0, 0);
     text-align: left;
     position: absolute;
-    left: 70px;
+    left: 5%;
     top: 25%;
     display: flex;
-    //transform: translate(0%, -50%);
 }
 
 .schoolicon{
-    height:120px;
-    width: 120px;
+    height:80%;
+    width: 16%;
     margin-left: 75%;
-    top:10px;
-    //display: flex;
+    top:10%;
+
     position: absolute;
 
 }
 
 .timetitle{
     font-family: "Noto Sans TC", monospace;
-    font-size: 48px;
+    font-size: 200%;
     color:rgb(0, 0, 0);
     text-align: left;
     position: absolute;
-    left: 70px;
+    left: 5%;
     top: 25%;
     display: flex;
-    //transform: translate(0%, -50%);
+
 }
 
 .time{
@@ -146,19 +142,18 @@
     
     position: relative;
     left: 25%;
-    //top: 100%;
-    //transform: translate(60%, 0%);
+
     justify-content: center;
-    //vertical-align: middle; 
+
     display: flex;
 }
 
 .clockicon{
-    height:120px;
-    width: 120px;
+    height:80%;
+    width: 16%;;
     margin-left: 75%;
-    top:10px;
-    //display: flex;
+    top:10%;
+
     position: absolute;
 
 }
@@ -175,31 +170,30 @@
     
     position: relative;
     left: 25%;
-    //top: 100%;
-    //transform: translate(60%, 0%);
+
     justify-content: center;
-    //vertical-align: middle; 
+
     display: flex;
 }
 
 .solotitle{
     font-family: "Noto Sans TC", monospace;
-    font-size: 48px;
+    font-size: 200%;
     color:rgb(0, 0, 0);
     text-align: left;
     position: absolute;
-    left: 70px;
+    left: 5%;
     top: 25%;
     display: flex;
-    //transform: translate(0%, -50%);
+
 }
 
 .soloicon{
-    height:120px;
-    width: 120px;
+    height:80%;
+    width: 16%;
     margin-left: 75%;
-    top:10px;
-    //display: flex;
+    top:10%;
+
     position: absolute;
 
 }
@@ -216,38 +210,37 @@
     
     position: relative;
     left: 25%;
-    //top: 100%;
-    //transform: translate(60%, 0%);
+
     justify-content: center;
-    //vertical-align: middle; 
+
     display: flex;
 }
 
 .grouptitle{
     font-family: "Noto Sans TC", monospace;
-    font-size: 48px;
+    font-size: 200%;
     color:rgb(0, 0, 0);
     text-align: left;
     position: absolute;
-    left: 70px;
+    left: 5%;
     top: 25%;
     display: flex;
-    //transform: translate(0%, -50%);
+
 }
 
 .groupicon{
-    height:120px;
-    width: 120px;
+    height:80%;
+    width: 16%;
     margin-left: 75%;
-    top:10px;
-    //display: flex;
+    top:10%;
+
     position: absolute;
 
 }
 
 .attend_button{
     font-family: "Noto Sans TC", monospace;
-    font-size: 48px;
+    font-size: 200%;
     color:rgb(0, 0, 0);
     display: relative;
     transform: translate(0%, -50%);margin-bottom: 50px;
@@ -259,81 +252,12 @@
     
     background-color: rgb(255, 255, 255);
     text-align: center;
-    //position: absolute;
-    left: 50%;
-    //top: 125%;
-    //transform: translate(-50%, 0%);
-    justify-content: center;
-    //vertical-align: middle; 
-}
-@media screen and (max-width: 1050px) {
-    .info{
-        height:auto;
-    }
-    .infotext{
-        font-size: 24px;
-    }
-    .dateicon{
-        height:40px;
-        width:40px;
-    }
-    .soloicon{
-        height:40px;
-        width:40px;
-    }
-    .groupicon{
-        height:40px;
-        width:40px;
-    }
-    .clockicon{
-        height:40px;
-        width:40px;
-    }
-    .schoolicon{
-        height:40px;
-        width:40px;
-    }
-    .datetitle{
-        font-size: 24px;
-        top:10%;
-        left: 10%;
-    }
-    .timetitle{
-        font-size: 24px;
-        top:10%;
-        left: 10%;
-    }
-    .solotitle{
-        font-size: 24px;
-        top:10%;
-        left: 10%;
-    }
-    .grouptitle{
-        font-size: 24px;
-        top:10%;
-        left: 10%;
-    }
-    .placetitle{
-        font-size: 24px;
-        top:10%;
-        left: 10%;
-    }
-    .date{
-        height:60px;
-    }
-    .group{
-        height:60px;
-    }
-    .time{
-        height:60px;
-    }
-    .place{
-        height:60px;
-    }
-    .solo{
-        height:60px;
-    }
 
-  }
-    
+    left: 50%;
+
+
+    justify-content: center;
+
+}
+
   
