@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import RegistrationInformation from "../image/registration_information.png";
-import FAQimg from "../image/faq.png";
-import TrafficInformation from "../image/traffic_information.png";
-import Reviewimg from "../image/review.png";
-import Logo from "../image/logo2024_.png";
+import registration_information_img from "../image/draw_icon/registration_information.png";
+import faq_img from "../image/draw_icon/faq.png";
+import traffic_information_img from "../image/draw_icon/traffic_information.png";
+import review_img from "../image/draw_icon/review.png";
+import banner from "../image/banner_2024.png";
 import About from "./About";
 import Info from "./Info";
 import FAQ from "./FAQ";
@@ -31,7 +31,7 @@ const Home = () => {
   return (
     <div id="main" style={{ margin: "59px 0%" }}>
       <header style={{ textAlign: "center" }} id="header">
-        <img src={Logo} alt="Logo" style={{ width: "100%" }} />
+        <img src={banner} alt="banner" style={{ width: "100%" }} />
       </header>
       <div className="container">
         <div>
@@ -78,12 +78,12 @@ const Home = () => {
                         <img
                           src={
                             index === 1
-                              ? RegistrationInformation
+                              ? registration_information_img
                               : index === 2
-                              ? FAQimg
+                              ? faq_img
                               : index === 3
-                              ? TrafficInformation
-                              : Reviewimg
+                              ? traffic_information_img
+                              : review_img
                           }
                           className={`image${index}`}
                           alt=""

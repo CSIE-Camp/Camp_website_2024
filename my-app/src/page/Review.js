@@ -192,27 +192,27 @@ export const Review = () => {
         <div id="page_review_year">
           <div id="year_logo" onClick={() => change_year(2023)}>
             <div id="year">2023</div>
-            <img src={require("../image/2023_logo.png")} alt="review_2023_logo" />
+            <img src={require("../image/logo_review/2023_logo.png")} alt="review_2023_logo" />
           </div>
           <div id="year_logo" onClick={() => change_year(2022)}>
             <div id="year">2022</div>
-            <img src={require("../image/2022_logo.png")} alt="review_2022_logo" />
+            <img src={require("../image/logo_review/2022_logo.png")} alt="review_2022_logo" />
           </div>
           <div id="year_logo" onClick={() => change_year(2021)}>
             <div id="year">2021</div>
-            <img src={require("../image/2021_logo.png")} alt="review_2021_logo" />
+            <img src={require("../image/logo_review/2021_logo.png")} alt="review_2021_logo" />
           </div>
           <div id="year_logo" onClick={() => change_year(2020)}>
             <div id="year">2020</div>
-            <img src={require("../image/2020_logo.png")} alt="review_2020_logo" />
+            <img src={require("../image/logo_review/2020_logo.png")} alt="review_2020_logo" />
           </div>
           {/* <div id="year_logo" onClick={() => change_year(2019)}>
             <div id="year">2019</div>
-            <img src={require("../image/2019_logo.png")} alt="review_2019_logo"/>
+            <img src={require("../image/logo_review/2019_logo.png")} alt="review_2019_logo"/>
           </div>
           <div id="year_logo" onClick={() => change_year(2018)}>
             <div id="year">2018</div>
-            <img src={require("../image/2018_logo.png")} alt="review_2018_logo"/>
+            <img src={require("../image/logo_review/2018_logo.png")} alt="review_2018_logo"/>
           </div> */}
         </div>
 
