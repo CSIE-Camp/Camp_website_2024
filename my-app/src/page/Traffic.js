@@ -22,10 +22,17 @@ const Traffic = () => {
   }
 
   function loading() {
-    const load = document.getElementById("loading-ani");
+    const load = document.getElementById("loading-block");
+    load.style.display = "block";
+    load.style.console.log(load.style.display);
     load.addEventListener("mouseover", () => {
       console.log("mouse");
     });
+  }
+
+  function off() {
+    const load = document.getElementById("loading-block");
+    load.style.display = "none";
   }
 
   return (
@@ -86,18 +93,22 @@ const Traffic = () => {
                 >
                   <img src={require("../image/metro.png")} className="metro-image" />
                   <div className="line">
-                    {/* <p>搭乘綠線</p> */}
+                    <p>搭乘綠線</p>
                     <div>
                       <div
+                        onMouseOver={loading}
+                        onMouseDown={off}
                         className="straight-line"
                         style={{ width: "150px", position: "relative" }}
                       >
-                        <div id="loading-ani" style={{ position: "absolute", top: "-5px" }}></div>
-                        <div id="loading-ani" style={{ position: "absolute", top: "-5px" }}></div>
-                        <div id="loading-ani" style={{ position: "absolute", top: "-5px" }}></div>
-                        <div id="loading-ani" style={{ position: "absolute", top: "-5px" }}></div>
-                        <div id="loading-ani" style={{ position: "absolute", top: "-5px" }}></div>
-                        <div id="loading-ani" style={{ position: "absolute", top: "-5px" }}></div>
+                        <div id="loading-block">
+                          <div id="loading-ani" style={{ position: "absolute", top: "-5px" }}></div>
+                          <div id="loading-ani" style={{ position: "absolute", top: "-5px" }}></div>
+                          <div id="loading-ani" style={{ position: "absolute", top: "-5px" }}></div>
+                          <div id="loading-ani" style={{ position: "absolute", top: "-5px" }}></div>
+                          <div id="loading-ani" style={{ position: "absolute", top: "-5px" }}></div>
+                          <div id="loading-ani" style={{ position: "absolute", top: "-5px" }}></div>
+                        </div>
                       </div>
                     </div>
                   </div>
