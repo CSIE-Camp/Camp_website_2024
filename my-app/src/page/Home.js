@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import RegistrationInformation from "../image/Registration_Information.png";
-import FAQimg from "../image/FAQ.png";
-import TrafficInformation from "../image/Traffic_Information.png";
+import RegistrationInformation from "../image/registration_information.png";
+import FAQimg from "../image/faq.png";
+import TrafficInformation from "../image/traffic_information.png";
 import Reviewimg from "../image/review.png";
 import Logo from "../image/logo2024_.png";
 import About from "./About";

@@ -41,7 +41,7 @@ NTNU CSIE camp website for 2024 Edit from last year's website
 > # 連結
 > react 語法須加上 require
 > ```
-> <img src={require("./image/Photos.png")} title="歷屆資工營照片" alt="Photo Wall"/>
+> <img src={require("./image/photos.png")} title="歷屆資工營照片" alt="Photo Wall"/>
 > ```
 > # 字體
 > 目前特殊標題用 [Torono_Glitch_SansH2](my-app/src/style/font/torono-glitch-sans) 

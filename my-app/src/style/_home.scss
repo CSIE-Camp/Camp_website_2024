@@ -38,7 +38,6 @@ main {
       display: flex;
       flex-direction: column;
 
-
       position: relative;
 
       div.imgFlex {
@@ -52,7 +51,7 @@ main {
 
         video {
           user-select: none;
-          pointer-events: none; // prevent pulse or play 
+          pointer-events: none; // prevent pulse or play
           width: 50%;
           height: 100%;
           object-fit: cover;
@@ -94,8 +93,8 @@ main {
           }
 
           @mixin textBorder() {
-            text-shadow: -2px 0 #ffffff, 0 2px rgb(255, 255, 255), 2px 0 rgb(255, 255, 255), 0 -2px rgb(255, 255, 255);
-
+            text-shadow: -2px 0 #ffffff, 0 2px rgb(255, 255, 255), 2px 0 rgb(255, 255, 255),
+              0 -2px rgb(255, 255, 255);
           }
 
           span.C {
@@ -149,7 +148,6 @@ main {
 @media screen and (max-width: 900px) {
   main {
     div.card {
-
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -165,7 +163,6 @@ main {
           width: fit-content;
         }
       }
-
 
       section.right {
         width: 90vw;
@@ -186,7 +183,6 @@ main {
             font-size: 2rem;
           }
         }
-
       }
     }
   }

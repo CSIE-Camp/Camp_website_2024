@@ -6,6 +6,7 @@
 
 .traffic-info {
   width: 100%;
+
   h1 {
     display: flex;
     position: static;
@@ -22,6 +23,7 @@
   justify-content: center;
   /* height: 100vh; */
   padding-top: 100px;
+
   iframe {
     width: 1200px;
     height: 650px;
@@ -40,6 +42,7 @@
   text-align: center;
   padding: 14px 16px;
   border-radius: 20px;
+
   a {
     font-size: 16px;
     width: 100px;
@@ -54,6 +57,7 @@
     align-items: center;
     justify-content: center;
   }
+
   a:hover {
     background-color: #214d4b;
     color: #fff;
@@ -175,17 +179,21 @@
   0% {
     left: 0;
   }
+
   100% {
     left: 100%;
   }
 }
 
 #loading-ani {
-  width: 10px; /* 调整点的大小 */
-  height: 10px; /* 调整点的大小 */
+  width: 10px;
+  /* 调整点的大小 */
+  height: 10px;
+  /* 调整点的大小 */
   background-color: black;
   border-radius: 50%;
-  animation: movedot 1s linear infinite; /* 调整动画持续时间和时间函数 */
+  animation: movedot 1s linear infinite;
+  /* 调整动画持续时间和时间函数 */
 }
 
 .metro-title {
@@ -234,21 +242,27 @@
   0% {
     transform: scale(1);
   }
+
   25% {
     transform: scale(1.4);
   }
+
   50% {
     transform: scale(1);
   }
+
   70% {
     transform: scale(1.1);
   }
+
   80% {
     transform: scale(1);
   }
+
   90% {
     transform: scale(1.05);
   }
+
   100% {
     transform: scale(1);
   }
@@ -278,7 +292,8 @@
   }
 
   .line-break br {
-    display: block; /* Hides the line break for non-CSS capable browsers */
+    display: block;
+    /* Hides the line break for non-CSS capable browsers */
   }
 
   .traffic-btn {

@@ -19,7 +19,7 @@ const About = () => {
         </div>
 
         <div className="image">
-          <img src={require("../image/python-base.png")} alt="base" />
+          <img src={require("../image/python_base.png")} alt="base" />
         </div>
       </section>
 
@@ -30,7 +30,7 @@ const About = () => {
         </div>
 
         <div className="image">
-          <img src={require("../image/machine-learning.png")} alt="machine learing" />
+          <img src={require("../image/machine_learning.png")} alt="machine learing" />
         </div>
       </section>
 
@@ -41,7 +41,7 @@ const About = () => {
         </div>
 
         <div className="image">
-          <img src={require("../image/python-advanced.png")} alt="advanced" />
+          <img src={require("../image/python_advanced.png")} alt="advanced" />
         </div>
       </section>
 
@@ -63,7 +63,7 @@ const About = () => {
         </div>
 
         <div className="image">
-          <img src={require("../image/information-security.png")} alt="information security" />
+          <img src={require("../image/information_security.png")} alt="information security" />
         </div>
       </section>
     </div>

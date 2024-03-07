@@ -5,7 +5,7 @@ const Nav = () => {
     <nav class="banner banner_background">
       <ul class="nav_ul">
         <a href="#header" class="home_link">
-          <img src={require("./image/logo_circle.png")} alt="logo" class="banner_logo"></img>
+          <img src={require("./image/logo_2024_circle.png")} alt="logo" class="banner_logo"></img>
         </a>
         <li class="banner_button">
           <a href="login" class="login_button ">
