@@ -39,7 +39,6 @@ const Traffic = () => {
     <>
       <div className="container">
         <div className="traffic-info">
-          <h1>交通資訊</h1>
           <p className="ntnu-address">臺灣師範大學公館校區（師大分部）</p>
           <p className="ntnu-address">
             11677 台北市文山區汀州路四段 88 號 應用科學大樓一樓 資訊工程學系

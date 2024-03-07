@@ -25,7 +25,8 @@ body > #root,
 
 #root > .App {
   overflow-y: auto;
-  background-image: url(image/Purple_background.jpg);
+  background-color: #f7d3a1;
+  // background-color: #D9CCC1;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -63,26 +64,6 @@ body {
   z-index: 1;
 }
 
-// @font-face {
-//   font-family: ToronoGlitchSans H1;
-//   src: local("ToronoGlitchSans H1"), url(./font/torono-glitch-sans/Torono_Glitch_SansH1.otf);
-// }
-
-@font-face {
-  font-family: ToronoGlitchSans H2;
-  src: local("ToronoGlitchSans H2"), url(./font/torono-glitch-sans/Torono_Glitch_SansH2.otf);
-}
-
-// @font-face {
-//   font-family: ToronoGlitchSans H3;
-//   src: local("ToronoGlitchSans H3"), url(./font/torono-glitch-sans/Torono_Glitch_SansH3.otf);
-// }
-
-@font-face {
-  font-family: ToronoGlitchSans H4;
-  src: local("ToronoGlitchSans H4"), url(./font/torono-glitch-sans/Torono_Glitch_SansH4.otf);
-}
-
 h1,
 h2,
 h3,
@@ -100,17 +81,9 @@ a {
 @import "./nav";
 @import "./home";
 @import "./footer";
-@import "./scrollbar";
+// @import "./scrollbar";
 @import "./info";
-@import "./login";
-@import "./register";
-@import "./registerSuccess";
 @import "./about";
-@import "./forget";
-@import "./form";
 @import "./review";
-@import "./personal";
-@import "./admin";
-@import "./payment";
-@import "./exam";
+@import "./faq";
 @import "./traffic";
