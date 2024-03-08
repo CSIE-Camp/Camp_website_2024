@@ -14,21 +14,21 @@ const Footer = () => {
       <div class="social_media">
         <a href="https://www.facebook.com/ntnucsiecamp" target="_blank">
           <img
-            src={require("./image/fb.png")}
+            src={require("./image/social_media_icon/fb.png")}
             alt="facebook"
             class="facebook_icon social_media_icon"
           ></img>
         </a>
         <a href="https://www.instagram.com/ntnucsiecamp/" target="_blank">
           <img
-            src={require("./image/ig.png")}
+            src={require("./image/social_media_icon/ig.png")}
             alt="instagram"
             class="instagram_icon social_media_icon"
           ></img>
         </a>
         <a href="http://m.me/ntnucsiecamp" target="_blank">
           <img
-            src={require("./image/messenger.png")}
+            src={require("./image/social_media_icon/messenger.png")}
             alt="messenger"
             class="messenger_icon social_media_icon"
           ></img>
