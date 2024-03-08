@@ -220,7 +220,7 @@ export const Review = () => {
         <div className="year_review" style={{ display: isShown === 2023 ? "flex" : "none" }}>
           <div>
             <div id="review_title">2023</div>
-            <div id="review_title">E級玩家</div>
+            <div id="review_title">E 級玩家</div>
           </div>
           <div id="rt_content">
             <li>Discord Bot</li>
@@ -265,8 +265,8 @@ export const Review = () => {
             <div id="course">
               <p>
                 想知道如何加密出一則讓別人看不懂的訊息嗎？🔐想知道怎麼在沒有密鑰的情況下，破密一則像
-                59,58,55,30,59,54,67,7a
-                這樣的訊息嗎？🕵️‍♀️我們會先介紹密碼學的歷史，從古希臘/羅馬時期的替換式密碼出發，經歷二戰時期的
+                59, 58, 55, 30, 59, 54, 67, 7a
+                這樣的訊息嗎？🕵️‍♀️我們會先介紹密碼學的歷史，從古希臘／羅馬時期的替換式密碼出發，經歷二戰時期的
                 Enigma
                 轉盤機，再介紹現代加密的方法！此外，除了上述的知識講解外，本次課程當中也會藉由分組，進行《密碼學解題競賽》！透過大量實作解題的環節，讓學員更能有效的吸收並即時演練上課所學，並將依分數排行頒發獎狀～最後，這堂課還會有一個「神秘的手作作品」能帶回家做紀念！
               </p>
@@ -299,10 +299,10 @@ export const Review = () => {
             <div id="course">
               <p>
                 想不想為自己設計一個獨一無二的桌布呢?或是想做一個炫酷的動態桌布🤩我們運用 Rainmeter
-                這個軟體，去做出可以不同於 window
+                這個軟體，去做出可以不同於 Windows
                 系統死板的桌面。我們將教學員們如何自己改動別人做好的套件，藉由改動裡面的參數或指令，做出符合自己期望功能的套件。另外，使用
-                honeycomb
-                跟文字改動做為課程主題，學習如何解析與修改別人撰寫的軟體設定檔，打造一個專屬於自己的桌布
+                Honeycomb
+                跟文字改動做為課程主題，學習如何解析與修改別人撰寫的軟體設定檔，打造一個專屬於自己的桌布。
               </p>
               <a href="https://www.facebook.com/ntnucsiecamp/posts/pfbid02c7D8sYK75spiB6fWyWjh7wkjTGWsbDZhAYLAMmE3RKmj7kAsqjCivybTcK6xguJil">
                 更<br />多<br />介<br />紹
@@ -316,7 +316,7 @@ export const Review = () => {
                 是一種高階程式語言，比起其它程式語言，Python
                 所使用的語法更簡潔直觀，容易理解，所以即使沒有任何程式基礎，Python
                 都會是很好掌握基本功能的一個程式語言；Python
-                也擁有許多的函式庫，能提供許多方便的功能，遇到特定的問題時，只要懂得運用相應的函式庫，就能快速解決，簡直就是程式設計師的哆啦A夢！！
+                也擁有許多的函式庫，能提供許多方便的功能，遇到特定的問題時，只要懂得運用相應的函式庫，就能快速解決，簡直就是程式設計師的哆啦A夢！
               </p>
               <a href="https://www.facebook.com/ntnucsiecamp/posts/pfbid0tagzVuPUpeKNsp3Bkkr1CFYaFQ4q65i5xRnBABatuZw4Y8HzLD9anZEuZugENpaJl">
                 更<br />多<br />介<br />紹
@@ -326,10 +326,10 @@ export const Review = () => {
             <li>接觸資工界不得不碰的</li>
             <div id="course">
               <p>
-                厭倦 Mincrosoft Windows 想要嘗試新的作業系統？Linux 可謂很不錯的選擇！！！我們將介紹
-                Linux
-                這個特別的作業系統，不僅圖形介面使用簡單，而且系統構造穩定。其中裡面最特別的就是有命令列需要額外記憶，但是別擔心，我們將帶領學員們一步一步，慢慢熟悉與動手實作一些常見且實用的指令。除此之外，Linux
-                比起 Windows，更可以滿足使用者對於高性能and高效率的需求。
+                厭倦 Mincrosoft Windows 想要嘗試新的作業系統？GNU/Linux 可謂很不錯的選擇！我們將介紹
+                GNU/Linux
+                這個特別的作業系統，不僅圖形介面使用簡單，而且系統構造穩定。其中裡面最特別的就是有命令列需要額外記憶，但是別擔心，我們將帶領學員們一步一步，慢慢熟悉與動手實作一些常見且實用的指令。除此之外，GNU/Linux
+                比起 Windows，更可以滿足使用者對於高性能 and 高效率的需求。
               </p>
               <a href="https://www.facebook.com/ntnucsiecamp/posts/pfbid033iFQFRCV46Q8zvg2MVd1eJMqyntxyJAbxPfXw9gYyFwj7VG3sTejRUhWeiGDPLHMl">
                 更<br />多<br />介<br />紹
@@ -340,10 +340,10 @@ export const Review = () => {
             <div id="course">
               <p>
                 你知道該怎麼建立自己的程式作品集嗎？你想和其他開發者學習技術交流嗎？那千萬別錯過學習
-                Git 與了解 Github 的機會！Git 是一個分散式的版本控制軟體，而 github 則是一個支援 git
-                程式碼存取和遠端托管的平台服務，可用來查找、分享、參與開源程式碼。Git 與 Github
+                Git 與了解 GitHub 的機會！Git 是一個分散式的版本控制軟體，而 GitHub 則是一個支援 Git
+                程式碼存取和遠端托管的平台服務，可用來查找、分享、參與開源程式碼。Git 與 GitHub
                 可說是資訊人的必備技能，我們將會帶領學員們熟悉 Git 與
-                Github，感受他們的威力與好處，可以把你酷酷的程式碼分享出去，也可以和別人一起合作專案，還能向其他開發者學習更優秀的技術。
+                GitHub，感受他們的威力與好處，可以把你酷酷的程式碼分享出去，也可以和別人一起合作專案，還能向其他開發者學習更優秀的技術。
               </p>
               <a href="https://www.facebook.com/ntnucsiecamp/posts/pfbid0aMeQLHJs8mYd5V8kg5oBkWvbQLJNPmif9WHzmrEimqXh1Wzfuasot2Zj51Vr9Zkzl">
                 更<br />多<br />介<br />紹
@@ -362,10 +362,10 @@ export const Review = () => {
             <div id="course">
               <p>
                 Blog 一直是人們分享生活、共享資訊的平台，網路上充滿著各式各樣的
-                Blog，有旅游的、知識的、遊戲的 ⋯，想知道如何建立屬於自己的 blog 嗎？在此我們選擇
-                Hexo 這款多種亮主題的網框，帶著各位學員們從零開始踏上建立 Blog
-                的旅程。不僅教你怎麼建立 Blog，GIT 也是 CS
-                世界裡常見的名詞，過程中也會手把手教你如何使用GIT，讓你成為網頁設計的 master！
+                Blog，有旅游的、知識的、遊戲的⋯⋯ 想知道如何建立屬於自己的 Blog 嗎？在此我們選擇 Hexo
+                這款多種亮主題的網框，帶著各位學員們從零開始踏上建立 Blog 的旅程。不僅教你怎麼建立
+                Blog，Git 也是 CS 世界裡常見的名詞，過程中也會手把手教你如何使用
+                Git，讓你成為網頁設計的 master！
               </p>
               <a href="https://www.facebook.com/ntnucsiecamp/posts/pfbid0ggNaMc4xkuZmtqQwKCbn96ntRCfUXp1GeFL5JR2nfYN9zsr28qjBtYt25XJBZZQ7l">
                 更<br />多<br />介<br />紹
@@ -377,19 +377,19 @@ export const Review = () => {
               <p>
                 資工系又名 Computer Science (and Information Engineering) Computer ...... 電腦
                 ......
-                計算機！在踏入這片未知的新大陸之前，透過計算機概論這堂課，來了解一切電腦相關的事物吧！電腦是從何時產生的呢？為什麼"電腦"是一種"計算機"呢？一起來了解電腦的演變以及資料在電腦中是如何被處理的吧!
+                計算機！在踏入這片未知的新大陸之前，透過計算機概論這堂課，來了解一切電腦相關的事物吧！電腦是從何時產生的呢？為什麼「電腦」是一種「計算機」呢？一起來了解電腦的演變以及資料在電腦中是如何被處理的吧！
               </p>
               <a href="https://www.facebook.com/ntnucsiecamp/posts/pfbid02oqUkvivA4NwUunfotrBu41yZusRwQRwta7s7SyRCnDx2ZJTL9XovPGFR5rPg7t7Rl">
                 更<br />多<br />介<br />紹
               </a>
             </div>
             <br />
-            <li>Node.js / Python 開發 Discord bot</li>
+            <li>Node.js / Python 開發 Discord Bot</li>
             <div id="course">
               <p>
                 想要自己的聊天機器人嗎？不滿於網路上的聊天機器人？只要會基礎的程式使用 Node.js 和
                 Python 就能開發出屬於自己的 Discord
-                bot！想要的功能都能自己打造，用自己的雙手寫出理想的聊天機器人！
+                Bot！想要的功能都能自己打造，用自己的雙手寫出理想的聊天機器人！
               </p>
               <a href="https://www.facebook.com/ntnucsiecamp/posts/pfbid02Vg3CPnk71GHoLMt6qzDQsF3EJXGsfRQxZecEEzUnqvseXevepepLc6HSWKj4eTUrl">
                 更<br />多<br />介<br />紹
@@ -413,8 +413,11 @@ export const Review = () => {
         <div className="year_review" style={{ display: isShown === 2020 ? "flex" : "none" }}>
           <div>
             <div id="review_title">2020</div>
-            <div id="review_title">bug與他們</div>
-            <div id="review_title">的產地</div>
+            <div id="review_title">BUG</div>
+            <div id="review_title"> 與</div>
+            <div id="review_title">他們</div>
+            <div id="review_title">的</div>
+            <div id="review_title">產地</div>
           </div>
           <div id="rt_content">
             <li>C++ 程式設計及實作</li>
@@ -423,7 +426,7 @@ export const Review = () => {
                 你是否曾經想過，人們是如何命令電腦呢？今年暑假，讓我們帶你一窺資工系的生活，學習如何以
                 C++
                 程式語言來和電腦溝通，將其實用於日常生活之中，並將你的想法由電腦展現。這裡有專業的學長，帶你離開微軟，深入
-                Linux 的世界，在了解 C++ 的語法之後，試著使用 C++ 搭配 OpenCV
+                GNU/Linux 的世界，在了解 C++ 的語法之後，試著使用 C++ 搭配 OpenCV
                 函式庫，運用自己獨特的想法，寫出屬於自己的小畫家。相信在完成自己的程式之後，能得到最初的感動，體會程式語言的美好。
               </p>
               <a href="https://www.facebook.com/ntnucsiecamp/posts/pfbid02zXqXD3oSYhuHqQTJTQodYhRQKyHtKzky5SnwftR2DYTGsvmKigA56YbhrzaHpdml">
@@ -447,9 +450,9 @@ export const Review = () => {
             <li>密碼學</li>
             <div id="course">
               <p>
-                在現代生活中，密碼無處不在，它背負著保障我們個人隱私的使命。你們是否和我一樣，曾因為看見「密碼強度:弱」，而感到煩悶？它背後判斷所依循的法則到底為何？我們將一步一步地帶你走進這玄幻的密碼學。從符號到數論，從凱薩密碼到
+                在現代生活中，密碼無處不在，它背負著保障我們個人隱私的使命。你們是否和我一樣，曾因為看見「密碼強度：弱」，而感到煩悶？它背後判斷所依循的法則到底為何？我們將一步一步地帶你走進這玄幻的密碼學。從符號到數論，從凱薩密碼到
                 RSA
-                加密，到底如何加密才不會輕易地被破解？又怎麼樣透過解密來獲得自己想要的資訊？這就像是一場戰役，彼此沙盤推演、互相往來，激發你潛藏的駭客魂，讓你在追求勝仗的路上欲罷不能！！
+                加密，到底如何加密才不會輕易地被破解？又怎麼樣透過解密來獲得自己想要的資訊？這就像是一場戰役，彼此沙盤推演、互相往來，激發你潛藏的駭客魂，讓你在追求勝仗的路上欲罷不能！
               </p>
               <a href="https://www.facebook.com/ntnucsiecamp/posts/pfbid0ycpv4ofWNd7mDC2mecAtSqJv2J81rpUi8NFWNhkfCaUEwfCjsGqWhpZpqSP6EdpYl">
                 更<br />多<br />介<br />紹
