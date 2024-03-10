@@ -12,10 +12,10 @@ import Review from "./Review";
 
 const Home = () => {
   const [descriptions, setDescriptions] = useState({
-    image1: { visible: false, content: <Info /> },
-    image2: { visible: false, content: <FAQ /> },
-    image3: { visible: false, content: <Traffic /> },
-    image4: { visible: false, content: <Review /> },
+    image1: { visible: true, content: <Info /> },
+    image2: { visible: true, content: <FAQ /> },
+    image3: { visible: true, content: <Traffic /> },
+    image4: { visible: true, content: <Review /> },
   });
 
   const toggleDescription = (imageId) => {
@@ -29,7 +29,7 @@ const Home = () => {
   };
 
   return (
-    <div id="main" style={{ margin: "59px 0%" }}>
+    <div id="main" style={{ margin: "64px 0%" }}>
       <header style={{ textAlign: "center" }} id="header">
         <img src={banner} alt="banner" style={{ width: "100%" }} />
       </header>
@@ -51,27 +51,14 @@ const Home = () => {
                   <li key={index}>
                     {index > 1 && <div style={{ height: "100%" }}></div>}
                     <div style={{ textAlign: index % 2 === 0 ? "right" : "left" }}>
-                      <h2 style={{ textAlign: index % 2 === 0 ? "right" : "left" }}>
-                        {index === 1 && (
-                          <font color="#ffead8" id="info">
-                            報名資訊
-                          </font>
-                        )}
-                        {index === 2 && (
-                          <font color="#ffead8" id="faq">
-                            FAQ
-                          </font>
-                        )}
-                        {index === 3 && (
-                          <font color="#ffead8" id="traffic">
-                            交通資訊
-                          </font>
-                        )}
-                        {index === 4 && (
-                          <font color="#ffead8" id="review">
-                            歷屆回顧
-                          </font>
-                        )}
+                      <h2
+                        style={{ textAlign: index % 2 === 0 ? "right" : "left" }}
+                        class="home_titles"
+                      >
+                        {index === 1 && <font id="info">報名資訊</font>}
+                        {index === 2 && <font id="faq">FAQ</font>}
+                        {index === 3 && <font id="traffic">交通資訊</font>}
+                        {index === 4 && <font id="review">歷屆回顧</font>}
                       </h2>
                       <hr />
                       <a href="#" onClick={() => toggleDescription(`image${index}`)}>
@@ -93,12 +80,7 @@ const Home = () => {
                       <p
                         className={`text-below${index}`}
                         style={{ textAlign: index % 2 === 0 ? "right" : "left" }}
-                      >
-                        {index === 1 && "點擊圖片查看內容"}
-                        {index === 2 && "點擊圖片查看內容"}
-                        {index === 3 && "點擊圖片查看內容"}
-                        {index === 4 && "點擊圖片查看內容"}
-                      </p>
+                      ></p>
                     </div>
 
                     <div

@@ -53,7 +53,7 @@ const Header = styled.header`
   top: 0;
   left: 0;
   right: 0;
-  z-index: 9;
+  z-index: 50;
   background: #433083;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   // animation-name: banner_animation;
@@ -63,7 +63,7 @@ const Header = styled.header`
 const Container = styled.div`
   display: flex;
   align-items: center;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
 `;
 
 const Flyout = styled.div`
@@ -110,28 +110,24 @@ const Flyout = styled.div`
 
 const menuItems = [
   {
-    name: "立即報名",
-    eng_name: "login",
-  },
-  {
-    name: "歷屆回顧",
-    eng_name: "review",
-  },
-  {
-    name: "交通資訊",
-    eng_name: "traffic",
-  },
-  {
-    name: "常見問題",
-    eng_name: "faq",
+    name: "營隊介紹",
+    eng_name: "about",
   },
   {
     name: "報名資訊",
     eng_name: "info",
   },
   {
-    name: "營隊介紹",
-    eng_name: "about",
+    name: "常見問題",
+    eng_name: "faq",
+  },
+  {
+    name: "交通資訊",
+    eng_name: "traffic",
+  },
+  {
+    name: "歷屆回顧",
+    eng_name: "review",
   },
 ];
 const Nav = () => {
@@ -145,7 +141,7 @@ const Nav = () => {
       <Header>
         <Container>
           {/* left */}
-          <a href="#header" class="home_link">
+          <a href="#top" class="home_link">
             <img src={require("./image/logo_2024_circle.png")} alt="logo" class="banner_logo"></img>
           </a>
           {/* right */}
@@ -158,9 +154,20 @@ const Nav = () => {
                   </a>
                 </li>
               ))}
+              <li class="banner_button">
+                <a href="\login" class="login_button">
+                  立即報名
+                </a>
+              </li>
             </ul>
             <Flyout className="flyout">
               <div>
+                <div class="banner_button">
+                  <a href="\login" class="login_button">
+                    立即報名
+                  </a>
+                </div>
+
                 {menuItems.map((item, index) => (
                   <div class="banner_button" key={index}>
                     <a href={`#${item.eng_name}`} class={`${item.eng_name}_button`}>
