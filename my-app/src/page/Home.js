@@ -94,10 +94,7 @@ const Home = () => {
                         className={`text-below${index}`}
                         style={{ textAlign: index % 2 === 0 ? "right" : "left" }}
                       >
-                        {index === 1 && "點擊圖片查看內容"}
-                        {index === 2 && "點擊圖片查看內容"}
-                        {index === 3 && "點擊圖片查看內容"}
-                        {index === 4 && "點擊圖片查看內容"}
+                        
                       </p>
                     </div>
 
