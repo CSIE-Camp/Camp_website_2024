@@ -51,27 +51,14 @@ const Home = () => {
                   <li key={index}>
                     {index > 1 && <div style={{ height: "100%" }}></div>}
                     <div style={{ textAlign: index % 2 === 0 ? "right" : "left" }}>
-                      <h2 style={{ textAlign: index % 2 === 0 ? "right" : "left" }}>
-                        {index === 1 && (
-                          <font color="#ffead8" id="info">
-                            報名資訊
-                          </font>
-                        )}
-                        {index === 2 && (
-                          <font color="#ffead8" id="faq">
-                            FAQ
-                          </font>
-                        )}
-                        {index === 3 && (
-                          <font color="#ffead8" id="traffic">
-                            交通資訊
-                          </font>
-                        )}
-                        {index === 4 && (
-                          <font color="#ffead8" id="review">
-                            歷屆回顧
-                          </font>
-                        )}
+                      <h2
+                        style={{ textAlign: index % 2 === 0 ? "right" : "left" }}
+                        class="home_titles"
+                      >
+                        {index === 1 && <font id="info">報名資訊</font>}
+                        {index === 2 && <font id="faq">FAQ</font>}
+                        {index === 3 && <font id="traffic">交通資訊</font>}
+                        {index === 4 && <font id="review">歷屆回顧</font>}
                       </h2>
                       <hr />
                       <a href="#" onClick={() => toggleDescription(`image${index}`)}>
@@ -93,9 +80,7 @@ const Home = () => {
                       <p
                         className={`text-below${index}`}
                         style={{ textAlign: index % 2 === 0 ? "right" : "left" }}
-                      >
-                        
-                      </p>
+                      ></p>
                     </div>
 
                     <div
