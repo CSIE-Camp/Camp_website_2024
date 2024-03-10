@@ -12,10 +12,10 @@ import Review from "./Review";
 
 const Home = () => {
   const [descriptions, setDescriptions] = useState({
-    image1: { visible: false, content: <Info /> },
-    image2: { visible: false, content: <FAQ /> },
-    image3: { visible: false, content: <Traffic /> },
-    image4: { visible: false, content: <Review /> },
+    image1: { visible: true, content: <Info /> },
+    image2: { visible: true, content: <FAQ /> },
+    image3: { visible: true, content: <Traffic /> },
+    image4: { visible: true, content: <Review /> },
   });
 
   const toggleDescription = (imageId) => {
