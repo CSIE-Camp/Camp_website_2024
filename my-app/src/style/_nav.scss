@@ -21,7 +21,7 @@ $brown: #794221;
 // }
 
 .banner_logo {
-  height: 36px;
+  height: 50px;
   animation-name: logo_spin;
   animation-duration: 5s;
   animation-iteration-count: infinite;
@@ -54,10 +54,10 @@ nav {
 
   li {
     float: right;
-    margin: 5px;
+    margin: 0px;
     position: relative;
     top: 1px;
-    width: 80px;
+    width: 100px;
 
     a {
       background-color: $purple;
@@ -68,7 +68,7 @@ nav {
       font-size: 16px;
       font-weight: bold;
       display: block;
-      padding: 4px 4px;
+      padding: 8px 8px;
       text-align: center;
       text-decoration: none;
       color: $white;
