@@ -3,6 +3,11 @@
   margin: 0px;
   padding: 0px;
 }
+// :root {
+//   --line-length-150: 150px;
+//   --line-length-300: 300px;
+
+// }
 
 .traffic-info {
   width: 100%;
@@ -104,6 +109,7 @@
 .traffic-public {
   /* display: grid; */
   display: flex;
+  flex-direction: column;
   margin-top: 5%;
   // margin-left: 10%;
   justify-content: center;
@@ -124,7 +130,7 @@
 
 .metro-method {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 50%;
 }
 
@@ -169,10 +175,27 @@
   // position: relative;
   margin: 20px;
   height: 3px;
-  width: 70px;
+  width: 150px;
   border: 3px solid;
   border-radius: 0.25rem;
   border-color: black;
+}
+
+.outside-traffic {
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+}
+
+.ctrl-path {
+  display: grid;
+  // background-color: red;
+  // placeItems: "center",
+  gap: "4px";
+  grid-auto-flow: column;
+  // display: flex;
+  // flex-direction: row;
 }
 
 @keyframes movedot {
@@ -191,13 +214,10 @@
 
 #loading-ani {
   width: 10px;
-  /* 调整点的大小 */
   height: 10px;
-  /* 调整点的大小 */
   background-color: black;
   border-radius: 50%;
   animation: movedot 1s linear infinite;
-  /* 调整动画持续时间和时间函数 */
 }
 
 .metro-title {
@@ -227,19 +247,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.spot-block {
-  display: flex;
-  height: 100%;
-  width: fit-content;
-  text-align: center;
-  flex-direction: column;
-  justify-content: center;
-  gap: 2px;
-  border-radius: 0.75rem;
-  background-color: #ffd598;
-  padding: 20px;
 }
 
 @keyframes turn-icon-animation {
@@ -272,11 +279,24 @@
   }
 }
 
+.spot-block {
+  display: flex;
+  height: 100%;
+  width: fit-content;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+  border-radius: 0.75rem;
+  background-color: #ffd598;
+  padding: 20px;
+}
+
 .spot-block:hover {
   animation: turn-icon-animation 1s;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1280px) {
   .map-content {
     display: flex;
     width: 100%;
@@ -301,8 +321,9 @@
   }
 
   .traffic-btn {
-    padding: 10px 80px;
-    background-color: #ff7a00;
+    padding: 30px 80px;
+    // background-color: #ff7a00;
+    // background-color: red;
     border-radius: 30px;
     font-size: 16px;
     white-space: nowrap;
@@ -314,6 +335,113 @@
 
   .bus-title {
     font-size: 25px;
+  }
+
+  .spot-block {
+    display: flex;
+    height: 100%;
+    width: fit-content;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+    border-radius: 0.75rem;
+    background-color: #ffd598;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .map-content {
+    display: flex;
+    width: 100%;
+    /* align-items: center; */
+    justify-content: center;
+    /* height: 100vh; */
+    padding-top: 100px;
+  }
+
+  .map-content iframe {
+    width: 550px;
+    height: 350px;
+  }
+
+  .navbar a {
+    font-size: 16px;
+  }
+
+  .line-break br {
+    display: block;
+    /* Hides the line break for non-CSS capable browsers */
+  }
+
+  .traffic-btn {
+    padding: 30px 80px;
+    // background-color: #ff7a00;
+    // background-color: red;
+    border-radius: 30px;
+    font-size: 16px;
+    white-space: nowrap;
+  }
+
+  .metro-title {
+    font-size: 25px;
+  }
+
+  .bus-title {
+    font-size: 25px;
+  }
+
+  .spot-block {
+    display: flex;
+    height: 100%;
+    width: fit-content;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+    border-radius: 0.75rem;
+    background-color: #ffd598;
+    padding: 10px;
+  }
+
+  .outside-traffic {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+  }
+
+  .metro-method {
+    display: flex;
+    flex-direction: column;
+    gap: 50%;
+  }
+
+  .ctrl-path {
+    display: grid;
+    place-items: center;
+    gap: "4px";
+    grid-auto-flow: row;
+  }
+
+  .line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+  }
+
+  .straight-line {
+    // position: relative;
+    margin: 20px;
+    height: 70px;
+    width: 3px;
+    border: 3px solid;
+    border-radius: 0.25rem;
+    border-color: black;
   }
 }
 
