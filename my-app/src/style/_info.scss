@@ -3,7 +3,14 @@
   justify-content: center;
   text-align: center;
 }
-
+.imageinfo {
+  margin: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: 16%;
+}
 .infotext {
   font-size: 60px;
   text-align: center;
@@ -224,22 +231,20 @@
 }
 
 .attend_button {
-  font-family: "Noto Sans TC", monospace;
-  font-size: 200%;
-  color: rgb(0, 0, 0);
+  color: #19a6a2;
+  font-weight: bold;
+  margin-bottom: 20px;
   display: relative;
-  transform: translate(0%, -50%);
-  margin-bottom: 50px;
-  border-radius: 20px;
-  border-style: solid;
-  border-color: rgb(247, 180, 36);
-  height: 75px;
-  width: 300px;
-
-  background-color: rgb(255, 255, 255);
-  text-align: center;
-
+  justify-content: space-between;
+  margin: 1vw 20vw;
+  background-color: #ffead8;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width:20%;
+  height: 20%;
   left: 50%;
+  text-align: center;
 
   justify-content: center;
 }
