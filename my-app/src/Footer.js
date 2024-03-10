@@ -3,6 +3,10 @@ import React from "react";
 const Footer = () => {
   return (
     <footer>
+      <div class="before">
+        <h3 class="before_title">歷年網站</h3>
+        <a href="/old/2023">2023</a>
+      </div>
       <div class="contact">
         <h2 class="contact_title contact_text">聯絡方式</h2>
         <p class="contact_content contact_text">

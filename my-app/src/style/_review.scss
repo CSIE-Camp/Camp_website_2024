@@ -135,12 +135,11 @@ div#page_review {
 
     div#review_title {
       font-family: "Noto Sans TC";
-      // font-family: "ToronoGlitchSans H2";
       width: 10.5vw;
       font-size: 35px;
       color: white;
       text-align: center;
-
+      font-weight: bold;
       @media (max-width: 1500px) {
         font-size: 30px;
       }

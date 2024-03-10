@@ -86,10 +86,6 @@ main {
           letter-spacing: 1rem;
           color: #ffffff;
 
-          span {
-            font-family: "ToronoGlitchSans H4", sans-serif;
-          }
-
           @mixin textBorder() {
             text-shadow: -2px 0 #ffffff, 0 2px rgb(255, 255, 255), 2px 0 rgb(255, 255, 255),
               0 -2px rgb(255, 255, 255);

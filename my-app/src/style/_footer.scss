@@ -52,7 +52,19 @@ footer {
   color: $black;
   line-height: 1.5em;
 }
-
+.before {
+  text-align: center;
+  .before_title {
+    font-size: 24px;
+    font-weight: bolder;
+    line-height: 30px;
+    color: $white;
+    line-height: 1.5em;
+  }
+  a {
+    color: $blue-green;
+  }
+}
 .social_media {
   display: flex;
   justify-content: center;
@@ -61,19 +73,19 @@ footer {
     width: 32px;
     height: 32px;
     margin: 4px;
-    filter: brightness(0);
+    filter: invert(100%);
   }
 
   .facebook_icon:hover {
-    filter: invert(100%);
+    filter: invert(100%) opacity(0.3) drop-shadow(0 0 0 blue);
   }
 
   .instagram_icon:hover {
-    filter: invert(100%);
+    filter: invert(100%) opacity(0.6) drop-shadow(0 0 0 red);
   }
 
   .messenger_icon:hover {
-    filter: brightness(0) invert(100%);
+    filter: invert(100%) opacity(0.8) drop-shadow(0 0 0 blue);
   }
 }
 
