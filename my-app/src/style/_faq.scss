@@ -20,7 +20,7 @@ div#page_faq {
     padding: 30px;
     border-radius: 25px;
     /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
-    height: 170px;
+    height: 200px;
   }
 
   .grid-item.wide {
@@ -35,4 +35,35 @@ div#page_faq {
   .grid-item.narrow {
     width: 340px;
   }
+
+  @media (max-width: 1100px) {
+    .grid-container {
+      grid-template-columns: 1fr; /* Change to a single column */
+      padding-left: 30px; /* Adjust the padding as needed for spacing */
+      padding-right: 30px;
+    }
+
+    .grid-item.wide,
+    .grid-item.wide.s,
+    .grid-item.narrow {
+      width: auto; /* Let items take full width */
+      margin-left: 0; /* Remove any left margin */
+    }
+  }
+}
+
+.grid-item .question {
+  display: block;
+}
+
+.grid-item .response {
+  display: none;
+}
+
+.grid-item:hover .question {
+  display: none;
+}
+
+.grid-item:hover .response {
+  display: block;
 }
