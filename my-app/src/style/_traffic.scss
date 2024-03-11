@@ -3,6 +3,7 @@
   margin: 0px;
   padding: 0px;
 }
+
 // :root {
 //   --line-length-150: 150px;
 //   --line-length-300: 300px;
@@ -35,45 +36,11 @@
   }
 }
 
-.navbar {
-  margin-top: 20px;
-  display: flex;
-  justify-content: flex-end;
-  background-color: #ff7a00;
-  position: fixed;
-  width: 100%;
-  height: 100px;
-  overflow: hidden;
-  text-align: center;
-  padding: 14px 16px;
-  border-radius: 20px;
-
-  a {
-    font-size: 16px;
-    width: 100px;
-    color: #000;
-    background-color: #19a6a2;
-    text-align: center;
-    /* padding: 14px 16px; */
-    text-decoration: none;
-    margin: 6px;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  a:hover {
-    background-color: #214d4b;
-    color: #fff;
-  }
-}
-
 .ntnu-address {
   display: flex;
   justify-content: center;
-  font-size: 20px;
   text-align: center;
+  color: white;
 }
 
 .traffic-method {
@@ -85,7 +52,7 @@
 .traffic-btn {
   padding: 30px 150px;
   // background-color: #ffead8;
-  border-radius: 30px;
+  border-radius: 8px;
   // font-size: 20px;
   background: none;
   color: inherit;
@@ -94,15 +61,17 @@
   font: inherit;
   cursor: pointer;
   outline: inherit;
+  color: #19a6a2;
+  font-weight: bold;
 }
 
 .traffic-btn:hover {
-  background-color: #ffead8;
+  background-color: #f5e1b4;
   cursor: pointer;
 }
 
 .traffic-block {
-  background-color: #f5e1b4;
+  background-color: #ffead8;
   display: flex;
   justify-content: space-around;
 }
@@ -124,7 +93,7 @@
 //   margin-left: 5%;
 //   height: 200px;
 //   width: 1200px;
-//   border-radius: 30px;
+//   border-radius: 8px;
 //   background-color: #f5e1b4;
 //   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 // }
@@ -136,7 +105,7 @@
 }
 
 .metro-image {
-  border-radius: 20px;
+  border-radius: 8px;
   // margin-top: 40px;
   // justify-content: center;
 }
@@ -146,21 +115,21 @@
   margin-left: 5%;
   height: 200px;
   width: 1200px;
-  border-radius: 30px;
-  background-color: #f5e1b4;
+  border-radius: 8px;
+  background-color: #ffead8;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .bus-image {
-  border-radius: 20px;
+  border-radius: 8px;
   margin-top: 10%;
 }
 
 .drive-method {
   height: 200px;
   width: 1200px;
-  border-radius: 30px;
-  background-color: #f5e1b4;
+  border-radius: 8px;
+  background-color: #ffead8;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -170,6 +139,10 @@
   align-items: center;
   justify-content: center;
   gap: 1px;
+
+  p {
+    color: white;
+  }
 }
 
 .straight-line {
@@ -179,7 +152,7 @@
   width: 150px;
   border: 3px solid;
   border-radius: 0.25rem;
-  border-color: black;
+  border-color: white;
 }
 
 .outside-traffic {
@@ -223,10 +196,12 @@
 
 .metro-title {
   font-size: 30px;
+  color: white;
 }
 
 .bus-title {
   font-size: 30px;
+  color: white;
 }
 
 #public {
@@ -242,6 +217,10 @@
   margin-top: 3%;
   display: none;
   margin-bottom: 5%;
+
+  p {
+    color: white;
+  }
 }
 
 .traffic-car {
@@ -289,9 +268,11 @@
   flex-direction: column;
   justify-content: center;
   gap: 2px;
-  border-radius: 0.75rem;
-  background-color: #ffd598;
+  border-radius: 8px;
+  background-color: #ffead8;
   padding: 20px;
+  color: #19a6a2;
+  font-weight: bold;
 }
 
 .spot-block:hover {
@@ -326,17 +307,21 @@
     padding: 30px 80px;
     // background-color: #ff7a00;
     // background-color: red;
-    border-radius: 30px;
+    border-radius: 8px;
     font-size: 16px;
     white-space: nowrap;
+    color: #19a6a2;
+    font-weight: bold;
   }
 
   .metro-title {
     font-size: 25px;
+    color: white;
   }
 
   .bus-title {
     font-size: 25px;
+    color: white;
   }
 
   .spot-block {
@@ -348,7 +333,7 @@
     justify-content: center;
     gap: 2px;
     border-radius: 0.75rem;
-    background-color: #ffd598;
+    background-color: #ffead8;
     padding: 10px;
   }
 }
@@ -381,17 +366,21 @@
     padding: 30px 80px;
     // background-color: #ff7a00;
     // background-color: red;
-    border-radius: 30px;
+    border-radius: 8px;
     font-size: 16px;
     white-space: nowrap;
+    color: #19a6a2;
+    font-weight: bold;
   }
 
   .metro-title {
     font-size: 25px;
+    color: white;
   }
 
   .bus-title {
     font-size: 25px;
+    color: white;
   }
 
   .spot-block {
@@ -403,7 +392,7 @@
     justify-content: center;
     gap: 2px;
     border-radius: 0.75rem;
-    background-color: #ffd598;
+    background-color: #ffead8;
     padding: 10px;
   }
 
@@ -434,6 +423,10 @@
     align-items: center;
     justify-content: center;
     gap: 1px;
+
+    p {
+      color: white;
+    }
   }
 
   .straight-line {
@@ -443,7 +436,7 @@
     width: 3px;
     border: 3px solid;
     border-radius: 0.25rem;
-    border-color: black;
+    border-color: white;
   }
 
   .traffic-car {
@@ -459,6 +452,7 @@
     width: 300px;
     height: 300px;
   }
+
   .ntnu-address {
     display: flex;
     justify-content: center;
@@ -473,11 +467,14 @@
     // padding: 30px 80px;
     // background-color: #ff7a00;
     // background-color: red;
-    border-radius: 30px;
+    border-radius: 8px;
     font-size: 16px;
     white-space: nowrap;
     font-size: 18px;
+    color: #19a6a2;
+    font-weight: bold;
   }
+
   .metro-method {
     font-size: 15px;
   }

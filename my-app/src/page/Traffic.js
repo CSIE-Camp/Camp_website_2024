@@ -39,10 +39,10 @@ const Traffic = () => {
     <>
       <div className="container">
         <div className="traffic-info">
-          <p className="ntnu-address">臺灣師範大學公館校區（師大分部）</p>
-          <p className="ntnu-address">
+          <h3 className="ntnu-address">臺灣師範大學公館校區（師大分部）</h3>
+          <h3 className="ntnu-address">
             11677 台北市文山區汀州路四段 88 號 應用科學大樓一樓 資訊工程學系
-          </p>
+          </h3>
         </div>
         <div className="map-content">
           <iframe
@@ -118,7 +118,7 @@ const Traffic = () => {
                     </div>
                   </div>
                   <div className="spot-block">捷運萬隆站</div>
-                  <div className="line" class={{ textAlign: "center" }}>
+                  <div className="line">
                     <p>沿羅斯福路往北步行約10分鐘抵達</p>
                     <div className="straight-line"></div> {/*150*/}
                   </div>
