@@ -76,7 +76,9 @@ const Traffic = () => {
             }}
           >
             <b>
-              <p className="metro-title">搭乘捷運</p>
+              <p className="metro-title" style={{ fontSize: "30px" }}>
+                搭乘捷運
+              </p>
             </b>
           </div>
           <div className="outside-traffic">
@@ -116,7 +118,7 @@ const Traffic = () => {
                     </div>
                   </div>
                   <div className="spot-block">捷運萬隆站</div>
-                  <div className="line">
+                  <div className="line" class={{ textAlign: "center" }}>
                     <p>沿羅斯福路往北步行約10分鐘抵達</p>
                     <div className="straight-line"></div> {/*150*/}
                   </div>
@@ -185,7 +187,7 @@ const Traffic = () => {
           <p></p>
         </div>
         <div id="tra-car">
-          <p style={{ fontSize: "30px", marginLeft: "18%", marginBottom: "3%" }}>
+          <p style={{ fontSize: "30px", marginLeft: "14%", marginBottom: "3%" }}>
             <b>開車路線</b>
           </p>
           <div className="traffic-car">
@@ -206,7 +208,7 @@ const Traffic = () => {
                   </a>
                 </b>
               </p>
-              <div className="straight-line" style={{ width: "280px" }}></div>
+              <div className="straight-line"></div> {/* 280px */}
             </div>
             <div className="spot-block">
               國立臺灣師範大學 <br />
@@ -214,7 +216,7 @@ const Traffic = () => {
             </div>
             <div className="line">
               <p>步行至應用科學大樓</p>
-              <div className="straight-line" style={{ width: "150px" }}></div>
+              <div className="straight-line"></div> {/* 150px */}
             </div>
             <div className="spot-block">
               應用科學大樓 <br />
