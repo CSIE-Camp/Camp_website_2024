@@ -74,7 +74,7 @@ const Home = () => {
                           }
                           className={`image${index}`}
                           alt=""
-                          style={{ width: "5%", height: "5%" }}
+                          style={{ width: "4em", height: "4em" }}
                         />
                       </a>
                       <p
