@@ -18,9 +18,20 @@ div#page_faq {
   .grid-item {
     background-color: #f0f0f0;
     padding: 30px;
+    padding-top: 80px;
     border-radius: 25px;
     /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
     height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .grid-item h2,
+  .grid-item p {
+    margin: 0;
   }
 
   .grid-item.wide {
@@ -34,6 +45,26 @@ div#page_faq {
 
   .grid-item.narrow {
     width: 340px;
+  }
+
+  .grid-item .question {
+    opacity: 1;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  }
+
+  .grid-item .response {
+    opacity: 0;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  }
+
+  .grid-item:hover .question {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+
+  .grid-item:hover .response {
+    opacity: 1;
+    transform: translateY(-40px);
   }
 
   @media (max-width: 1100px) {
@@ -50,20 +81,4 @@ div#page_faq {
       margin-left: 0; /* Remove any left margin */
     }
   }
-}
-
-.grid-item .question {
-  display: block;
-}
-
-.grid-item .response {
-  display: none;
-}
-
-.grid-item:hover .question {
-  display: none;
-}
-
-.grid-item:hover .response {
-  display: block;
 }
