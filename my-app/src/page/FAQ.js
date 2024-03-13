@@ -13,7 +13,7 @@ export const FAQ = () => {
       <div class="grid-container">
         <div class="grid-item wide">
           <div class="question">
-            <h2>上課需要什麼先備知識？</h2>
+            <p>上課需要什麼先備知識？</p>
           </div>
           <div class="response">
             <p>
@@ -24,7 +24,7 @@ export const FAQ = () => {
         </div>
         <div class="grid-item narrow">
           <div class="question">
-            <h2>上課內容是什麼？</h2>
+            <p>上課內容是什麼？</p>
           </div>
           <div class="response">
             <p>回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 </p>
@@ -32,7 +32,7 @@ export const FAQ = () => {
         </div>
         <div class="grid-item narrow">
           <div class="question">
-            <h2>要如何報名？</h2>
+            <p>要如何報名？</p>
           </div>
           <div class="response">
             <p>回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 </p>
@@ -40,7 +40,7 @@ export const FAQ = () => {
         </div>
         <div class="grid-item wide s">
           <div class="question">
-            <h2>報名的資格有限制嗎？</h2>
+            <p>報名的資格有限制嗎？</p>
           </div>
           <div class="response">
             <p>
@@ -51,7 +51,7 @@ export const FAQ = () => {
         </div>
         <div class="grid-item wide">
           <div class="question">
-            <h2>從哪裡獲得最新資訊？</h2>
+            <p>從哪裡獲得最新資訊？</p>
           </div>
           <div class="response">
             <p>
@@ -62,7 +62,7 @@ export const FAQ = () => {
         </div>
         <div class="grid-item narrow">
           <div class="question">
-            <h2>退費機制？</h2>
+            <p>退費機制？</p>
           </div>
           <div class="response">
             <p>回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 </p>
