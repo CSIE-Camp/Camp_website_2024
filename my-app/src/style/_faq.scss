@@ -16,7 +16,7 @@ div#page_faq {
   }
 
   .grid-item {
-    background-color: #f0f0f0;
+    background-color: #dc6a0b;
     padding: 30px;
     padding-top: 80px;
     border-radius: 20px;
@@ -32,6 +32,8 @@ div#page_faq {
   .grid-item h2,
   .grid-item p {
     margin: 0;
+    color: #fff;
+    text-align: center;
   }
 
   .grid-item.wide {
@@ -47,9 +49,12 @@ div#page_faq {
     width: 340px;
   }
 
-  .grid-item .question {
-    font-weight: bold;
+  .grid-item .question,
+  .grid-item .qustion p {
     font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-align: center;
     opacity: 1;
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
   }
