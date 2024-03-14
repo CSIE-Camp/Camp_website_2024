@@ -9,16 +9,17 @@ div#page_faq {
     grid-template-rows: repeat(3, 1fr);
     gap: 15px;
     padding-top: 30px;
-    padding-left: 21%;
-    padding-right: 21%;
+    padding-left: 16vw;
+    padding-right: 16vw;
     padding-bottom: 60px;
     justify-content: center;
   }
 
   .grid-item {
     background-color: #dc6a0b;
-    padding: 30px;
-    padding-top: 80px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 2.5vw;
     border-radius: 20px;
     /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
     height: 200px;
@@ -37,16 +38,16 @@ div#page_faq {
   }
 
   .grid-item.wide {
-    width: 550px;
+    width: 41vw;
   }
 
   .grid-item.wide.s {
-    width: 550px;
-    margin-left: -210px;
+    width: 41vw;
+    margin-left: -14vw;
   }
 
   .grid-item.narrow {
-    width: 340px;
+    width: 27vw;
   }
 
   .grid-item .question,
@@ -74,7 +75,7 @@ div#page_faq {
     transform: translateY(-50px);
   }
 
-  @media (max-width: 1100px) {
+  @media (max-width: 1261px) {
     .grid-container {
       grid-template-columns: 1fr; /* Change to a single column */
       padding-left: 30px; /* Adjust the padding as needed for spacing */
@@ -84,8 +85,25 @@ div#page_faq {
     .grid-item.wide,
     .grid-item.wide.s,
     .grid-item.narrow {
-      width: auto; /* Let items take full width */
-      margin-left: 0; /* Remove any left margin */
+      width: 68vw;
+      margin-left: 16vw;
+      margin-right: 16vw;
+    }
+  }
+
+  @media (max-width: 770px) {
+    .grid-container {
+      grid-template-columns: 1fr; /* Change to a single column */
+      padding-left: 30px; /* Adjust the padding as needed for spacing */
+      padding-right: 30px;
+    }
+
+    .grid-item.wide,
+    .grid-item.wide.s,
+    .grid-item.narrow {
+      width: auto;
+      margin-left: 2.5vw;
+      margin-right: 2.5vw;
     }
   }
 }
