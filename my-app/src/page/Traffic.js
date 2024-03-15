@@ -84,13 +84,8 @@ const Traffic = () => {
               marginLeft: "13%",
               marginTop: "3%",
             }}
-          >
-            <b>
-              <p className="metro-title" style={{ fontSize: "30px" }}>
-                搭乘捷運
-              </p>
-            </b>
-          </div>
+          ></div>
+          <p className="method-sub-title">搭乘捷運</p>
           <div className="outside-traffic">
             <div className="traffic-public">
               <div className="metro-method">
@@ -197,9 +192,7 @@ const Traffic = () => {
           <p></p>
         </div>
         <div id="tra-car">
-          <p style={{ fontSize: "30px", marginLeft: "14%", marginBottom: "3%" }}>
-            <b>開車路線</b>
-          </p>
+          <p className="method-sub-title">開車路線</p>
           <div className="traffic-car">
             <div
               style={{ display: "grid", placeItems: "center", gap: "4px", gridAutoFlow: "column" }}
