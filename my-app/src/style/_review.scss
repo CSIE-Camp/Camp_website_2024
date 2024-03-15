@@ -135,11 +135,12 @@ div#page_review {
 
     div#review_title {
       font-family: "Noto Sans TC";
-      width: 10.5vw;
+      width: 13vw;
       font-size: 35px;
       color: white;
       text-align: center;
       font-weight: bold;
+      letter-spacing: 3px;
       @media (max-width: 1500px) {
         font-size: 30px;
       }
@@ -159,6 +160,7 @@ div#page_review {
       margin-left: 1.5rem;
       display: flex;
       flex-direction: column;
+      text-align: left;
 
       li {
         font-size: 1.5rem;
