@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 
 const Traffic = () => {
+  const [clickedBtn, setClickedBtn] = useState("public");
+
   function public_method() {
+    setClickedBtn("public");
     let content = document.getElementById("tra-pub");
     let computedStyle = window.getComputedStyle(content);
     if (computedStyle.getPropertyValue("display") === "none") {
@@ -12,6 +15,7 @@ const Traffic = () => {
   }
 
   function car() {
+    setClickedBtn("car");
     let content = document.getElementById("tra-car");
     let computedStyle = window.getComputedStyle(content);
     if (computedStyle.getPropertyValue("display") === "none") {
@@ -47,8 +51,8 @@ const Traffic = () => {
         <div className="map-content">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.7905148156797!2d121.53508984715559!3d25.007233251863084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442aa1e27ab738b%3A0x2e5be38c37583475!2z5ZyL56uL6Ie654Gj5bir56-E5aSn5a24IOWFrOmkqOagoeWNgA!5e0!3m2!1szh-TW!2stw!4v1705928987464!5m2!1szh-TW!2stw"
-            width="600"
-            height="450"
+            /*width="600"
+            height="450"*/
             style={{ border: "0" }}
             allowfullscreen=""
             loading="lazy"
@@ -57,10 +61,16 @@ const Traffic = () => {
         </div>
         <div className="traffic-method">
           <div className="traffic-block">
-            <button className="traffic-btn" onClick={public_method}>
+            <button
+              className={clickedBtn === "public" ? "traffic-btn clicked" : "traffic-btn"}
+              onClick={public_method}
+            >
               大眾運輸工具
             </button>
-            <button className="traffic-btn" onClick={car}>
+            <button
+              className={clickedBtn === "car" ? "traffic-btn clicked" : "traffic-btn"}
+              onClick={car}
+            >
               自行開車
             </button>
           </div>
