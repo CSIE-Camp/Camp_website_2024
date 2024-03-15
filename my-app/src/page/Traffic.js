@@ -98,7 +98,9 @@ const Traffic = () => {
                   }}
                 > */}
                 <div className="ctrl-path">
-                  <img src={require("../image/google_icon/metro.png")} className="metro-image" />
+                  <div className="spot-block">
+                    <img src={require("../image/google_icon/metro.png")} className="metro-image" />
+                  </div>
                   <div className="line">
                     <p>搭乘綠線</p>
                     <div>
@@ -153,7 +155,9 @@ const Traffic = () => {
                   }}
                 > */}
                 <div className="ctrl-path">
-                  <img src={require("../image/google_icon/metro.png")} className="metro-image" />
+                  <div className="spot-block">
+                    <img src={require("../image/google_icon/metro.png")} className="metro-image" />
+                  </div>
                   <div className="line">
                     <p>搭乘綠線</p>
                     <div className="straight-line"></div>

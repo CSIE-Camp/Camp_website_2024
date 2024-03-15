@@ -76,6 +76,7 @@
   background-color: #e7ae16;
   /*border: 8px solid $light-blue;*/
   color: #fff;
+  box-shadow: 0px 4px 20px 0px #b28711b8;
 }
 
 .traffic-block {
@@ -120,9 +121,7 @@
   // margin-top: 40px;
   // justify-content: center;
   background-color: $off-white;
-  padding: 10px;
-  height: 100px;
-  margin: 10px;
+  height: 110px;
 }
 
 .car-image {
@@ -254,6 +253,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
 }
 
 .line p {
