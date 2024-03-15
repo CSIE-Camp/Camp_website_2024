@@ -102,7 +102,9 @@ const Traffic = () => {
                     <img src={require("../image/google_icon/metro.png")} className="metro-image" />
                   </div>
                   <div className="line">
-                    <p>搭乘綠線</p>
+                    <p>
+                      搭乘<span class="green-text"> 綠 </span>線
+                    </p>
                     <div>
                       <div
                         // onMouseOver={loading}
@@ -126,7 +128,7 @@ const Traffic = () => {
                   </div>
                   <div className="spot-block">捷運萬隆站</div>
                   <div className="line">
-                    <p>沿羅斯福路往北步行約10分鐘抵達</p>
+                    <p>沿羅斯福路往北步行約 10 分鐘抵達</p>
                     <div className="straight-line"></div> {/*150*/}
                   </div>
                   <div className="spot-block">
@@ -159,13 +161,15 @@ const Traffic = () => {
                     <img src={require("../image/google_icon/metro.png")} className="metro-image" />
                   </div>
                   <div className="line">
-                    <p>搭乘綠線</p>
+                    <p>
+                      搭乘<span class="green-text"> 綠 </span>線
+                    </p>
                     <div className="straight-line"></div>
                     {/*150*/}
                   </div>
                   <div className="spot-block">捷運公館站</div>
                   <div className="line">
-                    <p>沿羅斯福路往南步行約11分鐘抵達</p>
+                    <p>沿羅斯福路往南步行約 11 分鐘抵達</p>
                     <div className="straight-line"></div> {/*300*/}
                   </div>
                   <div className="spot-block">
@@ -202,18 +206,20 @@ const Traffic = () => {
               style={{ display: "grid", placeItems: "center", gap: "4px", gridAutoFlow: "column" }}
             >
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-                <img
-                  src={require("../image/google_icon/car.png")}
-                  alt="drive"
-                  className="car-image"
-                />
-                {/*<p class={{ textAlign: "center" }}>開車</p>*/}
+                <div className="spot-block">
+                  <img
+                    src={require("../image/google_icon/car.png")}
+                    alt="drive"
+                    className="car-image"
+                  />
+                  {/*<p class={{ textAlign: "center" }}>開車</p>*/}
+                </div>
               </div>
             </div>
             <div className="line">
               <p>
                 <b>
-                  導航至
+                  導航至{" "}
                   <a href={"https://maps.app.goo.gl/ZCmo2pzEMXvfB4Sw9"}>
                     國立臺灣師範大學 公館校區
                   </a>

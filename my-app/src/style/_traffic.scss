@@ -10,6 +10,12 @@
 
 // }
 
+.green-text {
+  color: rgb(59, 194, 59);
+  font-weight: bold;
+  font-size: larger;
+}
+
 .traffic-info {
   width: 100%;
 
@@ -129,8 +135,7 @@
   // margin-top: 40px;
   // justify-content: center;
   background-color: $off-white;
-  padding: 10px;
-  height: 80px;
+  height: 60px;
 }
 
 .bus-method {
@@ -165,6 +170,7 @@
 
   p {
     color: white;
+    margin: 15px;
   }
 }
 
@@ -254,10 +260,6 @@
   justify-content: center;
   align-items: center;
   margin-top: 50px;
-}
-
-.line p {
-  margin: 10px;
 }
 
 @keyframes turn-icon-animation {
@@ -444,6 +446,7 @@
 
     p {
       color: white;
+      margin: 15px;
     }
   }
 
