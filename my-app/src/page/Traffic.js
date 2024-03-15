@@ -93,7 +93,7 @@ const Traffic = () => {
                   }}
                 > */}
                 <div className="ctrl-path">
-                  <img src={require("../image/metro.png")} className="metro-image" />
+                  <img src={require("../image/google_icon/metro.png")} className="metro-image" />
                   <div className="line">
                     <p>搭乘綠線</p>
                     <div>
@@ -148,7 +148,7 @@ const Traffic = () => {
                   }}
                 > */}
                 <div className="ctrl-path">
-                  <img src={require("../image/metro.png")} className="metro-image" />
+                  <img src={require("../image/google_icon/metro.png")} className="metro-image" />
                   <div className="line">
                     <p>搭乘綠線</p>
                     <div className="straight-line"></div>
@@ -195,8 +195,12 @@ const Traffic = () => {
               style={{ display: "grid", placeItems: "center", gap: "4px", gridAutoFlow: "column" }}
             >
               <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-                <img src={require("../image/car.png")} width="45" height="50" alt="drive" />
-                <p class={{ textAlign: "center" }}>開車</p>
+                <img
+                  src={require("../image/google_icon/car.png")}
+                  alt="drive"
+                  className="car-image"
+                />
+                {/*<p class={{ textAlign: "center" }}>開車</p>*/}
               </div>
             </div>
             <div className="line">

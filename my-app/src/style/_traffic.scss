@@ -28,7 +28,7 @@
   /* align-items: center; */
   justify-content: center;
   /* height: 100vh; */
-  padding-top: 100px;
+  padding-top: 40px;
 
   iframe {
     width: 1200px;
@@ -41,10 +41,11 @@
   justify-content: center;
   text-align: center;
   color: white;
+  line-height: 40px;
 }
 
 .traffic-method {
-  padding-top: 30px;
+  padding-top: 40px;
   // display: flex;
   justify-content: space-around;
 }
@@ -52,7 +53,7 @@
 .traffic-btn {
   padding: 30px 150px;
   // background-color: #ffead8;
-  border-radius: 8px;
+  border-radius: 15px;
   // font-size: 20px;
   background: none;
   color: inherit;
@@ -105,9 +106,22 @@
 }
 
 .metro-image {
-  border-radius: 8px;
+  border-radius: 15px;
   // margin-top: 40px;
   // justify-content: center;
+  background-color: $off-white;
+  padding: 10px;
+  height: 100px;
+  margin: 10px;
+}
+
+.car-image {
+  border-radius: 15px;
+  // margin-top: 40px;
+  // justify-content: center;
+  background-color: $off-white;
+  padding: 10px;
+  height: 80px;
 }
 
 .bus-method {
@@ -115,7 +129,7 @@
   margin-left: 5%;
   height: 200px;
   width: 1200px;
-  border-radius: 8px;
+  border-radius: 15px;
   background-color: #ffead8;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -230,6 +244,10 @@
   align-items: center;
 }
 
+.line p {
+  margin: 10px;
+}
+
 @keyframes turn-icon-animation {
   0% {
     transform: scale(1);
@@ -268,7 +286,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 2px;
-  border-radius: 8px;
+  border-radius: 15px;
   background-color: #ffead8;
   padding: 20px;
   color: #19a6a2;
@@ -286,7 +304,7 @@
     /* align-items: center; */
     justify-content: center;
     /* height: 100vh; */
-    padding-top: 100px;
+    padding-top: 40px;
   }
 
   .map-content iframe {
@@ -307,7 +325,7 @@
     padding: 30px 80px;
     // background-color: #ff7a00;
     // background-color: red;
-    border-radius: 20px;
+    border-radius: 15px;
     font-size: 16px;
     white-space: nowrap;
     color: #19a6a2;
@@ -345,7 +363,7 @@
     /* align-items: center; */
     justify-content: center;
     /* height: 100vh; */
-    padding-top: 100px;
+    padding-top: 40px;
   }
 
   .map-content iframe {
@@ -366,7 +384,7 @@
     padding: 30px 80px;
     // background-color: #ff7a00;
     // background-color: red;
-    border-radius: 20px;
+    border-radius: 15px;
     font-size: 16px;
     white-space: nowrap;
     color: #19a6a2;
@@ -467,7 +485,7 @@
     // padding: 30px 80px;
     // background-color: #ff7a00;
     // background-color: red;
-    border-radius: 8px;
+    border-radius: 15px;
     font-size: 16px;
     white-space: nowrap;
     font-size: 18px;
