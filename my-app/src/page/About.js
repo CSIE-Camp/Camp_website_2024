@@ -19,7 +19,7 @@ const About = () => {
         </div>
 
         <div className="image">
-          <img src={require("../image/python_base.png")} alt="base" />
+          <img src={require("../image/google_icon/code.png")} alt="base" height="140px" />
         </div>
       </section>
 
@@ -30,7 +30,11 @@ const About = () => {
         </div>
 
         <div className="image">
-          <img src={require("../image/machine_learning.png")} alt="machine learing" />
+          <img
+            src={require("../image/google_icon/brain.png")}
+            alt="machine learing"
+            height="140px"
+          />
         </div>
       </section>
 
@@ -41,7 +45,7 @@ const About = () => {
         </div>
 
         <div className="image">
-          <img src={require("../image/python_advanced.png")} alt="advanced" />
+          <img src={require("../image/google_icon/pattern.png")} alt="advanced" height="140px" />
         </div>
       </section>
 
@@ -52,7 +56,7 @@ const About = () => {
         </div>
 
         <div className="image">
-          <img src={require("../image/pygame.png")} alt="pygame" />
+          <img src={require("../image/google_icon/game.png")} alt="pygame" height="140px" />
         </div>
       </section>
 
@@ -62,8 +66,12 @@ const About = () => {
           <p>介紹資訊安全的基本概念，並學習保護系統和數據的方法。</p>
         </div>
 
-        <div className="image">
-          <img src={require("../image/information_security.png")} alt="information security" />
+        <div class="image">
+          <img
+            src={require("../image/google_icon/security.png")}
+            alt="information security"
+            height="140px"
+          />
         </div>
       </section>
     </div>
