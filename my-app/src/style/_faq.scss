@@ -16,7 +16,7 @@ div#page_faq {
   }
 
   .grid-item {
-    background-color: #dc6a0b;
+    background-color: $off-white;
     padding-left: 5vw;
     padding-right: 5vw;
     padding-top: 2.5vw;
@@ -33,12 +33,15 @@ div#page_faq {
   .grid-item h2,
   .grid-item p {
     margin: 0;
-    color: #fff;
+
     text-align: center;
   }
 
   .grid-item.wide {
     width: 41vw;
+    p {
+      color: $light-blue;
+    }
   }
 
   .grid-item.wide.s {
@@ -48,6 +51,9 @@ div#page_faq {
 
   .grid-item.narrow {
     width: 27vw;
+    p {
+      color: black;
+    }
   }
 
   .grid-item .question,
@@ -104,6 +110,20 @@ div#page_faq {
       width: auto;
       margin-left: 2.5vw;
       margin-right: 2.5vw;
+    }
+
+    .grid-item.wide.rwd1,
+    .grid-item.narrow.rwd1 {
+      p {
+        color: $light-blue;
+      }
+    }
+
+    .grid-item.wide.rwd2,
+    .grid-item.narrow.rwd2 {
+      p {
+        color: black;
+      }
     }
   }
 }
