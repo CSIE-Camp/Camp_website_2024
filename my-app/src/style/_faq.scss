@@ -95,6 +95,20 @@ div#page_faq {
       margin-left: 16vw;
       margin-right: 16vw;
     }
+
+    .grid-item.wide.rwd1,
+    .grid-item.narrow.rwd1 {
+      p {
+        color: $light-blue;
+      }
+    }
+
+    .grid-item.wide.rwd2,
+    .grid-item.narrow.rwd2 {
+      p {
+        color: black;
+      }
+    }
   }
 
   @media (max-width: 770px) {
