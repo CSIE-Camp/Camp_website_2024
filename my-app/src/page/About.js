@@ -18,9 +18,7 @@ const About = () => {
           <p>學習 Python 程式語言的基礎知識，包括語法、變數、迴圈等。</p>
         </div>
 
-        <div className="image">
-          <img src={require("../image/google_icon/code.png")} alt="base" height="140px" />
-        </div>
+        <img src={require("../image/google_icon/code.png")} alt="base" class="image" />
       </section>
 
       <section className="lesson">
@@ -29,13 +27,7 @@ const About = () => {
           <p>深入了解機器學習的基本概念，並實際應用在問題解決上。</p>
         </div>
 
-        <div className="image">
-          <img
-            src={require("../image/google_icon/brain.png")}
-            alt="machine learing"
-            height="140px"
-          />
-        </div>
+        <img src={require("../image/google_icon/brain.png")} alt="machine learing" class="image" />
       </section>
 
       <section className="lesson">
@@ -44,9 +36,7 @@ const About = () => {
           <p>進階 Python 程式設計，包括函式式程式設計、物件導向等進階主題。</p>
         </div>
 
-        <div className="image">
-          <img src={require("../image/google_icon/pattern.png")} alt="advanced" height="140px" />
-        </div>
+        <img src={require("../image/google_icon/pattern.png")} alt="advanced" class="image" />
       </section>
 
       <section className="lesson">
@@ -55,9 +45,7 @@ const About = () => {
           <p>使用 Pygame 框架開發簡單的遊戲，學習遊戲開發的基本原理。</p>
         </div>
 
-        <div className="image">
-          <img src={require("../image/google_icon/game.png")} alt="pygame" height="140px" />
-        </div>
+        <img src={require("../image/google_icon/game.png")} alt="pygame" class="image" />
       </section>
 
       <section className="lesson">
@@ -66,13 +54,11 @@ const About = () => {
           <p>介紹資訊安全的基本概念，並學習保護系統和數據的方法。</p>
         </div>
 
-        <div class="image">
-          <img
-            src={require("../image/google_icon/security.png")}
-            alt="information security"
-            height="140px"
-          />
-        </div>
+        <img
+          src={require("../image/google_icon/security.png")}
+          alt="information security"
+          class="image"
+        />
       </section>
     </div>
   );

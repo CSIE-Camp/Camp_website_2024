@@ -21,7 +21,7 @@ body {
   color: #19a6a2;
   font-weight: bold;
   text-align: left;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 p {
@@ -37,7 +37,7 @@ p {
   background-color: #ffead8;
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  padding: 3%;
 }
 
 .lesson {
@@ -47,7 +47,7 @@ p {
   background-color: #ffead8;
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 25px;
+  padding: 3%;
 }
 
 .image {
@@ -55,6 +55,8 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 80%;
+  width: 16%;
 }
 
 @media screen and (max-width: 770px) {
