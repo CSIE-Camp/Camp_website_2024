@@ -16,6 +16,13 @@
   font-size: larger;
 }
 
+/*
+.purple-red-text {
+  color: #d12580;
+  font-weight: bold;
+}
+*/
+
 .traffic-info {
   width: 100%;
 
@@ -98,7 +105,7 @@
   }
 }
 
-.traffic-public {
+.traffic-metro {
   /* display: grid; */
   display: flex;
   flex-direction: column;
@@ -131,7 +138,7 @@
   // margin-top: 40px;
   // justify-content: center;
   background-color: $off-white;
-  height: 110px;
+  height: 60px;
 }
 
 .car-image {
@@ -142,27 +149,24 @@
   height: 60px;
 }
 
-.bus-method {
-  margin-top: 1%;
-  margin-left: 5%;
-  height: 200px;
-  width: 1200px;
-  border-radius: 15px;
-  background-color: #ffead8;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
 .bus-image {
-  border-radius: 8px;
-  margin-top: 10%;
+  border-radius: 15px;
+  // margin-top: 40px;
+  // justify-content: center;
+  background-color: $off-white;
+  height: 60px;
 }
 
-.drive-method {
-  height: 200px;
-  width: 1200px;
-  border-radius: 8px;
-  background-color: #ffead8;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.bus-method {
+  display: flex;
+  flex-direction: row;
+  gap: 50%;
+}
+
+.car-method {
+  display: flex;
+  flex-direction: row;
+  gap: 50%;
 }
 
 .line {
@@ -175,14 +179,15 @@
   p {
     color: white;
     margin: 15px;
+    text-align: center;
   }
 }
 
 .straight-line {
   // position: relative;
-  margin: 20px;
+  margin: 15px;
   height: 3px;
-  width: 150px;
+  width: 100px;
   border: 3px solid;
   border-radius: 0.25rem;
   border-color: white;
@@ -239,12 +244,12 @@
   color: white;
 }
 
-#public {
+#metro {
   margin-top: 5%;
   margin-left: 10%;
 }
 
-#tra-pub {
+#tra-metro {
   display: block;
 }
 
@@ -258,7 +263,25 @@
   }
 }
 
+#tra-bus {
+  margin-top: 3%;
+  display: none;
+  margin-bottom: 5%;
+
+  p {
+    color: white;
+  }
+}
+
 .traffic-car {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.traffic-bus {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -304,7 +327,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 2px;
-  border-radius: 15px;
+  border-radius: 20px;
   background-color: #ffead8;
   padding: 20px;
   color: #19a6a2;
@@ -362,7 +385,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 2px;
-    border-radius: 0.75rem;
+    border-radius: 20px;
     background-color: #ffead8;
     padding: 10px;
   }
@@ -415,7 +438,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 2px;
-    border-radius: 0.75rem;
+    border-radius: 20px;
     background-color: #ffead8;
     padding: 10px;
   }
@@ -429,6 +452,18 @@
   }
 
   .metro-method {
+    display: flex;
+    flex-direction: column;
+    gap: 50%;
+  }
+
+  .bus-method {
+    display: flex;
+    flex-direction: column;
+    gap: 50%;
+  }
+
+  .car-method {
     display: flex;
     flex-direction: column;
     gap: 50%;
@@ -456,7 +491,7 @@
 
   .straight-line {
     // position: relative;
-    margin: 20px;
+    margin: 15px;
     height: 70px;
     width: 3px;
     border: 3px solid;
@@ -465,6 +500,13 @@
   }
 
   .traffic-car {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .traffic-bus {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -495,6 +537,14 @@
   }
 
   .metro-method {
+    font-size: 15px;
+  }
+
+  .bus-method {
+    font-size: 15px;
+  }
+
+  .car-method {
     font-size: 15px;
   }
 }
