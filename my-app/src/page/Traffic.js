@@ -57,7 +57,15 @@ const Traffic = () => {
     <>
       <div className="container">
         <div className="traffic-info">
-          <h3 className="ntnu-address">臺灣師範大學公館校區（師大分部）</h3>
+          <h3 className="ntnu-address">
+            國立臺灣師範大學 &nbsp;
+            <b>
+              <a href="https://www.ga.ntnu.edu.tw/ntnu_map/img/ntnu03.jpg" target="_blank">
+                公館校區
+              </a>
+            </b>
+            （師大分部）
+          </h3>
           <h3 className="ntnu-address">
             11677 台北市文山區汀州路四段 88 號 應用科學大樓一樓 資訊工程學系
           </h3>
@@ -380,7 +388,12 @@ const Traffic = () => {
                       導航至
                       <br />
                       <b>
-                        <a href={"https://maps.app.goo.gl/ZCmo2pzEMXvfB4Sw9"}>
+                        <a
+                          href={
+                            "https://www.google.com/maps/dir//116%E5%8F%B0%E5%8C%97%E5%B8%82%E6%96%87%E5%B1%B1%E5%8D%80%E6%B1%80%E5%B7%9E%E8%B7%AF%E5%9B%9B%E6%AE%B588%E8%99%9F%E5%9C%8B%E7%AB%8B%E8%87%BA%E7%81%A3%E5%B8%AB%E7%AF%84%E5%A4%A7%E5%AD%B8+%E5%85%AC%E9%A4%A8%E6%A0%A1%E5%8D%80/@25.0077644,121.4959235,13z/data=!4m9!4m8!1m0!1m5!1m1!1s0x3442aa1e27ab738b:0x2e5be38c37583475!2m2!1d121.5371235!2d25.0077701!3e0?entry=ttu"
+                          }
+                          target="_blank"
+                        >
                           國立臺灣師範大學 公館校區
                         </a>
                       </b>
