@@ -136,12 +136,36 @@ const Nav = () => {
     const flyout = document.querySelector(".flyout");
     flyout.classList.toggle("open");
   };
+  function smoothScroll(event, targetId) {
+    event.preventDefault();
+
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
+    }
+  }
+  function smoothScrollToTop(event) {
+    event.preventDefault();
+
+    const targetElement = document.getElementById("top");
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
+    }
+  }
   return (
     <>
       <Header>
         <Container>
           {/* left */}
-          <a href="#top" class="home_link">
+          <a href="#top" class="home_link" onClick={smoothScrollToTop}>
             <img src={require("./image/logo_2024_circle.png")} alt="logo" class="banner_logo"></img>
           </a>
           {/* right */}
@@ -149,7 +173,11 @@ const Nav = () => {
             <ul class="nav_ul">
               {menuItems.map((item, index) => (
                 <li class="banner_button" key={index}>
-                  <a href={`#${item.eng_name}`} class={`${item.eng_name}_button`}>
+                  <a
+                    href={`#${item.eng_name}`}
+                    class={`${item.eng_name}_button`}
+                    onClick={(e) => smoothScroll(e, item.eng_name)}
+                  >
                     {item.name}
                   </a>
                 </li>
