@@ -4,7 +4,7 @@ import registration_information_img from "../image/draw_icon/registration_inform
 import faq_img from "../image/draw_icon/faq.png";
 import traffic_information_img from "../image/draw_icon/traffic_information.png";
 import review_img from "../image/draw_icon/review.png";
-import banner from "../image/banner_2024.png";
+import banner from "../image/banner.png";
 import About from "./About";
 import Info from "./Info";
 import FAQ from "./FAQ";
