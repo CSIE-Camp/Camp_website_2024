@@ -28,11 +28,11 @@ body > #root,
 
 #root > .App {
   overflow-y: auto;
-  background-color: #372e75;
+  background-image: url("../image/bg.png");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-repeat: repeat;
+  background-attachment: scroll;
 }
 
 #bg {
