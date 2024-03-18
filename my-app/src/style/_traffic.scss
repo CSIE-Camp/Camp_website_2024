@@ -100,8 +100,8 @@
   margin-left: 8vw;
   border-radius: 50px;
   button {
-    font-size: 22px;
-    padding: 1.5vw;
+    font-size: 1.3em;
+    padding: 0.6em;
   }
 }
 
@@ -367,6 +367,19 @@
     font-weight: bold;
   }
 
+  .traffic-block {
+    background-color: #ffead8;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 8vw;
+    margin-left: 8vw;
+    border-radius: 50px;
+    button {
+      font-size: 1.15em;
+      padding: 0.55em;
+    }
+  }
+
   .metro-title {
     font-size: 25px;
     color: white;
@@ -521,6 +534,19 @@
     font-size: 18px;
     text-align: center;
   }
+
+  .traffic-block {
+    background-color: #ffead8;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 8vw;
+    margin-left: 8vw;
+    border-radius: 50px;
+    button {
+      font-size: 1em;
+      padding: 0.55em;
+    }
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -534,6 +560,19 @@
     font-size: 18px;
     color: #19a6a2;
     font-weight: bold;
+  }
+
+  .traffic-block {
+    background-color: #ffead8;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 8vw;
+    margin-left: 8vw;
+    border-radius: 50px;
+    button {
+      font-size: 0.83em;
+      padding: 0.55em;
+    }
   }
 
   .metro-method {
