@@ -161,9 +161,9 @@ const Traffic = () => {
                   <div className="line">
                     <p>
                       <span class="material-symbols-rounded">directions_walk</span>
-                      <span class="material-symbols-rounded">arrow_downward</span>
+                      <span class="material-symbols-rounded">arrow_top_right</span>
                       <br />
-                      沿羅斯福路往南
+                      出站右轉沿羅斯福路
                       <br />約 11 分鐘抵達
                     </p>
                     <div className="straight-line"></div> {/*150*/}
@@ -218,9 +218,9 @@ const Traffic = () => {
                   <div className="line">
                     <p>
                       <span class="material-symbols-rounded">directions_walk</span>
-                      <span class="material-symbols-rounded">arrow_upward</span>
+                      <span class="material-symbols-rounded">arrow_top_left</span>
                       <br />
-                      沿羅斯福路往北
+                      出站左轉沿羅斯福路
                       <br />約 10 分鐘抵達
                     </p>
                     <div className="straight-line"></div> {/*300*/}
@@ -333,7 +333,6 @@ const Traffic = () => {
                   <div className="line">
                     <p>
                       <span class="material-symbols-rounded">directions_walk</span>
-                      <span class="material-symbols-rounded">arrow_back</span>
                       <br />
                       向西步行
                       <br />約 2 分鐘抵達
