@@ -182,7 +182,7 @@ const Nav = () => {
                   </a>
                 </li>
               ))}
-              <li class="banner_button">
+              <li class="banner_button_register">
                 <a href="\login" class="login_button">
                   立即報名
                 </a>
@@ -190,7 +190,7 @@ const Nav = () => {
             </ul>
             <Flyout className="flyout">
               <div>
-                <div class="banner_button">
+                <div class="banner_button_register">
                   <a href="\login" class="login_button">
                     立即報名
                   </a>
