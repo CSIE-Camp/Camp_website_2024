@@ -233,7 +233,10 @@ export const Review = () => {
                 ChatGPT 背後的 OpenAI API！透過 ChatGPT
                 的自然語言處理技術，無論是回答問題、編寫文章、玩遊戲，都能夠如同真人般應答如流。
               </p>
-              <a href="https://www.facebook.com/ntnucsiecamp/posts/pfbid02n5Fxd2V7725PXDuJ74zye8wjcDXu8iPLsMSMjRQrEE5He2tE44LFp7ouJmcqawz4l">
+              <a
+                href="https://www.facebook.com/ntnucsiecamp/posts/pfbid02n5Fxd2V7725PXDuJ74zye8wjcDXu8iPLsMSMjRQrEE5He2tE44LFp7ouJmcqawz4l"
+                target="_blank"
+              >
                 更<br />多<br />介<br />紹
               </a>
             </div>
@@ -245,7 +248,10 @@ export const Review = () => {
                 萬人的個資早就在網路上販賣了。我們在這堂課會帶你認識 SQL
                 injection（資料隱碼攻擊）如何防禦，守護你的遊戲公正性！在玩別隊設計的遊戲都打不贏嗎？當然我們也會教你如何攻擊，並實際運用所學，嘗試破解其他小隊的資料庫。攻擊！防禦！來打一場資料攻防戰吧！
               </p>
-              <a href="https://www.facebook.com/ntnucsiecamp/posts/pfbid0MFeoPv7EcPsz4UpqpdCXMoJTysMVnt2xZv3Yn8fFpxcoSbNgRKHm2RwKgcwAuXVTl">
+              <a
+                href="https://www.facebook.com/ntnucsiecamp/posts/pfbid0MFeoPv7EcPsz4UpqpdCXMoJTysMVnt2xZv3Yn8fFpxcoSbNgRKHm2RwKgcwAuXVTl"
+                target="_blank"
+              >
                 更<br />多<br />介<br />紹
               </a>
             </div>
@@ -256,7 +262,10 @@ export const Review = () => {
                 相信大家一定對網頁不陌生吧！想知道網購平台或社群媒體的精美網站是怎麼做出來的嗎？想做出一個酷酷專屬於自己的學習歷程網站嗎？在這堂課「網頁設計與開發」的課程，我們會從最基礎易懂的部分開始，帶你們做出一個自己的網站！透過網站展現你的個人特質與專業形象，吸引更多人的注意力，為學習歷程檔案增加亮點吧！最後偷偷告訴你們，我們也會與
                 Discord Bot 課程連結，做出屬於自己的網站儀表板，敬請期待吧！
               </p>
-              <a href="https://www.facebook.com/ntnucsiecamp/posts/pfbid02awwFdTkqNRfDZ4RzfmpnyA6GsC5MoaZF8MyEQmfhwHgZm2TfAEt3eQRHgHHFpstWl">
+              <a
+                href="https://www.facebook.com/ntnucsiecamp/posts/pfbid02awwFdTkqNRfDZ4RzfmpnyA6GsC5MoaZF8MyEQmfhwHgZm2TfAEt3eQRHgHHFpstWl"
+                target="_blank"
+              >
                 更<br />多<br />介<br />紹
               </a>
             </div>
@@ -270,7 +279,10 @@ export const Review = () => {
                 Enigma
                 轉盤機，再介紹現代加密的方法！此外，除了上述的知識講解外，本次課程當中也會藉由分組，進行《密碼學解題競賽》！透過大量實作解題的環節，讓學員更能有效的吸收並即時演練上課所學，並將依分數排行頒發獎狀～最後，這堂課還會有一個「神秘的手作作品」能帶回家做紀念！
               </p>
-              <a href="https://www.facebook.com/ntnucsiecamp/posts/pfbid02u4KTSioCRupXKhAppnUJf1MiGkP5c46NxhZ9tChyQAWA2ux8MovydMiXBtTng2pCl">
+              <a
+                href="https://www.facebook.com/ntnucsiecamp/posts/pfbid02u4KTSioCRupXKhAppnUJf1MiGkP5c46NxhZ9tChyQAWA2ux8MovydMiXBtTng2pCl"
+                target="_blank"
+              >
                 更<br />多<br />介<br />紹
               </a>
             </div>
@@ -282,7 +294,10 @@ export const Review = () => {
                 Markdown 開始，一步步使用 Hugo 與 GitHub
                 完成部落格網站的搭建。這門課程涵蓋從頭到尾的所有步驟，讓你能夠掌握建立部落格的技巧。無論你對網站開發毫無經驗，還是已經有基本技能，這門課都會讓你獲益匪淺！
               </p>
-              <a href="https://www.facebook.com/ntnucsiecamp/posts/pfbid0eJDq7EL4Nbqf9exmxV4vpua8vaTsQZxZ5z4DDjKxJrkay5ueGiBBz6QMDUZ18XBil">
+              <a
+                href="https://www.facebook.com/ntnucsiecamp/posts/pfbid0eJDq7EL4Nbqf9exmxV4vpua8vaTsQZxZ5z4DDjKxJrkay5ueGiBBz6QMDUZ18XBil"
+                target="_blank"
+              >
                 更<br />多<br />介<br />紹
               </a>
             </div>
@@ -304,7 +319,10 @@ export const Review = () => {
                 Honeycomb
                 跟文字改動做為課程主題，學習如何解析與修改別人撰寫的軟體設定檔，打造一個專屬於自己的桌布。
               </p>
-              <a href="https://www.facebook.com/ntnucsiecamp/posts/pfbid02c7D8sYK75spiB6fWyWjh7wkjTGWsbDZhAYLAMmE3RKmj7kAsqjCivybTcK6xguJil">
+              <a
+                href="https://www.facebook.com/ntnucsiecamp/posts/pfbid02c7D8sYK75spiB6fWyWjh7wkjTGWsbDZhAYLAMmE3RKmj7kAsqjCivybTcK6xguJil"
+                target="_blank"
+              >
                 更<br />多<br />介<br />紹
               </a>
             </div>
@@ -318,7 +336,10 @@ export const Review = () => {
                 都會是很好掌握基本功能的一個程式語言；Python
                 也擁有許多的函式庫，能提供許多方便的功能，遇到特定的問題時，只要懂得運用相應的函式庫，就能快速解決，簡直就是程式設計師的哆啦A夢！
               </p>
-              <a href="https://www.facebook.com/ntnucsiecamp/posts/pfbid0tagzVuPUpeKNsp3Bkkr1CFYaFQ4q65i5xRnBABatuZw4Y8HzLD9anZEuZugENpaJl">
+              <a
+                href="https://www.facebook.com/ntnucsiecamp/posts/pfbid0tagzVuPUpeKNsp3Bkkr1CFYaFQ4q65i5xRnBABatuZw4Y8HzLD9anZEuZugENpaJl"
+                target="_blank"
+              >
                 更<br />多<br />介<br />紹
               </a>
             </div>
@@ -331,7 +352,10 @@ export const Review = () => {
                 這個特別的作業系統，不僅圖形介面使用簡單，而且系統構造穩定。其中裡面最特別的就是有命令列需要額外記憶，但是別擔心，我們將帶領學員們一步一步，慢慢熟悉與動手實作一些常見且實用的指令。除此之外，GNU/Linux
                 比起 Windows，更可以滿足使用者對於高性能 and 高效率的需求。
               </p>
-              <a href="https://www.facebook.com/ntnucsiecamp/posts/pfbid033iFQFRCV46Q8zvg2MVd1eJMqyntxyJAbxPfXw9gYyFwj7VG3sTejRUhWeiGDPLHMl">
+              <a
+                href="https://www.facebook.com/ntnucsiecamp/posts/pfbid033iFQFRCV46Q8zvg2MVd1eJMqyntxyJAbxPfXw9gYyFwj7VG3sTejRUhWeiGDPLHMl"
+                target="_blank"
+              >
                 更<br />多<br />介<br />紹
               </a>
             </div>
@@ -345,7 +369,10 @@ export const Review = () => {
                 可說是資訊人的必備技能，我們將會帶領學員們熟悉 Git 與
                 GitHub，感受他們的威力與好處，可以把你酷酷的程式碼分享出去，也可以和別人一起合作專案，還能向其他開發者學習更優秀的技術。
               </p>
-              <a href="https://www.facebook.com/ntnucsiecamp/posts/pfbid0aMeQLHJs8mYd5V8kg5oBkWvbQLJNPmif9WHzmrEimqXh1Wzfuasot2Zj51Vr9Zkzl">
+              <a
+                href="https://www.facebook.com/ntnucsiecamp/posts/pfbid0aMeQLHJs8mYd5V8kg5oBkWvbQLJNPmif9WHzmrEimqXh1Wzfuasot2Zj51Vr9Zkzl"
+                target="_blank"
+              >
                 更<br />多<br />介<br />紹
               </a>
             </div>
@@ -362,12 +389,15 @@ export const Review = () => {
             <div id="course">
               <p>
                 Blog 一直是人們分享生活、共享資訊的平台，網路上充滿著各式各樣的
-                Blog，有旅游的、知識的、遊戲的⋯⋯ 想知道如何建立屬於自己的 Blog 嗎？在此我們選擇 Hexo
-                這款多種亮主題的網框，帶著各位學員們從零開始踏上建立 Blog 的旅程。不僅教你怎麼建立
-                Blog，Git 也是 CS 世界裡常見的名詞，過程中也會手把手教你如何使用
-                Git，讓你成為網頁設計的 master！
+                Blog，有旅游的、知識的、遊戲的⋯⋯，想知道如何建立屬於自己的 Blog 嗎？在此我們選擇
+                Hexo 這款多種亮主題的網框，帶著各位學員們從零開始踏上建立 Blog
+                的旅程。不僅教你怎麼建立 Blog，Git 也是 CS
+                世界裡常見的名詞，過程中也會手把手教你如何使用 Git，讓你成為網頁設計的 master！
               </p>
-              <a href="https://www.facebook.com/ntnucsiecamp/posts/pfbid0ggNaMc4xkuZmtqQwKCbn96ntRCfUXp1GeFL5JR2nfYN9zsr28qjBtYt25XJBZZQ7l">
+              <a
+                href="https://www.facebook.com/ntnucsiecamp/posts/pfbid0ggNaMc4xkuZmtqQwKCbn96ntRCfUXp1GeFL5JR2nfYN9zsr28qjBtYt25XJBZZQ7l"
+                target="_blank"
+              >
                 更<br />多<br />介<br />紹
               </a>
             </div>
@@ -379,7 +409,10 @@ export const Review = () => {
                 ......
                 計算機！在踏入這片未知的新大陸之前，透過計算機概論這堂課，來了解一切電腦相關的事物吧！電腦是從何時產生的呢？為什麼「電腦」是一種「計算機」呢？一起來了解電腦的演變以及資料在電腦中是如何被處理的吧！
               </p>
-              <a href="https://www.facebook.com/ntnucsiecamp/posts/pfbid02oqUkvivA4NwUunfotrBu41yZusRwQRwta7s7SyRCnDx2ZJTL9XovPGFR5rPg7t7Rl">
+              <a
+                href="https://www.facebook.com/ntnucsiecamp/posts/pfbid02oqUkvivA4NwUunfotrBu41yZusRwQRwta7s7SyRCnDx2ZJTL9XovPGFR5rPg7t7Rl"
+                target="_blank"
+              >
                 更<br />多<br />介<br />紹
               </a>
             </div>
@@ -391,7 +424,10 @@ export const Review = () => {
                 Python 就能開發出屬於自己的 Discord
                 Bot！想要的功能都能自己打造，用自己的雙手寫出理想的聊天機器人！
               </p>
-              <a href="https://www.facebook.com/ntnucsiecamp/posts/pfbid02Vg3CPnk71GHoLMt6qzDQsF3EJXGsfRQxZecEEzUnqvseXevepepLc6HSWKj4eTUrl">
+              <a
+                href="https://www.facebook.com/ntnucsiecamp/posts/pfbid02Vg3CPnk71GHoLMt6qzDQsF3EJXGsfRQxZecEEzUnqvseXevepepLc6HSWKj4eTUrl"
+                target="_blank"
+              >
                 更<br />多<br />介<br />紹
               </a>
             </div>
@@ -403,7 +439,10 @@ export const Review = () => {
                 NLP、ML，這幾項技術也時常使用 Python
                 為何大家會愛用？為何會變成主流之一？就讓我們在資工營時學習這個程式語言吧！
               </p>
-              <a href="https://www.facebook.com/ntnucsiecamp/posts/pfbid0Sj8HD585P4M5A48nwFx5GDs54x8Mc3LJB6UqzMS6GYTuCcnwBNhAb8opfiraBeXAl">
+              <a
+                href="https://www.facebook.com/ntnucsiecamp/posts/pfbid0Sj8HD585P4M5A48nwFx5GDs54x8Mc3LJB6UqzMS6GYTuCcnwBNhAb8opfiraBeXAl"
+                target="_blank"
+              >
                 更<br />多<br />介<br />紹
               </a>
             </div>
@@ -429,7 +468,10 @@ export const Review = () => {
                 GNU/Linux 的世界，在了解 C++ 的語法之後，試著使用 C++ 搭配 OpenCV
                 函式庫，運用自己獨特的想法，寫出屬於自己的小畫家。相信在完成自己的程式之後，能得到最初的感動，體會程式語言的美好。
               </p>
-              <a href="https://www.facebook.com/ntnucsiecamp/posts/pfbid02zXqXD3oSYhuHqQTJTQodYhRQKyHtKzky5SnwftR2DYTGsvmKigA56YbhrzaHpdml">
+              <a
+                href="https://www.facebook.com/ntnucsiecamp/posts/pfbid02zXqXD3oSYhuHqQTJTQodYhRQKyHtKzky5SnwftR2DYTGsvmKigA56YbhrzaHpdml"
+                target="_blank"
+              >
                 更<br />多<br />介<br />紹
               </a>
             </div>
@@ -442,7 +484,10 @@ export const Review = () => {
                 位址」，IP
                 位址是在錯綜複雜的網路世界中，幫助你準確定位與傳送資訊的重要關鍵，讓你不再迷失於網路世界之中，在你上完所有課程之後，你就會具備暢遊網路世界的能力了。
               </p>
-              <a href="https://www.facebook.com/ntnucsiecamp/posts/pfbid0Yu7k3R9JaR2TbPW6WkzR5qD7CXm3wzLyrrb6pfeuDX7ax5MCpXZCnoH1oGhM5C7Zl">
+              <a
+                href="https://www.facebook.com/ntnucsiecamp/posts/pfbid0Yu7k3R9JaR2TbPW6WkzR5qD7CXm3wzLyrrb6pfeuDX7ax5MCpXZCnoH1oGhM5C7Zl"
+                target="_blank"
+              >
                 更<br />多<br />介<br />紹
               </a>
             </div>
@@ -454,7 +499,10 @@ export const Review = () => {
                 RSA
                 加密，到底如何加密才不會輕易地被破解？又怎麼樣透過解密來獲得自己想要的資訊？這就像是一場戰役，彼此沙盤推演、互相往來，激發你潛藏的駭客魂，讓你在追求勝仗的路上欲罷不能！
               </p>
-              <a href="https://www.facebook.com/ntnucsiecamp/posts/pfbid0ycpv4ofWNd7mDC2mecAtSqJv2J81rpUi8NFWNhkfCaUEwfCjsGqWhpZpqSP6EdpYl">
+              <a
+                href="https://www.facebook.com/ntnucsiecamp/posts/pfbid0ycpv4ofWNd7mDC2mecAtSqJv2J81rpUi8NFWNhkfCaUEwfCjsGqWhpZpqSP6EdpYl"
+                target="_blank"
+              >
                 更<br />多<br />介<br />紹
               </a>
             </div>
