@@ -138,7 +138,8 @@ const Nav = () => {
   };
   function smoothScroll(event, targetId) {
     event.preventDefault();
-
+    const flyout = document.querySelector(".flyout");
+    flyout.classList.remove("open");
     const targetElement = document.getElementById(targetId);
     if (targetElement) {
       targetElement.scrollIntoView({
@@ -198,7 +199,11 @@ const Nav = () => {
 
                 {menuItems.map((item, index) => (
                   <div class="banner_button" key={index}>
-                    <a href={`/#${item.eng_name}`} class={`${item.eng_name}_button`}>
+                    <a
+                      href={`/#${item.eng_name}`}
+                      class={`${item.eng_name}_button`}
+                      onClick={(e) => smoothScroll(e, item.eng_name)}
+                    >
                       {item.name}
                     </a>
                   </div>
