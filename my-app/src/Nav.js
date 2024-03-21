@@ -165,7 +165,7 @@ const Nav = () => {
       <Header>
         <Container>
           {/* left */}
-          <a href="#top" class="home_link" onClick={smoothScrollToTop}>
+          <a href="/#top" class="home_link" onClick={smoothScrollToTop}>
             <img src={require("./image/logo_2024_circle.png")} alt="logo" class="banner_logo"></img>
           </a>
           {/* right */}
@@ -174,7 +174,7 @@ const Nav = () => {
               {menuItems.map((item, index) => (
                 <li class="banner_button" key={index}>
                   <a
-                    href={`#${item.eng_name}`}
+                    href={`/#${item.eng_name}`}
                     class={`${item.eng_name}_button`}
                     onClick={(e) => smoothScroll(e, item.eng_name)}
                   >
@@ -198,7 +198,7 @@ const Nav = () => {
 
                 {menuItems.map((item, index) => (
                   <div class="banner_button" key={index}>
-                    <a href={`#${item.eng_name}`} class={`${item.eng_name}_button`}>
+                    <a href={`/#${item.eng_name}`} class={`${item.eng_name}_button`}>
                       {item.name}
                     </a>
                   </div>
