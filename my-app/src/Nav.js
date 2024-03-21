@@ -138,6 +138,8 @@ const Nav = () => {
   };
   function smoothScroll(event, targetId) {
     event.preventDefault();
+    const hamburger = document.getElementById("hamburger");
+    hamburger.classList.remove("x");
     const flyout = document.querySelector(".flyout");
     flyout.classList.remove("open");
     const targetElement = document.getElementById(targetId);
@@ -210,7 +212,7 @@ const Nav = () => {
                 ))}
               </div>
             </Flyout>
-            <Hamburger onClick={handlerClick}>
+            <Hamburger id="hamburger" onClick={handlerClick}>
               <span></span>
               <span></span>
               <span></span>
