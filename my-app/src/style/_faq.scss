@@ -61,11 +61,48 @@ div#page_faq {
     align-items: center;
     background-color: $off-white;
     border-radius: 20px;
-    padding: 2.5vw 5vw;
+    padding-right: 5vw;
+    padding-left: 5vw;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+
+  .cell.course-1 {
+    padding-top: 3vw;
+  }
+
+  .cell.course-2 {
+    padding-top: 5.5vw;
+  }
+
+  .cell.course-3 {
+    padding-top: 3.5vw;
+  }
+
+  .cell.dormitory-1 {
+    padding-top: 5.5vw;
+  }
+
+  .cell.dormitory-2 {
+    padding-top: 7vw;
+  }
+
+  .cell.register-1 {
+    padding-top: 9.5vw;
+  }
+
+  .cell.register-2 {
+    padding-top: 3vw;
+  }
+
+  .cell.register-3 {
+    padding-top: 10vw;
+  }
+
+  .cell.register-4 {
+    padding-top: 1vw;
   }
 
   .grid-item {
@@ -111,7 +148,7 @@ div#page_faq {
 
   .cell .question,
   .cell .qustion p {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: bold;
     letter-spacing: 3px;
     text-align: center;
