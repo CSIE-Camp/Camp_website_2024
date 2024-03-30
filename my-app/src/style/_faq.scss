@@ -10,7 +10,7 @@ div#page_faq {
   .grid-container {
     display: grid;
     grid-template-columns: 4fr 1fr 1fr 4fr;
-    grid-template-rows: repeat(5, 200px);
+    grid-template-rows: 150px 150px 200px 230px 230px;
     gap: 15px;
 
     padding-top: 30px;
@@ -19,11 +19,11 @@ div#page_faq {
     padding-bottom: 60px;
     justify-content: center;
     grid-template-areas:
-      "dor-2 cou-1 cou-1 cou-1"
-      "dor-2 cou-3 cou-3 cou-3"
-      "dor-1 dor-1 dor-1 cou-2"
-      "reg-1 reg-1 reg-2 reg-2"
-      "reg-3 reg-3 reg-3 reg-4";
+      "cou-2 cou-1 cou-1 cou-1"
+      "cou-2 cou-3 cou-3 cou-3"
+      "dor-1 dor-1 dor-2 dor-2"
+      "reg-1 reg-2 reg-2 reg-2"
+      "reg-4 reg-4 reg-4 reg-3";
   }
 
   .course-1 {

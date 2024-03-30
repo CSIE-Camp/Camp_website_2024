@@ -34,7 +34,7 @@ export const FAQ = () => {
             <p>我已經有基礎了課程對我而言會不會太簡單？</p>
           </div>
           <div class="response">
-            <p>回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 </p>
+            <p>不會。我們會提供補充資料或挑戰任務給已經有基礎的同學挑戰！</p>
           </div>
         </div>
         <div class="cell course-3">
@@ -43,10 +43,10 @@ export const FAQ = () => {
               <span class="material-symbols-outlined">keyboard</span>
               <span class="text">課程</span>
             </div>
-            <p>要如何報名？</p>
+            <p>會有教授來上課嗎？</p>
           </div>
           <div class="response">
-            <p>回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 </p>
+            <p>會！第一天會有系上的教授為我們帶來《走進 CS》演講。</p>
           </div>
         </div>
         <div class="cell dormitory-1">
@@ -55,12 +55,11 @@ export const FAQ = () => {
               <span class="material-symbols-outlined">hotel</span>
               <span class="text">住宿</span>
             </div>
-            <p>報名的資格有限制嗎？</p>
+            <p>住宿是幾人一間？需要帶睡袋嗎？</p>
           </div>
           <div class="response">
             <p>
-              回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1
-              回覆 1 回覆 1 回覆 1 回覆 1{" "}
+              都是兩人一間，不用帶睡袋哦。好奇的話可以看一下「承攜行旅 台北重慶館」的房間圖片。{" "}
             </p>
           </div>
         </div>
@@ -70,12 +69,11 @@ export const FAQ = () => {
               <span class="material-symbols-outlined">hotel</span>
               <span class="text">住宿</span>
             </div>
-            <p>從哪裡獲得最新資訊？</p>
+            <p>可以不要跟大家一起住宿嗎？</p>
           </div>
           <div class="response">
             <p>
-              回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1
-              回覆 1 回覆 1 回覆 1 回覆 1{" "}
+              課程安排中有包含小隊的團體實作，而多數討論的時間會在回到旅館之後。因此會要求各學員住宿，以便進行小組討論。{" "}
             </p>
           </div>
         </div>
@@ -85,10 +83,12 @@ export const FAQ = () => {
               <span class="material-symbols-outlined">done_all</span>
               <span class="text">報名</span>
             </div>
-            <p>退費機制？</p>
+            <p>我怎麼知道我有沒有報名成功？</p>
           </div>
           <div class="response">
-            <p>回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 </p>
+            <p>
+              完成所有報名小任務後，會出現申請報名的按鈕，點下去出現「報名已受理」即代表報名成功！
+            </p>
           </div>
         </div>
         <div class="cell register-2">
@@ -97,10 +97,10 @@ export const FAQ = () => {
               <span class="material-symbols-outlined">done_all</span>
               <span class="text">報名</span>
             </div>
-            <p>退費機制？</p>
+            <p>按下報名後還可以修改個人資料嗎？</p>
           </div>
           <div class="response">
-            <p>回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 </p>
+            <p>可以。在個人資料中點選「編輯」即可修改，不用點選「取消報名」再修改哦！</p>
           </div>
         </div>
         <div class="cell register-3">
@@ -109,10 +109,12 @@ export const FAQ = () => {
               <span class="material-symbols-outlined">done_all</span>
               <span class="text">報名</span>
             </div>
-            <p>退費機制？</p>
+            <p>早鳥優惠的時間是怎麼計算的？</p>
           </div>
           <div class="response">
-            <p>回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 </p>
+            <p>
+              以最後點選「申請報名」的時間為準，也就是 5/23 00:00 開始不要亂玩「取消報名」按鈕哦！
+            </p>
           </div>
         </div>
         <div class="cell register-4">
@@ -121,10 +123,10 @@ export const FAQ = () => {
               <span class="material-symbols-outlined">done_all</span>
               <span class="text">報名</span>
             </div>
-            <p>退費機制？</p>
+            <p>個人資料填寫中和程式相關的問題是否會影響錄取？</p>
           </div>
           <div class="response">
-            <p>回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 回覆 1 </p>
+            <p>不會。這個問題僅供我們做分隊的參考。</p>
           </div>
         </div>
       </div>
