@@ -9,14 +9,63 @@ div#page_faq {
 
   .grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 4fr 1fr 1fr 4fr;
+    grid-template-rows: repeat(5, 200px);
     gap: 15px;
+
     padding-top: 30px;
     padding-left: 16vw;
     padding-right: 16vw;
     padding-bottom: 60px;
     justify-content: center;
+    grid-template-areas:
+      "dor-2 cou-1 cou-1 cou-1"
+      "dor-2 cou-3 cou-3 cou-3"
+      "dor-1 dor-1 dor-1 cou-2"
+      "reg-1 reg-1 reg-2 reg-2"
+      "reg-3 reg-3 reg-3 reg-4";
+  }
+
+  .course-1 {
+    grid-area: cou-1;
+  }
+  .course-2 {
+    grid-area: cou-2;
+  }
+  .course-3 {
+    grid-area: cou-3;
+  }
+  .dormitory-1 {
+    grid-area: dor-1;
+  }
+  .dormitory-2 {
+    grid-area: dor-2;
+  }
+  .register-1 {
+    grid-area: reg-1;
+  }
+  .register-2 {
+    grid-area: reg-2;
+  }
+  .register-3 {
+    grid-area: reg-3;
+  }
+  .register-4 {
+    grid-area: reg-4;
+  }
+
+  .cell {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    background-color: $off-white;
+    border-radius: 20px;
+    padding: 2.5vw 5vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   .grid-item {
@@ -34,8 +83,8 @@ div#page_faq {
     text-align: center;
   }
 
-  .grid-item h2,
-  .grid-item p {
+  .cell h2,
+  .cell p {
     margin: 0;
 
     text-align: center;
@@ -60,8 +109,8 @@ div#page_faq {
     }
   }
 
-  .grid-item .question,
-  .grid-item .qustion p {
+  .cell .question,
+  .cell .qustion p {
     font-size: 32px;
     font-weight: bold;
     letter-spacing: 3px;
@@ -70,17 +119,17 @@ div#page_faq {
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
   }
 
-  .grid-item .response {
+  .cell .response {
     opacity: 0;
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
   }
 
-  .grid-item:hover .question {
+  .cell:hover .question {
     opacity: 0;
     transform: translateY(-50px);
   }
 
-  .grid-item:hover .response {
+  .cell:hover .response {
     opacity: 1;
     transform: translateY(-50px);
   }
