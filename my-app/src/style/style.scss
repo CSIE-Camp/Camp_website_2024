@@ -6,16 +6,20 @@
   //position: relative;
 }
 
-$orange-1: #DC6A0B;
-$orange-2: #DA5512;
-$yellow-1: #E7AE16;
-$blue-1: #083A75;
+$orange-1: #dc6a0b;
+$yellow-1: #e7ae16;
+$blue-1: #083a75;
 $gray-bg1: rgba(217, 217, 217, 0.35);
+// for 2024 main color below
+$off-white: #ffead8;
+$light-blue: #19a6a2;
+$orange-2: #da5512;
+$purple: #433083;
 
 html,
 body,
-body>#root,
-#root>.App {
+body > #root,
+#root > .App {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
@@ -23,14 +27,13 @@ body>#root,
   padding: 0;
 }
 
-
-#root>.App {
+#root > .App {
   overflow-y: auto;
-  background-image: url(image/Purple_background.jpg);
+  background-image: url("../image/bg.png");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-repeat: repeat;
+  background-attachment: scroll;
 }
 
 #bg {
@@ -64,26 +67,6 @@ body {
   z-index: 1;
 }
 
-// @font-face {
-//   font-family: ToronoGlitchSans H1;
-//   src: local("ToronoGlitchSans H1"), url(./font/torono-glitch-sans/Torono_Glitch_SansH1.otf);
-// }
-
-@font-face {
-  font-family: ToronoGlitchSans H2;
-  src: local("ToronoGlitchSans H2"), url(./font/torono-glitch-sans/Torono_Glitch_SansH2.otf);
-}
-
-// @font-face {
-//   font-family: ToronoGlitchSans H3;
-//   src: local("ToronoGlitchSans H3"), url(./font/torono-glitch-sans/Torono_Glitch_SansH3.otf);
-// }
-
-@font-face {
-  font-family: ToronoGlitchSans H4;
-  src: local("ToronoGlitchSans H4"), url(./font/torono-glitch-sans/Torono_Glitch_SansH4.otf);
-}
-
 h1,
 h2,
 h3,
@@ -98,20 +81,12 @@ a {
   color: $yellow-1;
 }
 
-
 @import "./nav";
 @import "./home";
 @import "./footer";
-@import "./scrollbar";
+// @import "./scrollbar";
 @import "./info";
-@import "./login";
-@import "./register";
-@import "./registerSuccess";
 @import "./about";
-@import "./forget";
-@import "./form";
 @import "./review";
-@import "./personal";
-@import "./admin";
-@import "./payment";
-@import "./exam";
+@import "./faq";
+@import "./traffic";

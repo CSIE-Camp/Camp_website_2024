@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   height="24"
+   viewBox="0 -960 960 960"
+   width="24"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="metro.svg"
+   inkscape:export-filename="metro.png"
+   inkscape:export-xdpi="1200"
+   inkscape:export-ydpi="1200"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:zoom="16.995896"
+     inkscape:cx="4.6775997"
+     inkscape:cy="8.2961203"
+     inkscape:window-width="1920"
+     inkscape:window-height="1046"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <path
+     d="m 160,-320 v -380 q 0,-53 27.5,-84.5 27.5,-31.5 72.5,-48 45,-16.5 102.5,-22 57.5,-5.5 117.5,-5.5 66,0 124.5,5.5 58.5,5.5 102,22 43.5,16.5 68.5,48 25,31.5 25,84.5 v 380 q 0,59 -40.5,99.5 Q 719,-180 660,-180 l 60,60 v 20 h -80 l -80,-80 H 400 l -80,80 h -80 v -20 l 60,-60 q -59,0 -99.5,-40.5 Q 160,-261 160,-320 Z m 320,-460 q -106,0 -155,12.5 -49,12.5 -67,27.5 H 706 Q 691,-757 641.5,-768.5 592,-780 480,-780 Z M 240,-540 H 440 V -660 H 240 Z m 420,80 H 240 720 Z M 520,-540 H 720 V -660 H 520 Z m -180,240 q 26,0 43,-17 17,-17 17,-43 0,-26 -17,-43 -17,-17 -43,-17 -26,0 -43,17 -17,17 -17,43 0,26 17,43 17,17 43,17 z m 280,0 q 26,0 43,-17 17,-17 17,-43 0,-26 -17,-43 -17,-17 -43,-17 -26,0 -43,17 -17,17 -17,43 0,26 17,43 17,17 43,17 z m -320,40 h 360 q 26,0 43,-17 17,-17 17,-43 V -460 H 240 v 140 q 0,26 17,43 17,17 43,17 z M 480,-740 H 706 258 Z"
+     id="path1"
+     style="fill:#19a6a2;fill-opacity:1" />
+</svg>

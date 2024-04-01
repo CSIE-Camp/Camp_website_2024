@@ -1,263 +1,251 @@
-.attend_info_{
-    display: absolute;
-    justify-content:center;
-    text-align: center;
-    
+.attend_info_ {
+  display: absolute;
+  justify-content: center;
+  text-align: center;
+}
+.imageinfo {
+  margin: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: 16%;
+}
+.infotext {
+  font-size: 60px;
+  text-align: center;
+  justify-content: center;
+
+  line-height: 48px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  font-family: "Noto Sans TC", monospace;
 }
 
-.infotext{
-    font-size: 60px;
-    text-align: center;
-    justify-content: center;
+.info {
+  margin-top: 50px;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  text-align: center;
 
+  left: 50%;
 
-    line-height: 48px;
-    color: rgb(255, 255, 255);
-    display: flex;
-    font-family: "Noto Sans TC", monospace;
-}
-.info{
-    margin-top: 50px;
-    height: 100px;
-    width: 100%;
-    display: flex;
-    text-align: center;
+  justify-content: center;
 
-    left: 50%;
-
-    justify-content: center;
-
-    font-family: "Noto Sans TC", monospace;
-    
+  font-family: "Noto Sans TC", monospace;
 }
 
-.date{
-    font-family: "Noto Sans TC", monospace;
-    border-radius: 20px;
-    border-style: solid;
-    border-color: rgb(247, 180, 36);
-    height: 150px;
-    width: 50%;
-    
-    background-color: rgb(255, 255, 255);
-    
-    position: relative;
-    left: 25%;
+.date {
+  font-family: "Noto Sans TC", monospace;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: rgb(247, 180, 36);
+  height: 150px;
+  width: 50%;
 
-    justify-content: center;
-; 
-    display: flex;
-    margin-bottom: 50px;
-    
+  background-color: rgb(255, 255, 255);
+
+  position: relative;
+  left: 25%;
+
+  justify-content: center;
+  display: flex;
+  margin-bottom: 50px;
 }
 
-.datetitle{
-    font-family: "Noto Sans TC", monospace;
-    font-size: 200%;
-    color:rgb(0, 0, 0);
-    text-align: left;
-    position: absolute;
-    left: 5%;
-    top: 25%;
-    display: flex;
-
-
+.datetitle {
+  font-family: "Noto Sans TC", monospace;
+  font-size: 200%;
+  color: rgb(0, 0, 0);
+  text-align: left;
+  position: absolute;
+  left: 5%;
+  top: 25%;
+  display: flex;
 }
 
-.dateicon{
+.dateicon {
+  height: 80%;
+  width: 16%;
+  margin-left: 75%;
+  top: 10%;
 
-    height:80%;
-    width: 16%;
-    margin-left: 75%;
-    top:10%;
-
-    position: absolute;
-
+  position: absolute;
 }
 
+.place {
+  font-family: "Noto Sans TC", monospace;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: rgb(247, 180, 36);
+  height: 150px;
+  width: 50%;
 
+  background-color: rgb(255, 255, 255);
 
+  position: relative;
+  left: 25%;
 
-.place{
-    font-family: "Noto Sans TC", monospace;
-    border-radius: 20px;
-    border-style: solid;
-    border-color: rgb(247, 180, 36);
-    height: 150px;
-    width: 50%;
-    
-    background-color: rgb(255, 255, 255);
-    
-    position: relative;
-    left: 25%;
+  justify-content: center;
 
-    justify-content: center;
-
-    display: flex;margin-bottom: 50px;
-
+  display: flex;
+  margin-bottom: 50px;
 }
 
-.placetitle{
-    font-family: "Noto Sans TC", monospace;
-    font-size: 200%;
-    color:rgb(0, 0, 0);
-    text-align: left;
-    position: absolute;
-    left: 5%;
-    top: 25%;
-    display: flex;
+.placetitle {
+  font-family: "Noto Sans TC", monospace;
+  font-size: 200%;
+  color: rgb(0, 0, 0);
+  text-align: left;
+  position: absolute;
+  left: 5%;
+  top: 25%;
+  display: flex;
 }
 
-.schoolicon{
-    height:80%;
-    width: 16%;
-    margin-left: 75%;
-    top:10%;
+.schoolicon {
+  height: 80%;
+  width: 16%;
+  margin-left: 75%;
+  top: 10%;
 
-    position: absolute;
-
+  position: absolute;
 }
 
-.timetitle{
-    font-family: "Noto Sans TC", monospace;
-    font-size: 200%;
-    color:rgb(0, 0, 0);
-    text-align: left;
-    position: absolute;
-    left: 5%;
-    top: 25%;
-    display: flex;
-
+.timetitle {
+  font-family: "Noto Sans TC", monospace;
+  font-size: 200%;
+  color: rgb(0, 0, 0);
+  text-align: left;
+  position: absolute;
+  left: 5%;
+  top: 25%;
+  display: flex;
 }
 
-.time{
-    font-family: "Noto Sans TC", monospace;
-    border-radius: 20px;
-    border-style: solid;
-    border-color: rgb(247, 180, 36);
-    height: 150px;
-    width: 50%;margin-bottom: 50px;
-    
-    background-color: rgb(255, 255, 255);
-    
-    position: relative;
-    left: 25%;
+.time {
+  font-family: "Noto Sans TC", monospace;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: rgb(247, 180, 36);
+  height: 150px;
+  width: 50%;
+  margin-bottom: 50px;
 
-    justify-content: center;
+  background-color: rgb(255, 255, 255);
 
-    display: flex;
+  position: relative;
+  left: 25%;
+
+  justify-content: center;
+
+  display: flex;
 }
 
-.clockicon{
-    height:80%;
-    width: 16%;;
-    margin-left: 75%;
-    top:10%;
+.clockicon {
+  height: 80%;
+  width: 16%;
+  margin-left: 75%;
+  top: 10%;
 
-    position: absolute;
-
+  position: absolute;
 }
 
-.solo{
-    font-family: "Noto Sans TC", monospace;
-    border-radius: 20px;margin-bottom: 50px;
-    border-style: solid;
-    border-color: rgb(247, 180, 36);
-    height: 150px;
-    width: 50%;
-    
-    background-color: rgb(255, 255, 255);
-    
-    position: relative;
-    left: 25%;
+.solo {
+  font-family: "Noto Sans TC", monospace;
+  border-radius: 20px;
+  margin-bottom: 50px;
+  border-style: solid;
+  border-color: rgb(247, 180, 36);
+  height: 150px;
+  width: 50%;
 
-    justify-content: center;
+  background-color: rgb(255, 255, 255);
 
-    display: flex;
+  position: relative;
+  left: 25%;
+
+  justify-content: center;
+
+  display: flex;
 }
 
-.solotitle{
-    font-family: "Noto Sans TC", monospace;
-    font-size: 200%;
-    color:rgb(0, 0, 0);
-    text-align: left;
-    position: absolute;
-    left: 5%;
-    top: 25%;
-    display: flex;
-
+.solotitle {
+  font-family: "Noto Sans TC", monospace;
+  font-size: 200%;
+  color: rgb(0, 0, 0);
+  text-align: left;
+  position: absolute;
+  left: 5%;
+  top: 25%;
+  display: flex;
 }
 
-.soloicon{
-    height:80%;
-    width: 16%;
-    margin-left: 75%;
-    top:10%;
+.soloicon {
+  height: 80%;
+  width: 16%;
+  margin-left: 75%;
+  top: 10%;
 
-    position: absolute;
-
+  position: absolute;
 }
 
-.group{
-    font-family: "Noto Sans TC", monospace;
-    border-radius: 20px;
-    border-style: solid;margin-bottom: 100px;
-    border-color: rgb(247, 180, 36);
-    height: 150px;
-    width: 50%;
-    
-    background-color: rgb(255, 255, 255);
-    
-    position: relative;
-    left: 25%;
+.group {
+  font-family: "Noto Sans TC", monospace;
+  border-radius: 20px;
+  border-style: solid;
+  margin-bottom: 100px;
+  border-color: rgb(247, 180, 36);
+  height: 150px;
+  width: 50%;
 
-    justify-content: center;
+  background-color: rgb(255, 255, 255);
 
-    display: flex;
+  position: relative;
+  left: 25%;
+
+  justify-content: center;
+
+  display: flex;
 }
 
-.grouptitle{
-    font-family: "Noto Sans TC", monospace;
-    font-size: 200%;
-    color:rgb(0, 0, 0);
-    text-align: left;
-    position: absolute;
-    left: 5%;
-    top: 25%;
-    display: flex;
-
+.grouptitle {
+  font-family: "Noto Sans TC", monospace;
+  font-size: 200%;
+  color: rgb(0, 0, 0);
+  text-align: left;
+  position: absolute;
+  left: 5%;
+  top: 25%;
+  display: flex;
 }
 
-.groupicon{
-    height:80%;
-    width: 16%;
-    margin-left: 75%;
-    top:10%;
+.groupicon {
+  height: 80%;
+  width: 16%;
+  margin-left: 75%;
+  top: 10%;
 
-    position: absolute;
-
+  position: absolute;
 }
 
-.attend_button{
-    font-family: "Noto Sans TC", monospace;
-    font-size: 200%;
-    color:rgb(0, 0, 0);
-    display: relative;
-    transform: translate(0%, -50%);margin-bottom: 50px;
-    border-radius: 20px;
-    border-style: solid;
-    border-color: rgb(247, 180, 36);
-    height: 75px;
-    width: 300px;
-    
-    background-color: rgb(255, 255, 255);
-    text-align: center;
+.attend_button {
+  font-size: 100%;
+  color: #19a6a2;
+  font-weight: bold;
+  margin-bottom: 20px;
+  display: relative;
+  justify-content: space-between;
+  margin: 1vw 20vw;
+  background-color: #ffead8;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: 30%;
+  height: 20%;
+  left: 50%;
+  text-align: center;
 
-    left: 50%;
-
-
-    justify-content: center;
-
+  justify-content: center;
 }
-
-  

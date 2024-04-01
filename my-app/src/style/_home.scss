@@ -4,7 +4,6 @@
     text-align: center;
     padding: 1.5rem 1.5rem 1.5rem 2rem;
     letter-spacing: 0.75rem;
-    font-family: "ToronoGlitchSans H2";
     text-decoration: none;
     color: #ffffff;
     font-size: 1.5rem;
@@ -38,7 +37,6 @@ main {
       display: flex;
       flex-direction: column;
 
-
       position: relative;
 
       div.imgFlex {
@@ -52,8 +50,8 @@ main {
 
         video {
           user-select: none;
-          pointer-events: none; // prevent pulse or play 
-          width: 100%;
+          pointer-events: none; // prevent pulse or play
+          width: 50%;
           height: 100%;
           object-fit: cover;
         }
@@ -82,20 +80,15 @@ main {
         flex-flow: column;
 
         div.h1 {
-          font-family: "ToronoGlitchSans H4", sans-serif;
           padding: 0.5rem 0;
           font-weight: 900;
           font-size: 2.5rem;
           letter-spacing: 1rem;
           color: #ffffff;
 
-          span {
-            font-family: "ToronoGlitchSans H4", sans-serif;
-          }
-
           @mixin textBorder() {
-            text-shadow: -2px 0 #ffffff, 0 2px rgb(255, 255, 255), 2px 0 rgb(255, 255, 255), 0 -2px rgb(255, 255, 255);
-
+            text-shadow: -2px 0 #ffffff, 0 2px rgb(255, 255, 255), 2px 0 rgb(255, 255, 255),
+              0 -2px rgb(255, 255, 255);
           }
 
           span.C {
@@ -149,7 +142,6 @@ main {
 @media screen and (max-width: 900px) {
   main {
     div.card {
-
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -165,7 +157,6 @@ main {
           width: fit-content;
         }
       }
-
 
       section.right {
         width: 90vw;
@@ -186,8 +177,18 @@ main {
             font-size: 2rem;
           }
         }
-
       }
     }
+  }
+}
+
+h2.home_titles {
+  font {
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
   }
 }

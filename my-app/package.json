@@ -12,6 +12,7 @@
     "react-router": "^6.8.1",
     "react-router-dom": "^6.8.1",
     "react-scripts": "5.0.1",
+    "styled-components": "^6.1.8",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -45,7 +46,7 @@
     "husky": "^8.0.3",
     "lint-staged": "^13.1.2",
     "prettier": "^2.8.4",
-    "sass": "^1.58.1"
+    "sass": "^1.71.1"
   },
   "lint-staged": {
     "*.{js,jsx,json,yaml,yml,html,scss,css}": [
