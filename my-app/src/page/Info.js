@@ -53,7 +53,7 @@ export const Info = () => {
       <div class="lesson">
         <div>
           <h2>詳細資訊</h2>
-          <p> What ? </p>
+          <p> Coming Soon... </p>
         </div>
         <img
           src={require("../image/google_icon/description.png")}
