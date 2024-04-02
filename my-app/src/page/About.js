@@ -54,7 +54,7 @@ const About = () => {
 
       <section className="lesson">
         <div>
-          <h2>ML 教學</h2>
+          <h2>機器學習</h2>
           <p>
             看著每天新聞上滿滿 AI 的話題、遊手好閒玩著
             ChatGPT，然而卻總是霧裡看花嗎？這門課當中，我們將在 3
