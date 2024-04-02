@@ -81,6 +81,10 @@ a {
   color: $yellow-1;
 }
 
+p {
+  font-size: 24px;
+}
+
 @import "./nav";
 @import "./home";
 @import "./footer";
