@@ -7,8 +7,10 @@ export const Info = () => {
   return (
     <div class="attend_info_">
       <section class="lesson">
-        <div><h2>日期</h2>
-        <p>2024 7/1 ~ 7/5</p></div>
+        <div>
+          <h2>日期</h2>
+          <p>2024 7/1 ~ 7/5</p>
+        </div>
         <img
           src={require("../image/google_icon/calendar.png")}
           alt="date_icon"
@@ -17,8 +19,10 @@ export const Info = () => {
       </section>
 
       <div class="lesson">
-      <div><h2>地點</h2>
-        <p>國立台灣師範大學公館校區</p></div>
+        <div>
+          <h2>地點</h2>
+          <p>國立台灣師範大學公館校區</p>
+        </div>
         <img
           src={require("../image/google_icon/location.png")}
           alt="school_icon"
@@ -26,8 +30,10 @@ export const Info = () => {
         ></img>
       </div>
       <div class="lesson">
-        <div><h2>報名時間</h2>
-        <p>第一階段：4/20 ~ 5/27</p></div>
+        <div>
+          <h2>報名時間</h2>
+          <p>第一階段：4/20 ~ 5/27</p>
+        </div>
         <img
           src={require("../image/google_icon/clock.png")}
           alt="clock_icon"
@@ -36,17 +42,19 @@ export const Info = () => {
       </div>
 
       <div class="lesson">
-        <div><h2>報名費用</h2>
-            <p>9500<br>早鳥優惠：8900（4/20 ~ 4/30）</p></div>
-        <img
-          src={require("../image/google_icon/paid.png")}
-          alt="paid_icon"
-          class="imageinfo"
-        ></img>
+        <div>
+          <h2>報名費用</h2>
+          <p>
+            9500<br></br>早鳥優惠：8900（4/20 ~ 4/30）
+          </p>
+        </div>
+        <img src={require("../image/google_icon/paid.png")} alt="paid_icon" class="imageinfo"></img>
       </div>
       <div class="lesson">
-        <div><h2>詳細資訊</h2>
-            <p> What ? </p></div>
+        <div>
+          <h2>詳細資訊</h2>
+          <p> What ? </p>
+        </div>
         <img
           src={require("../image/google_icon/description.png")}
           alt="description_icon"
