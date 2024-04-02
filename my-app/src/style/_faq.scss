@@ -10,7 +10,7 @@ div#page_faq {
   .grid-container {
     display: grid;
     grid-template-columns: 4fr 1fr 1fr 4fr;
-    grid-template-rows: 150px 150px 200px 230px 230px;
+    grid-template-rows: 170px 170px 200px 230px 230px;
     gap: 15px;
 
     padding-top: 30px;
@@ -73,36 +73,126 @@ div#page_faq {
     padding-top: 3vw;
   }
 
+  .cell.course-1:hover .question {
+    opacity: 0;
+    transform: translateY(-55px);
+  }
+
+  .cell.course-1:hover .response {
+    opacity: 1;
+    transform: translateY(-55px);
+  }
+
   .cell.course-2 {
     padding-top: 5.5vw;
+  }
+
+  .cell.course-2:hover .question {
+    opacity: 0;
+    transform: translateY(-75px);
+  }
+
+  .cell.course-2:hover .response {
+    opacity: 1;
+    transform: translateY(-135px);
   }
 
   .cell.course-3 {
     padding-top: 3.5vw;
   }
 
+  .cell.course-3:hover .question {
+    opacity: 0;
+    transform: translateY(-57px);
+  }
+
+  .cell.course-3:hover .response {
+    opacity: 1;
+    transform: translateY(-57px);
+  }
+
   .cell.dormitory-1 {
     padding-top: 5.5vw;
+  }
+
+  .cell.dormitory-1:hover .question {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  .cell.dormitory-1:hover .response {
+    opacity: 1;
+    transform: translateY(-90px);
   }
 
   .cell.dormitory-2 {
     padding-top: 7vw;
   }
 
+  .cell.dormitory-2:hover .question {
+    opacity: 0;
+    transform: translateY(-45px);
+  }
+
+  .cell.dormitory-2:hover .response {
+    opacity: 1;
+    transform: translateY(-100px);
+  }
+
   .cell.register-1 {
     padding-top: 6vw;
+  }
+
+  .cell.register-1:hover .question {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+
+  .cell.register-1:hover .response {
+    opacity: 1;
+    transform: translateY(-96px);
   }
 
   .cell.register-2 {
     padding-top: 7.5vw;
   }
 
+  .cell.register-2:hover .question {
+    opacity: 0;
+    transform: translateY(-35px);
+  }
+
+  .cell.register-2:hover .response {
+    opacity: 1;
+    transform: translateY(-128px);
+  }
+
   .cell.register-3 {
     padding-top: 10vw;
   }
 
+  .cell.register-3:hover .question {
+    opacity: 0;
+    transform: translateY(-38px);
+  }
+
+  .cell.register-3:hover .response {
+    opacity: 1;
+    transform: translateY(-140px);
+  }
+
   .cell.register-4 {
     padding-top: 1vw;
+  }
+
+  .cell.register-4:hover .question {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  .cell.register-4:hover .response {
+    opacity: 1;
+    transform: translateY(-68px);
   }
 
   .grid-item {
@@ -159,16 +249,6 @@ div#page_faq {
   .cell .response {
     opacity: 0;
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-  }
-
-  .cell:hover .question {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
-
-  .cell:hover .response {
-    opacity: 1;
-    transform: translateY(-50px);
   }
 
   .category-course {
