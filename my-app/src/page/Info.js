@@ -9,7 +9,7 @@ export const Info = () => {
       <section class="lesson">
         <div>
           <h2>日期</h2>
-          <p>2024 7/1 ~ 7/5</p>
+          <p>113 年 7 月 1 日 至 113 年 7 月 5 日</p>
         </div>
         <img
           src={require("../image/google_icon/calendar.png")}
@@ -21,7 +21,7 @@ export const Info = () => {
       <div class="lesson">
         <div>
           <h2>地點</h2>
-          <p>國立台灣師範大學公館校區</p>
+          <p>國立臺灣師範大學公館校區</p>
         </div>
         <img
           src={require("../image/google_icon/location.png")}
@@ -32,7 +32,7 @@ export const Info = () => {
       <div class="lesson">
         <div>
           <h2>報名時間</h2>
-          <p>第一階段：4/20 ~ 5/27</p>
+          <p>第一階段：113 年 4 月 20 日 至 113 年 5 月 27 日</p>
         </div>
         <img
           src={require("../image/google_icon/clock.png")}
@@ -45,7 +45,8 @@ export const Info = () => {
         <div>
           <h2>報名費用</h2>
           <p>
-            9500<br></br>早鳥優惠：8900（4/20 ~ 4/30）
+            新臺幣 9500 元整<br></br>早鳥優惠：新臺幣 8900 元整（113 年 4 月 20 日 至 113 年 4 月 30
+            日）
           </p>
         </div>
         <img src={require("../image/google_icon/paid.png")} alt="paid_icon" class="imageinfo"></img>
