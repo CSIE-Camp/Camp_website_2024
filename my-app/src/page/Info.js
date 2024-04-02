@@ -46,7 +46,7 @@ export const Info = () => {
       </div>
       <div class="lesson">
         <div><h2>詳細資訊</h2>
-            <p>9500<br>早鳥優惠：8900（4/20 ~ 4/30）</p></div>
+            <p> What ? </p></div>
         <img
           src={require("../image/google_icon/description.png")}
           alt="description_icon"
