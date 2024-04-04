@@ -17,14 +17,14 @@ const Footer = () => {
         </p>
       </div>
       <div class="social_media">
-        <a href="https://www.facebook.com/ntnucsiecamp" target="_blank">
+        <a href="https://www.facebook.com/ntnucsiecamp">
           <img
             src={require("./image/social_media_icon/fb.png")}
             alt="facebook"
             class="facebook_icon social_media_icon"
           ></img>
         </a>
-        <a href="https://www.instagram.com/ntnucsiecamp2024/" target="_blank">
+        <a href="https://www.instagram.com/ntnucsiecamp2024/">
           <img
             src={require("./image/social_media_icon/ig.png")}
             alt="instagram"

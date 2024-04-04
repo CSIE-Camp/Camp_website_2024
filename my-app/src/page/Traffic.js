@@ -39,19 +39,19 @@ const Traffic = () => {
     // content.style.display = "none";
   }
 
-  function loading() {
-    const load = document.getElementById("loading-block");
-    load.style.display = "block";
-    load.style.console.log(load.style.display);
-    load.addEventListener("mouseover", () => {
-      console.log("mouse");
-    });
-  }
+  // function loading() {
+  //   const load = document.getElementById("loading-block");
+  //   load.style.display = "block";
+  //   load.style.console.log(load.style.display);
+  //   load.addEventListener("mouseover", () => {
+  //     console.log("mouse");
+  //   });
+  // }
 
-  function off() {
-    const load = document.getElementById("loading-block");
-    load.style.display = "none";
-  }
+  // function off() {
+  //   const load = document.getElementById("loading-block");
+  //   load.style.display = "none";
+  // }
 
   return (
     <>
@@ -60,9 +60,7 @@ const Traffic = () => {
           <h3 className="ntnu-address">
             國立臺灣師範大學 &nbsp;
             <b>
-              <a href="https://www.ga.ntnu.edu.tw/ntnu_map/img/ntnu03.jpg" target="_blank">
-                公館校區
-              </a>
+              <a href="https://www.ga.ntnu.edu.tw/ntnu_map/img/ntnu03.jpg">公館校區</a>
             </b>
             （師大分部）
           </h3>
@@ -75,6 +73,7 @@ const Traffic = () => {
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2149.9659516315546!2d121.53552866807054!3d25.007001962683137!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a9602b8f4639%3A0x32245faca67b22c9!2z5ZyL56uL6Ie654Gj5bir56-E5aSn5a246LOH6KiK5bel56iL5a2457O75pqo56CU56m25omA!5e0!3m2!1sen!2stw!4v1710680069146!5m2!1sen!2stw"
             /*width="600"
             height="450"*/
+            title="ntnu-map"
             style={{ border: "0" }}
             allowfullscreen=""
             loading="lazy"
@@ -127,7 +126,11 @@ const Traffic = () => {
                 > */}
                 <div className="ctrl-path">
                   <div className="spot-block">
-                    <img src={require("../image/google_icon/metro.png")} className="metro-image" />
+                    <img
+                      src={require("../image/google_icon/metro.png")}
+                      alt="metro"
+                      className="metro-image"
+                    />
                   </div>
                   <div className="line">
                     <p>
@@ -202,7 +205,11 @@ const Traffic = () => {
                 > */}
                 <div className="ctrl-path">
                   <div className="spot-block">
-                    <img src={require("../image/google_icon/metro.png")} className="metro-image" />
+                    <img
+                      src={require("../image/google_icon/metro.png")}
+                      alt="metro"
+                      className="metro-image"
+                    />
                   </div>
                   <div className="line">
                     <p>
@@ -274,7 +281,11 @@ const Traffic = () => {
                 > */}
                 <div className="ctrl-path">
                   <div className="spot-block">
-                    <img src={require("../image/google_icon/bus.png")} className="bus-image" />
+                    <img
+                      src={require("../image/google_icon/bus.png")}
+                      alt="bus"
+                      className="bus-image"
+                    />
                   </div>
                   <div className="line">
                     <p>
@@ -378,7 +389,11 @@ const Traffic = () => {
                 > */}
                 <div className="ctrl-path">
                   <div className="spot-block">
-                    <img src={require("../image/google_icon/car.png")} className="car-image" />
+                    <img
+                      src={require("../image/google_icon/car.png")}
+                      alt="car"
+                      className="car-image"
+                    />
                   </div>
                   <div className="line">
                     <p>
@@ -391,7 +406,6 @@ const Traffic = () => {
                           href={
                             "https://www.google.com/maps/dir//116%E5%8F%B0%E5%8C%97%E5%B8%82%E6%96%87%E5%B1%B1%E5%8D%80%E6%B1%80%E5%B7%9E%E8%B7%AF%E5%9B%9B%E6%AE%B588%E8%99%9F%E5%9C%8B%E7%AB%8B%E8%87%BA%E7%81%A3%E5%B8%AB%E7%AF%84%E5%A4%A7%E5%AD%B8+%E5%85%AC%E9%A4%A8%E6%A0%A1%E5%8D%80/@25.0077644,121.4959235,13z/data=!4m9!4m8!1m0!1m5!1m1!1s0x3442aa1e27ab738b:0x2e5be38c37583475!2m2!1d121.5371235!2d25.0077701!3e0?entry=ttu"
                           }
-                          target="_blank"
                         >
                           國立臺灣師範大學 公館校區
                         </a>
