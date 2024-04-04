@@ -54,7 +54,12 @@ export const Info = () => {
       <div class="lesson">
         <div>
           <h2>詳細資訊</h2>
-          <p> Coming Soon... </p>
+          <p>
+            {" "}
+            <a href="https://docs.google.com/document/d/1-IfWEmdciveIbeI3UuuFrzIo26U1mj23lXVqvMRNDCk/edit?usp=sharing">
+              報名簡章
+            </a>{" "}
+          </p>
         </div>
         <img
           src={require("../image/google_icon/description.png")}
