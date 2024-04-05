@@ -133,17 +133,7 @@ nav {
   }
 }
 
-@media screen and (width: 980px) and (min-height: 1700px) {
-  .nav_ul {
-    li {
-      width: 100px;
-
-      a {
-        font-size: 20px;
-      }
-    }
-  }
-
+@media screen and (max-width: 980px) and (min-height: 900px) {
   .banner_logo {
     height: 50px;
   }
