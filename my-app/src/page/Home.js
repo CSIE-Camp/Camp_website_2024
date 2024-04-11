@@ -55,7 +55,11 @@ const Home = () => {
                         {index === 5 && <font id="review">歷屆回顧</font>}
                       </h2>
                       <hr />
-                      <a href = "#a" onClick={() => toggleDescription(`image${index}`)}>
+                      <a
+                        href="#a"
+                        onClick={() => toggleDescription(`image${index}`)}
+                        className="home_titles_image"
+                      >
                         <img
                           src={
                             index === 1
