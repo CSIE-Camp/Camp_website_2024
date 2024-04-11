@@ -68,9 +68,13 @@ export const Info = () => {
         ></img>
       </div>
 
-      <button type="button" class="attend_button" onClick={attend_click}>
-        報名營隊
-      </button>
+      <button
+        type="button"
+        class="attend_button"
+        onClick={attend_click}
+        data-front="立即報名"
+        data-back='你們在 "code" 甚麼'
+      ></button>
     </div>
   );
 };
