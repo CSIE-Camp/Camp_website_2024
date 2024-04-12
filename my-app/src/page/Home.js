@@ -56,7 +56,7 @@ const Home = () => {
                       </h2>
                       <hr />
                       <a
-                        href="#a"
+                        href="javascript:;"
                         onClick={() => toggleDescription(`image${index}`)}
                         className="home_titles_image"
                       >
