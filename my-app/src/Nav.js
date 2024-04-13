@@ -82,7 +82,7 @@ const Flyout = styled.div`
     rgba(27, 19, 54, 1) 100%
   );
   div {
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
