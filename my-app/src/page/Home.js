@@ -32,6 +32,7 @@ const Home = () => {
   };
 
   return (
+    <script>if(window.location.href != "https://camp.csie.cool/"){window.location.href = "https://camp.csie.cool/"}</script>
     <div id="main" style={{ margin: "64px 0%" }}>
       <header style={{ textAlign: "center" }} id="header">
         <img src={banner} alt="banner" style={{ width: "100%" }} />
