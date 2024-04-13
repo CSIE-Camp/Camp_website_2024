@@ -55,11 +55,7 @@ const Home = () => {
                         {index === 5 && <font id="review">歷屆回顧</font>}
                       </h2>
                       <hr />
-                      <a
-                        href="#a"
-                        onClick={() => toggleDescription(`image${index}`)}
-                        className="home_titles_image"
-                      >
+                      <div onClick={() => toggleDescription(`image${index}`)}>
                         <img
                           src={
                             index === 1
@@ -76,7 +72,7 @@ const Home = () => {
                           alt=""
                           style={{ width: "4em", height: "4em" }}
                         />
-                      </a>
+                      </div>
                       <p
                         className={`text-below${index}`}
                         style={{ textAlign: index % 2 === 0 ? "right" : "left" }}
