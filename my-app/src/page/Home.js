@@ -12,6 +12,7 @@ import Traffic from "./Traffic";
 import Review from "./Review";
 
 const Home = () => {
+  window.location.href = "https://camp.csie.cool/"
   const [descriptions, setDescriptions] = useState({
     image1: { visible: true, content: <About /> },
     image2: { visible: true, content: <Info /> },
