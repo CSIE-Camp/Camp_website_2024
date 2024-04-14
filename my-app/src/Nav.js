@@ -150,8 +150,8 @@ const Nav = () => {
   useEffect(() => {
     function setVhVariable() {
       // 將視窗的高度乘以 0.01 並設置為 --vh 變數的值
-      let vh = window.innerHeight * 0.01;
-      document.documentElement.style.setProperty("--vh", `${vh}px`);
+      let vh_set = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty("--vh", `${vh_set}px`);
     }
 
     // 頁面加載時初始化 --vh 變數
