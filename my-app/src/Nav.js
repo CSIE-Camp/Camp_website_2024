@@ -82,7 +82,9 @@ const Flyout = styled.div`
     rgba(27, 19, 54, 1) 100%
   );
   div {
-    height: 100%;
+    height: 100vh; /*給 Safari 以外的瀏覽器讀取*/
+    height: calc(var(--vh, 1vh) * 100);
+
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -131,6 +133,15 @@ const menuItems = [
   },
 ];
 const Nav = () => {
+  function safariFix() {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty("--vh", `${vh}px`);
+    window.addEventListener("resize", () => {
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty("--vh", `${vh}px`);
+    });
+  }
+  safariFix();
   const handlerClick = (e) => {
     e.target.classList.toggle("x");
     const flyout = document.querySelector(".flyout");
