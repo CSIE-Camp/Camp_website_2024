@@ -95,7 +95,7 @@ div#page_faq {
     opacity: 1;
     height: 0%;
     align-content: center;
-    transform: translateY(0px);
+    transform: translateY(-7px);
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
   }
 
@@ -183,7 +183,7 @@ div#page_faq {
   @media (max-width: 1025px) {
     .grid-container {
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: repeat(4, 1fr) 0.7fr;
+      grid-template-rows: repeat(4, 1fr) 1fr;
       grid-template-areas:
         "cou-1 cou-2"
         "cou-3 dor-1"
@@ -196,7 +196,7 @@ div#page_faq {
   @media (max-width: 770px) {
     .grid-container {
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: repeat(4, 0.8fr) 0.8fr;
+      grid-template-rows: repeat(4, 0.8fr) 1fr;
       grid-template-areas:
         "cou-1 cou-2"
         "cou-3 dor-1"
@@ -208,7 +208,7 @@ div#page_faq {
   @media (max-width: 426px) {
     .grid-container {
       grid-template-columns: 1fr;
-      grid-template-rows: repeat(9, 0.8fr);
+      grid-template-rows: repeat(8, 1.3fr) 1.8fr;
       grid-template-areas:
         "cou-1"
         "cou-2"
@@ -225,7 +225,7 @@ div#page_faq {
   @media (max-width: 376px) {
     .grid-container {
       grid-template-columns: 1fr;
-      grid-template-rows: repeat(9, 0.8fr);
+      grid-template-rows: repeat(9, 1.4fr);
       grid-template-areas:
         "cou-1"
         "cou-2"
