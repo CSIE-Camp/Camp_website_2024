@@ -221,7 +221,7 @@ const Nav = () => {
                 </li>
               ))}
               <li class="banner_button_register">
-                <a href="https://camp-app.csie.cool/login" className="login_button">
+                <a href="https://camp-app.csie.cool/login" className="login_button" target="_blank">
                   立即報名
                 </a>
               </li>
@@ -229,7 +229,11 @@ const Nav = () => {
             <Flyout className="flyout">
               <div>
                 <div class="banner_button_register">
-                  <a href="https://camp-app.csie.cool/login" className="login_button">
+                  <a
+                    href="https://camp-app.csie.cool/login"
+                    className="login_button"
+                    target="_blank"
+                  >
                     立即報名
                   </a>
                 </div>
