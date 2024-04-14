@@ -256,69 +256,51 @@
 }
 */
 
-$speed: 0.5s;
-
 .attend_button {
-  opacity: 1;
-  outline: 0;
-  font-size: 110%;
-  font-weight: bold;
-  color: #fff;
-  margin: 1vw 20vw;
-  justify-content: space-between;
-  line-height: 40px;
-  position: relative;
   text-align: center;
-  justify-content: center;
-  display: inline-block;
-  width: 230px;
-  background-color: #ffffff00;
+  position: relative;
+  color: #fff;
+  font-size: 120%;
+  background-color: $orange-2;
+  font-weight: bold;
   border-radius: 50px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin: 1vw auto;
+  width: 220px;
+  height: 20%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
+  overflow: hidden;
+}
 
-  &:hover {
-    &:after {
-      opacity: 1;
-      transform: translateY(0) rotateX(0);
-    }
-
-    &:before {
-      opacity: 0;
-      transform: translateY(50%) rotateX(90deg);
-    }
-  }
-
-  &:after {
-    top: 0;
-    left: 0;
-    opacity: 0;
-    width: 100%;
-    color: #ffffff;
-    display: block;
-    transition: $speed;
-    position: absolute;
-    background: $light-blue;
-    content: attr(data-back);
-    transform: translateY(-50%) rotateX(90deg);
-    border-radius: 50px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
+.attend_button.effect {
+  transition: all 0.2s linear 0s;
 
   &:before {
+    content: "\eac9";
+    font-family: "Material Symbols Rounded";
+    font-size: 150%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
     top: 0;
-    left: 0;
-    opacity: 1;
-    color: #ffffff;
-    display: block;
-    padding: 0 30px;
-    line-height: 40px;
-    transition: $speed;
-    position: relative;
-    background: $orange-2;
-    content: attr(data-front);
-    transform: translateY(0) rotateX(0);
-    border-radius: 50px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    height: 100%;
+    width: 80px;
+    transition: all 0.2s linear 0s;
+  }
+
+  &:hover {
+    text-indent: -20px;
+
+    &:before {
+      opacity: 1;
+      text-indent: 0px;
+    }
   }
 }
