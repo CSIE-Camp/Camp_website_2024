@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect } from "react";
 import styled from "styled-components";
 const Hamburger = styled.a`
   display: none;
@@ -82,8 +82,9 @@ const Flyout = styled.div`
     rgba(27, 19, 54, 1) 100%
   );
   div {
-    height: 100vh; /*給 Safari 以外的瀏覽器讀取*/
-    height: calc(var(--vh, 1vh) * 100);
+    height: 100%;
+    height: 100vh;
+    height: 100dvh;
 
     display: flex;
     flex-direction: column;
@@ -94,6 +95,9 @@ const Flyout = styled.div`
     // animation-name: banner_animation;
     // animation-duration: 5s;
     // animation-iteration-count: infinite;
+    div {
+      height: auto;
+    }
     a {
       color: #fff;
       font-size: 1.5rem;
@@ -133,15 +137,25 @@ const menuItems = [
   },
 ];
 const Nav = () => {
-  function safariFix() {
-    let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty("--vh", `${vh}px`);
-    window.addEventListener("resize", () => {
+  useEffect(() => {
+    function setVhVariable() {
+      // 將視窗的高度乘以 0.01 並設置為 --vh 變數的值
       let vh = window.innerHeight * 0.01;
       document.documentElement.style.setProperty("--vh", `${vh}px`);
-    });
-  }
-  safariFix();
+    }
+
+    // 頁面加載時初始化 --vh 變數
+    setVhVariable();
+
+    // 視窗大小改變時重新計算 --vh 變數的值
+    window.addEventListener("resize", setVhVariable);
+
+    // 組件卸載時移除事件監聽器
+    return () => {
+      window.removeEventListener("resize", setVhVariable);
+    };
+  }, []);
+
   const handlerClick = (e) => {
     e.target.classList.toggle("x");
     const flyout = document.querySelector(".flyout");
