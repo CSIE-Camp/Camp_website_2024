@@ -2,7 +2,7 @@ import React from "react";
 
 export const Info = () => {
   function attend_click() {
-    window.open("https://camp-app.csie.cool/login", "_blank");
+    window.open("https://camp-app.csie.cool/login");
   }
   return (
     <div class="attend_info_">
