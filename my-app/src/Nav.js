@@ -75,11 +75,11 @@ const Flyout = styled.div`
   transition: max-height 0.15s ease-out;
   overflow: hidden;
   background: linear-gradient(
-    45deg,
+    180deg,
     rgba(39, 27, 78, 1) 0%,
     rgba(40, 29, 79, 1) 35%,
-    rgba(27, 19, 54, 1) 82%,
-    rgba(27, 19, 54, 1) 100%
+    rgba(27, 19, 54, 1) 70%,
+    rgba(11, 0, 23, 1) 100%
   );
   div {
     height: 100%;
@@ -97,13 +97,23 @@ const Flyout = styled.div`
     // animation-iteration-count: infinite;
     div {
       height: auto;
-    }
-    a {
-      color: #fff;
-      font-size: 1.5rem;
-      padding: 1rem 0;
-      text-decoration: none;
-      font-weight: 600;
+      a {
+        background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(230, 230, 230, 1) 100%);
+        text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: #fff;
+        font-size: 1.5rem;
+        padding: 1rem 0;
+        letter-spacing: 0.25rem;
+        text-decoration: none;
+        font-weight: 600;
+      }
+      a.login_button {
+        background: linear-gradient(90deg, rgba(255, 215, 0, 1) 0%, rgba(255, 165, 0, 1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
     }
   }
   @media screen and (max-width: 690px) {
@@ -211,7 +221,7 @@ const Nav = () => {
                 </li>
               ))}
               <li class="banner_button_register">
-                <a href="https://camp-app.csie.cool/login" class="login_button">
+                <a href="https://camp-app.csie.cool/login" className="login_button">
                   立即報名
                 </a>
               </li>
@@ -219,7 +229,7 @@ const Nav = () => {
             <Flyout className="flyout">
               <div>
                 <div class="banner_button_register">
-                  <a href="https://camp-app.csie.cool/login" class="login_button">
+                  <a href="https://camp-app.csie.cool/login" className="login_button">
                     立即報名
                   </a>
                 </div>
