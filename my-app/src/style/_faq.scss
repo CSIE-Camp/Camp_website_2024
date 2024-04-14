@@ -12,7 +12,6 @@ div#page_faq {
     grid-template-columns: 4fr 1fr 1fr 4fr;
     grid-template-rows: 170px 170px 230px 230px 230px;
     gap: 15px;
-
     padding-top: 30px;
     padding-left: 12vw;
     padding-right: 12vw;
@@ -71,13 +70,11 @@ div#page_faq {
 
   .cell:hover .question {
     opacity: 0;
-    height: 0%;
-    transform: translateY(-70px);
+    transform: translateY(-67px);
   }
 
   .cell:hover .response {
     opacity: 1;
-    height: 0%;
     transform: translateY(0px);
   }
 
@@ -87,7 +84,7 @@ div#page_faq {
     text-align: center;
   }
 
-  .cell .question {
+  .question {
     font-size: 28px;
     font-weight: bold;
     letter-spacing: 3px;
@@ -99,10 +96,10 @@ div#page_faq {
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
   }
 
-  .cell .response {
+  .response {
     height: 0%;
     align-content: center;
-    transform: translateY(70px);
+    transform: translateY(60px);
     opacity: 0;
     align-items: center;
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
@@ -180,10 +177,17 @@ div#page_faq {
     }
   }
 
-  @media (max-width: 1025px) {
+  @media (max-width: 1024px) {
     .grid-container {
+      display: grid;
+      gap: 15px;
+      padding-top: 30px;
+      padding-left: 12vw;
+      padding-right: 12vw;
+      padding-bottom: 60px;
+      justify-content: center;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: repeat(4, 1fr) 1fr;
+      grid-template-rows: repeat(4, 220px) 190px;
       grid-template-areas:
         "cou-1 cou-2"
         "cou-3 dor-1"
@@ -193,10 +197,17 @@ div#page_faq {
     }
   }
 
-  @media (max-width: 770px) {
+  @media (max-width: 768px) {
     .grid-container {
+      display: grid;
+      gap: 15px;
+      padding-top: 30px;
+      padding-left: 12vw;
+      padding-right: 12vw;
+      padding-bottom: 60px;
+      justify-content: center;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: repeat(4, 0.8fr) 1fr;
+      grid-template-rows: repeat(4, 270px) 250px;
       grid-template-areas:
         "cou-1 cou-2"
         "cou-3 dor-1"
@@ -205,10 +216,18 @@ div#page_faq {
         "reg-4 reg-4";
     }
   }
+
   @media (max-width: 426px) {
     .grid-container {
+      display: grid;
+      gap: 15px;
+      padding-top: 30px;
+      padding-left: 12vw;
+      padding-right: 12vw;
+      padding-bottom: 60px;
+      justify-content: center;
       grid-template-columns: 1fr;
-      grid-template-rows: repeat(8, 1.3fr) 1.8fr;
+      grid-template-rows: 230px 270px 200px repeat(5, 230px) 270px;
       grid-template-areas:
         "cou-1"
         "cou-2"
@@ -224,8 +243,15 @@ div#page_faq {
 
   @media (max-width: 376px) {
     .grid-container {
+      display: grid;
+      gap: 15px;
+      padding-top: 30px;
+      padding-left: 12vw;
+      padding-right: 12vw;
+      padding-bottom: 60px;
+      justify-content: center;
       grid-template-columns: 1fr;
-      grid-template-rows: repeat(9, 1.4fr);
+      grid-template-rows: 230px 275px 230px repeat(5, 230px) 275px;
       grid-template-areas:
         "cou-1"
         "cou-2"
