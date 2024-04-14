@@ -198,6 +198,34 @@ div#page_faq {
         "reg-2 reg-3"
         "reg-4 reg-4";
     }
+    .course-1 {
+      grid-area: cou-1;
+    }
+    .course-2 {
+      grid-area: cou-2;
+    }
+    .course-3 {
+      grid-area: cou-3;
+    }
+    .dormitory-1 {
+      grid-area: dor-1;
+    }
+    .dormitory-2 {
+      grid-area: dor-2;
+    }
+    .register-1 {
+      grid-area: reg-1;
+    }
+    .register-2 {
+      grid-area: reg-2;
+    }
+    .register-3 {
+      grid-area: reg-3;
+    }
+    .register-4 {
+      grid-area: reg-4;
+    }
+
     .cell {
       display: flex;
       box-sizing: border-box;
@@ -211,6 +239,117 @@ div#page_faq {
       justify-content: center;
       align-items: center;
       text-align: center;
+    }
+
+    .cell:hover .question {
+      opacity: 0;
+      height: 0%;
+      transform: translateY(-70px);
+    }
+
+    .cell:hover .response {
+      opacity: 1;
+      height: 0%;
+      transform: translateY(0px);
+    }
+
+    .cell h2,
+    .cell p {
+      margin: 0;
+      text-align: center;
+    }
+
+    .cell .question {
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 3px;
+      text-align: center;
+      opacity: 1;
+      height: 0%;
+      align-content: center;
+      transform: translateY(-7px);
+      transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    }
+
+    .cell .response {
+      height: 0%;
+      align-content: center;
+      transform: translateY(70px);
+      opacity: 0;
+      align-items: center;
+      transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    }
+
+    .category-course {
+      display: flex;
+      position: relative;
+      transform: translateX(-50%);
+      left: 50%;
+      height: 1.8em;
+      width: 6.5em;
+      border-radius: 50px;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 400;
+      color: $off-white;
+      color: $off-white;
+      background-color: $purple;
+      /*border: 3px solid $yellow-1;*/
+      .text {
+        padding-bottom: 0.1em;
+        padding-left: 0.3em;
+      }
+    }
+
+    .category-dormitory {
+      display: flex;
+      position: relative;
+      transform: translateX(-50%);
+      left: 50%;
+      height: 1.8em;
+      width: 6.5em;
+      border-radius: 50px;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 400;
+      color: $off-white;
+      color: $off-white;
+      background-color: $yellow-1;
+      /*border: 3px solid $yellow-1;*/
+      .text {
+        padding-bottom: 0.1em;
+        padding-left: 0.3em;
+      }
+    }
+
+    .category-register {
+      display: flex;
+      position: relative;
+      transform: translateX(-50%);
+      left: 50%;
+      height: 1.8em;
+      width: 6.5em;
+      border-radius: 50px;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 400;
+      color: $off-white;
+      color: $off-white;
+      background-color: $orange-2;
+      /*border: 3px solid $yellow-1;*/
+      .text {
+        padding-bottom: 0.1em;
+        padding-left: 0.3em;
+      }
     }
   }
 
@@ -231,6 +370,159 @@ div#page_faq {
         "dor-2 reg-1"
         "reg-2 reg-3"
         "reg-4 reg-4";
+    }
+    .course-1 {
+      grid-area: cou-1;
+    }
+    .course-2 {
+      grid-area: cou-2;
+    }
+    .course-3 {
+      grid-area: cou-3;
+    }
+    .dormitory-1 {
+      grid-area: dor-1;
+    }
+    .dormitory-2 {
+      grid-area: dor-2;
+    }
+    .register-1 {
+      grid-area: reg-1;
+    }
+    .register-2 {
+      grid-area: reg-2;
+    }
+    .register-3 {
+      grid-area: reg-3;
+    }
+    .register-4 {
+      grid-area: reg-4;
+    }
+
+    .cell {
+      display: flex;
+      box-sizing: border-box;
+      justify-content: center;
+      align-items: center;
+      background-color: $off-white;
+      border-radius: 20px;
+      padding-right: 3vw;
+      padding-left: 3vw;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .cell:hover .question {
+      opacity: 0;
+      height: 0%;
+      transform: translateY(-70px);
+    }
+
+    .cell:hover .response {
+      opacity: 1;
+      height: 0%;
+      transform: translateY(0px);
+    }
+
+    .cell h2,
+    .cell p {
+      margin: 0;
+      text-align: center;
+    }
+
+    .cell .question {
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 3px;
+      text-align: center;
+      opacity: 1;
+      height: 0%;
+      align-content: center;
+      transform: translateY(-7px);
+      transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    }
+
+    .cell .response {
+      height: 0%;
+      align-content: center;
+      transform: translateY(70px);
+      opacity: 0;
+      align-items: center;
+      transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    }
+
+    .category-course {
+      display: flex;
+      position: relative;
+      transform: translateX(-50%);
+      left: 50%;
+      height: 1.8em;
+      width: 6.5em;
+      border-radius: 50px;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 400;
+      color: $off-white;
+      color: $off-white;
+      background-color: $purple;
+      /*border: 3px solid $yellow-1;*/
+      .text {
+        padding-bottom: 0.1em;
+        padding-left: 0.3em;
+      }
+    }
+
+    .category-dormitory {
+      display: flex;
+      position: relative;
+      transform: translateX(-50%);
+      left: 50%;
+      height: 1.8em;
+      width: 6.5em;
+      border-radius: 50px;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 400;
+      color: $off-white;
+      color: $off-white;
+      background-color: $yellow-1;
+      /*border: 3px solid $yellow-1;*/
+      .text {
+        padding-bottom: 0.1em;
+        padding-left: 0.3em;
+      }
+    }
+
+    .category-register {
+      display: flex;
+      position: relative;
+      transform: translateX(-50%);
+      left: 50%;
+      height: 1.8em;
+      width: 6.5em;
+      border-radius: 50px;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 400;
+      color: $off-white;
+      color: $off-white;
+      background-color: $orange-2;
+      /*border: 3px solid $yellow-1;*/
+      .text {
+        padding-bottom: 0.1em;
+        padding-left: 0.3em;
+      }
     }
   }
   @media (max-width: 426px) {
