@@ -123,7 +123,7 @@ const Flyout = styled.div`
     }
   }
 `;
-
+const Star = styled.div``;
 const menuItems = [
   {
     name: "營隊介紹",
@@ -246,6 +246,11 @@ const Nav = () => {
                   </div>
                 ))}
               </div>
+              <Star>
+                <span id="stars"></span>
+                <span id="stars2"></span>
+                <span id="stars3"></span>
+              </Star>
             </Flyout>
             <Hamburger id="hamburger" onClick={handlerClick}>
               <span></span>
