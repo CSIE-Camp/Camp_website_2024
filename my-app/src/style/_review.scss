@@ -6,7 +6,7 @@ div#page_review {
   --npr--arrow_width: 6vw;
   --npr--arrow_height: 5vw;
   --npr--dotbar_height: 7vw;
-
+  width: 100vw;
   @media (max-width: 600px) {
     --npr--photo_width: 80vw;
 
@@ -123,7 +123,7 @@ div#page_review {
   }
 
   div.year_review {
-    width: 80%;
+    width: 100%;
     min-width: 300px;
     // height: 50%;
     padding: 0 0 0 1vw;
@@ -131,27 +131,30 @@ div#page_review {
     display: flex;
     justify-content: left;
     align-items: center;
-
+    @media screen and (max-width: 600px) {
+      width: 100%;
+      flex-direction: column;
+    }
     // border: 3px red solid;
 
     div#review_title {
       font-family: "Noto Sans TC";
-      width: 13vw;
+      // width: 13vw;
       font-size: 35px;
       color: white;
       text-align: center;
       font-weight: bold;
       letter-spacing: 3px;
       @media (max-width: 1500px) {
-        font-size: 30px;
+        font-size: 2.5rem;
       }
 
       @media (max-width: 1100px) {
-        font-size: 20px;
+        font-size: 2rem;
       }
 
       @media (max-width: 550px) {
-        font-size: 15px;
+        font-size: 1.5rem;
       }
     }
 
