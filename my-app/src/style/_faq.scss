@@ -82,9 +82,11 @@ div#page_faq {
   .cell p {
     margin: 0;
     text-align: center;
+    overflow: visible;
   }
 
   .question {
+    display: grid;
     font-size: 28px;
     font-weight: bold;
     letter-spacing: 3px;
@@ -97,6 +99,7 @@ div#page_faq {
   }
 
   .response {
+    display: grid;
     height: 0%;
     align-content: center;
     transform: translateY(60px);
