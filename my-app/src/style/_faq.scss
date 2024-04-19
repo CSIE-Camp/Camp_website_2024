@@ -63,8 +63,6 @@ div#page_faq {
     padding-right: 3vw;
     padding-left: 3vw;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
   }
 
@@ -123,7 +121,6 @@ div#page_faq {
     font-size: 14px;
     font-weight: 400;
     color: $off-white;
-    color: $off-white;
     background-color: $purple;
     /*border: 3px solid $yellow-1;*/
     .text {
@@ -147,7 +144,6 @@ div#page_faq {
     font-size: 14px;
     font-weight: 400;
     color: $off-white;
-    color: $off-white;
     background-color: $yellow-1;
     /*border: 3px solid $yellow-1;*/
     .text {
@@ -170,7 +166,6 @@ div#page_faq {
     justify-content: center;
     font-size: 14px;
     font-weight: 400;
-    color: $off-white;
     color: $off-white;
     background-color: $orange-2;
     /*border: 3px solid $yellow-1;*/
