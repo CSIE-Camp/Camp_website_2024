@@ -46,8 +46,10 @@ export const Info = () => {
         <div>
           <h2>報名費用</h2>
           <p>
-            新臺幣 9500 元整<br></br>早鳥優惠：新臺幣 8900 元整（113 年 4 月 20 日 至 113 年 4 月 30
-            日）
+            新臺幣 9500 元整<br></br>
+            <div class="early_bird">
+              早鳥優惠：新臺幣 8900 元整（113 年 4 月 20 日 至 113 年 4 月 30 日）
+            </div>
           </p>
         </div>
         <img src={require("../image/google_icon/paid.png")} alt="paid_icon" class="imageinfo"></img>
