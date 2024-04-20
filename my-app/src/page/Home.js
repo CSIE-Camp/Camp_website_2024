@@ -12,7 +12,6 @@ import Traffic from "./Traffic";
 import Review from "./Review";
 
 const Home = () => {
-  
   const [descriptions, setDescriptions] = useState({
     image1: { visible: true, content: <About /> },
     image2: { visible: true, content: <Info /> },
@@ -32,7 +31,6 @@ const Home = () => {
   };
 
   return (
-    
     <div id="main" style={{ margin: "64px 0%" }}>
       <header style={{ textAlign: "center" }} id="header">
         <img src={banner} alt="banner" style={{ width: "100%" }} />
@@ -57,7 +55,8 @@ const Home = () => {
                         {index === 5 && <font id="review">歷屆回顧</font>}
                       </h2>
                       <hr />
-                      <div onClick={() => toggleDescription(`image${index}`)}>
+                      <div>
+                        {/*<div onClick={() => toggleDescription(`image${index}`)}>*/}
                         <img
                           src={
                             index === 1
