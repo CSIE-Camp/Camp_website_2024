@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import camp_introduction_img from "../image/draw_icon/camp_introduction.png";
-import registration_information_img from "../image/draw_icon/registration_information.png";
-import faq_img from "../image/draw_icon/faq.png";
-import traffic_information_img from "../image/draw_icon/traffic_information.png";
-import review_img from "../image/draw_icon/review.png";
+// import camp_introduction_img from "../image/draw_icon/camp_introduction.png";
+// import registration_information_img from "../image/draw_icon/registration_information.png";
+// import faq_img from "../image/draw_icon/faq.png";
+// import traffic_information_img from "../image/draw_icon/traffic_information.png";
+// import review_img from "../image/draw_icon/review.png";
 import banner from "../image/banner.png";
 import About from "./About";
 import Info from "./Info";
@@ -55,9 +55,8 @@ const Home = () => {
                         {index === 5 && <font id="review">歷屆回顧</font>}
                       </h2>
                       <hr />
-                      <div>
-                        {/*<div onClick={() => toggleDescription(`image${index}`)}>*/}
-                        <img
+                      {/*<div onClick={() => toggleDescription(`image${index}`)}>
+                         <img
                           src={
                             index === 1
                               ? camp_introduction_img
@@ -72,8 +71,8 @@ const Home = () => {
                           className={`image${index}`}
                           alt=""
                           style={{ width: "4em", height: "4em" }}
-                        />
-                      </div>
+                        /> 
+                      </div>*/}
                       <p
                         className={`text-below${index}`}
                         style={{ textAlign: index % 2 === 0 ? "right" : "left" }}
@@ -84,7 +83,7 @@ const Home = () => {
                       style={{
                         textAlign: index % 2 === 0 ? "right" : "left",
                         width: "100%",
-                        display: descriptions[`image${index}`].visible ? "block" : "none",
+                        // display: descriptions[`image${index}`].visible ? "block" : "none",
                         wordWrap: "break-word",
                       }}
                     >
