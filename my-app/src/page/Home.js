@@ -20,6 +20,8 @@ const Home = () => {
     image5: { visible: true, content: <Review /> },
   });
 
+  {
+    /*
   const toggleDescription = (imageId) => {
     setDescriptions((prevState) => ({
       ...prevState,
@@ -29,6 +31,8 @@ const Home = () => {
       },
     }));
   };
+*/
+  }
 
   return (
     <div id="main" style={{ margin: "64px 0%" }}>
@@ -55,8 +59,8 @@ const Home = () => {
                         {index === 5 && <font id="review">歷屆回顧</font>}
                       </h2>
                       <hr />
-                      <div onClick={() => toggleDescription(`image${index}`)}>
-                        {/* <img
+                      {/*<div onClick={() => toggleDescription(`image${index}`)}>
+                         <img
                           src={
                             index === 1
                               ? camp_introduction_img
@@ -71,8 +75,8 @@ const Home = () => {
                           className={`image${index}`}
                           alt=""
                           style={{ width: "4em", height: "4em" }}
-                        /> */}
-                      </div>
+                        /> 
+                      </div>*/}
                       <p
                         className={`text-below${index}`}
                         style={{ textAlign: index % 2 === 0 ? "right" : "left" }}

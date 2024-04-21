@@ -24,9 +24,10 @@ footer {
   // align-items: center;
   padding: 10px 32px;
   background: $light_orange;
-  border: 15px solid $brown;
-  border-radius: 8px;
+  border: 12px solid $brown;
+  border-radius: 22px;
   margin: 5px;
+  margin-bottom: 14px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   animation-name: contact_animation;
   animation-duration: 5s;
@@ -76,7 +77,7 @@ footer {
   .social_media_icon {
     width: 32px;
     height: 32px;
-    margin: 4px;
+    margin: 16px 10px;
   }
 
   .facebook_icon:hover {
@@ -96,7 +97,6 @@ footer {
 
 // }
 @media screen and (width: 980px) and (min-height: 1700px) {
-
   // .contact {
   //     // width: 300px;
   // }
