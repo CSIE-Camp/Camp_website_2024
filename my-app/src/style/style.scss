@@ -22,7 +22,7 @@ body > #root,
 #root > .App {
   //height: 100%;
   //width: 100%;
-  //overflow-x: hidden;
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
 }
@@ -31,7 +31,7 @@ body > #root,
   overflow-y: auto;
   background-image: url("../image/bg_nobg.png"), linear-gradient(to right, #352e72ff, #351a37ff);
   background-size: 100%;
-  background-position: center;
+  background-position: cover;
   background-repeat: repeat;
   //background-attachment: scroll;
   background-attachment: fixed;
