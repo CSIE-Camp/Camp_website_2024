@@ -20,6 +20,8 @@ const Home = () => {
     image5: { visible: true, content: <Review /> },
   });
 
+  {
+    /*
   const toggleDescription = (imageId) => {
     setDescriptions((prevState) => ({
       ...prevState,
@@ -29,6 +31,8 @@ const Home = () => {
       },
     }));
   };
+*/
+  }
 
   return (
     <div id="main" style={{ margin: "64px 0%" }}>
