@@ -83,7 +83,7 @@ const Home = () => {
                       style={{
                         textAlign: index % 2 === 0 ? "right" : "left",
                         width: "100%",
-                        display: descriptions[`image${index}`].visible ? "block" : "none",
+                        // display: descriptions[`image${index}`].visible ? "block" : "none",
                         wordWrap: "break-word",
                       }}
                     >
