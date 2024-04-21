@@ -7,6 +7,9 @@ export const Info = () => {
 
   return (
     <div class="attend_info_">
+      <div class="early_bird-notice">
+        <p>早鳥優惠進行中</p>
+      </div>
       <section class="lesson">
         <div>
           <h2>日期</h2>
@@ -48,7 +51,10 @@ export const Info = () => {
           <p>
             新臺幣 9500 元整<br></br>
             <div class="early_bird">
-              早鳥優惠：新臺幣 8900 元整（113 年 4 月 20 日 至 113 年 4 月 30 日）
+              <span class="early_bird-label">進行中</span>
+              <span class="early_bird_text">
+                早鳥優惠：新臺幣 8900 元整（113 年 4 月 20 日 至 113 年 4 月 30 日）
+              </span>
             </div>
           </p>
         </div>
