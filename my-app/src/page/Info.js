@@ -63,10 +63,10 @@ export const Info = () => {
       <div class="lesson">
         <div>
           <h2>詳細資訊</h2>
-          <p>
+          <p class="doc-link">
             {" "}
             <a href="https://docs.google.com/document/d/1-IfWEmdciveIbeI3UuuFrzIo26U1mj23lXVqvMRNDCk/edit?usp=sharing">
-              報名簡章
+              點此查看 <b>報名簡章</b>
             </a>{" "}
           </p>
         </div>

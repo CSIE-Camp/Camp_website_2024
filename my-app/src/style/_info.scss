@@ -313,7 +313,7 @@
   color: $yellow-1;
   font-weight: bold;
   line-height: 1.8;
-  top: 1.1px;
+  top: 1.2px;
 }
 
 .early_bird-notice p {
@@ -388,4 +388,9 @@
   100% {
     transform: scale(1.3);
   }
+}
+
+.doc-link {
+  color: $yellow-1;
+  text-decoration: underline $yellow-1;
 }
