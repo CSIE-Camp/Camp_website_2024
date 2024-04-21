@@ -1,5 +1,21 @@
 import React from "react";
-
+import styled from "styled-components";
+const Lesson = styled.section`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  div {
+    div.title {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      img {
+        align-self: flex-end;
+      }
+    }
+  }
+`;
 const About = () => {
   return (
     <div>
