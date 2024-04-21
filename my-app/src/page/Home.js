@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 // import camp_introduction_img from "../image/draw_icon/camp_introduction.png";
 // import registration_information_img from "../image/draw_icon/registration_information.png";
 // import faq_img from "../image/draw_icon/faq.png";
@@ -12,16 +12,16 @@ import Traffic from "./Traffic";
 import Review from "./Review";
 
 const Home = () => {
-  const [descriptions, setDescriptions] = useState({
-    image1: { visible: true, content: <About /> },
-    image2: { visible: true, content: <Info /> },
-    image3: { visible: true, content: <FAQ /> },
-    image4: { visible: true, content: <Traffic /> },
-    image5: { visible: true, content: <Review /> },
-  });
+  const pages = [<About />, <Info />, <FAQ />, <Traffic />, <Review />];
+  // const [descriptions, setDescriptions] = useState({
+  //   image1: { visible: true, content: <About /> },
+  //   image2: { visible: true, content: <Info /> },
+  //   image3: { visible: true, content: <FAQ /> },
+  //   image4: { visible: true, content: <Traffic /> },
+  //   image5: { visible: true, content: <Review /> },
+  // });
 
-  {
-    /*
+  /*
   const toggleDescription = (imageId) => {
     setDescriptions((prevState) => ({
       ...prevState,
@@ -32,7 +32,6 @@ const Home = () => {
     }));
   };
 */
-  }
 
   return (
     <div id="main" style={{ margin: "64px 0%" }}>
@@ -91,7 +90,7 @@ const Home = () => {
                         wordWrap: "break-word",
                       }}
                     >
-                      {descriptions[`image${index}`].content}
+                      {pages[index - 1]}
                     </div>
                   </li>
                 ))}
