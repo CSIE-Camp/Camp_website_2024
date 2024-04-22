@@ -53,7 +53,7 @@ const Home = () => {
                       >
                         {index === 1 && <font id="about">營隊資訊</font>}
                         {index === 2 && <font id="info">報名資訊</font>}
-                        {index === 3 && <font id="faq">FAQ</font>}
+                        {index === 3 && <font id="faq">常見問題</font>}
                         {index === 4 && <font id="traffic">交通資訊</font>}
                         {index === 5 && <font id="review">歷屆回顧</font>}
                       </h2>
