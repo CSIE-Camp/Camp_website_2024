@@ -10,7 +10,28 @@ import Info from "./Info";
 import FAQ from "./FAQ";
 import Traffic from "./Traffic";
 import Review from "./Review";
-
+const menuItems = [
+  {
+    name: "營隊介紹",
+    eng_name: "about",
+  },
+  {
+    name: "報名資訊",
+    eng_name: "info",
+  },
+  {
+    name: "常見問題",
+    eng_name: "faq",
+  },
+  {
+    name: "交通資訊",
+    eng_name: "traffic",
+  },
+  {
+    name: "歷屆回顧",
+    eng_name: "review",
+  },
+];
 const Home = () => {
   const pages = [<About />, <Info />, <FAQ />, <Traffic />, <Review />];
   // const [descriptions, setDescriptions] = useState({
@@ -43,54 +64,33 @@ const Home = () => {
           <div className="col-6 col-12-medium">
             <section>
               <ul className="big-image-list" style={{ listStyleType: "none" }}>
-                {[1, 2, 3, 4, 5].map((index) => (
+                {menuItems.map((item, index) => (
                   <li key={index}>
-                    {index > 1 && <div style={{ height: "100%" }}></div>}
-                    <div style={{ textAlign: index % 2 === 0 ? "right" : "left" }}>
+                    <div
+                      style={{ textAlign: index % 2 !== 0 ? "right" : "left" }}
+                      id={item.eng_name}
+                    >
                       <h2
-                        style={{ textAlign: index % 2 === 0 ? "right" : "left" }}
+                        style={{ textAlign: index % 2 !== 0 ? "right" : "left" }}
                         class="home_titles"
                       >
-                        {index === 1 && <font id="about">營隊資訊</font>}
-                        {index === 2 && <font id="info">報名資訊</font>}
-                        {index === 3 && <font id="faq">常見問題</font>}
-                        {index === 4 && <font id="traffic">交通資訊</font>}
-                        {index === 5 && <font id="review">歷屆回顧</font>}
+                        <span>{item.name}</span>
                       </h2>
                       <hr />
-                      {/*<div onClick={() => toggleDescription(`image${index}`)}>
-                         <img
-                          src={
-                            index === 1
-                              ? camp_introduction_img
-                              : index === 2
-                              ? registration_information_img
-                              : index === 3
-                              ? faq_img
-                              : index === 4
-                              ? traffic_information_img
-                              : review_img
-                          }
-                          className={`image${index}`}
-                          alt=""
-                          style={{ width: "4em", height: "4em" }}
-                        /> 
-                      </div>*/}
                       <p
                         className={`text-below${index}`}
-                        style={{ textAlign: index % 2 === 0 ? "right" : "left" }}
+                        style={{ textAlign: index % 2 !== 0 ? "right" : "left" }}
                       ></p>
                     </div>
-
                     <div
                       style={{
-                        textAlign: index % 2 === 0 ? "right" : "left",
+                        textAlign: index % 2 !== 0 ? "right" : "left",
                         width: "100%",
                         // display: descriptions[`image${index}`].visible ? "block" : "none",
                         wordWrap: "break-word",
                       }}
                     >
-                      {pages[index - 1]}
+                      {pages[index]}
                     </div>
                   </li>
                 ))}

@@ -184,6 +184,12 @@ const Nav = () => {
         block: "start",
         inline: "nearest",
       });
+      window.setTimeout(function () {
+        window.scrollTo({
+          top: window.scrollY - 75,
+          behavior: "smooth",
+        });
+      }, 700);
     }
   }
   function smoothScrollToTop(event) {
