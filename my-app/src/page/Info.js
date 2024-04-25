@@ -35,6 +35,20 @@ export const Info = () => {
       </div>
       <div class="lesson">
         <div>
+          <h2>住宿地點</h2>
+          <p>
+            <a href="https://guidehotel.com.tw/hotel-detail/1052">承攜行旅 臺北重慶館</a>
+            <br></br>103 臺北市大同區臺北市大同區重慶北路一段 62 號
+          </p>
+        </div>
+        <img
+          src={require("../image/google_icon/hotel.png")}
+          alt="hotel_icon"
+          class="imageinfo"
+        ></img>
+      </div>
+      <div class="lesson">
+        <div>
           <h2>報名時間</h2>
           <p>第一階段：113 年 4 月 20 日 至 113 年 5 月 20 日</p>
         </div>
