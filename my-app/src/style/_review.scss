@@ -6,7 +6,7 @@ div#page_review {
   --npr--arrow_width: 6vw;
   --npr--arrow_height: 5vw;
   --npr--dotbar_height: 7vw;
-
+  width: 100vw;
   @media (max-width: 600px) {
     --npr--photo_width: 80vw;
 
@@ -84,12 +84,15 @@ div#page_review {
     align-items: center;
     // border: 3px red solid;
 
+    @media (max-width: 1500px) {
+      margin-bottom: 30px;
+    }
+
     div#year_logo {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      cursor: pointer;
       // border: 3px red solid;
     }
 
@@ -106,11 +109,15 @@ div#page_review {
       // border: 3px red solid;
     }
 
-    img {
-      aspect-ratio: 1 / 1;
+    .img-border {
+      display: inline-block; /* 确保容器只占据所需的空间 */
+      overflow: hidden;
+      margin: 0;
       width: 9rem;
+      aspect-ratio: 1 / 1;
+      border: 2px #ede9db solid; /* 设置边框样式 */
       border-radius: 20px;
-      border: 2px #ede9db solid;
+      cursor: pointer;
 
       @media (max-width: 1100px) {
         width: 6rem;
@@ -120,38 +127,55 @@ div#page_review {
         width: 4rem;
       }
     }
+
+    img {
+      aspect-ratio: 1 / 1;
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+      //border: 2px #ede9db solid;
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.12);
+    }
   }
 
   div.year_review {
-    width: 80%;
+    width: 100%;
     min-width: 300px;
     // height: 50%;
-    padding: 0 0 0 1vw;
+    padding: 0 0 0 0vw;
     margin-bottom: 5vh;
     display: flex;
     justify-content: left;
     align-items: center;
-
+    @media screen and (max-width: 600px) {
+      width: 95vw;
+      flex-direction: column;
+      gap: 30px;
+    }
     // border: 3px red solid;
 
     div#review_title {
       font-family: "Noto Sans TC";
-      width: 13vw;
+      // width: 13vw;
       font-size: 35px;
       color: white;
       text-align: center;
       font-weight: bold;
       letter-spacing: 3px;
       @media (max-width: 1500px) {
-        font-size: 30px;
+        font-size: 2.5rem;
       }
 
       @media (max-width: 1100px) {
-        font-size: 20px;
+        font-size: 2rem;
       }
 
       @media (max-width: 550px) {
-        font-size: 15px;
+        font-size: 1.8rem;
       }
     }
 
@@ -261,7 +285,11 @@ div#page_review {
         }
 
         @media (max-width: 600px) {
-          opacity: 0;
+          position: absolute;
+          bottom: -22.5%; /* 距離圖片區域底部的距離，可以根據需要調整 */
+          left: 45.5%; /* 讓箭頭置中 */
+          transform: translateX(-130%);
+          opacity: 1;
         }
       }
 
@@ -270,6 +298,11 @@ div#page_review {
         height: calc(var(--npr--photo_height) + var(--npr--photo_yd) * 2);
         position: relative;
         user-select: none;
+
+        @media (max-width: 600px) {
+          left: 8%;
+          margin-bottom: 3%;
+        }
 
         div#ri_img_touch_left {
           width: 40%;

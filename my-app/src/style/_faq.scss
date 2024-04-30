@@ -12,7 +12,6 @@ div#page_faq {
     grid-template-columns: 4fr 1fr 1fr 4fr;
     grid-template-rows: 170px 170px 230px 230px 230px;
     gap: 15px;
-
     padding-top: 30px;
     padding-left: 12vw;
     padding-right: 12vw;
@@ -64,20 +63,16 @@ div#page_faq {
     padding-right: 3vw;
     padding-left: 3vw;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
   }
 
   .cell:hover .question {
     opacity: 0;
-    height: 0%;
-    transform: translateY(-70px);
+    transform: translateY(-67px);
   }
 
   .cell:hover .response {
     opacity: 1;
-    height: 0%;
     transform: translateY(0px);
   }
 
@@ -85,9 +80,11 @@ div#page_faq {
   .cell p {
     margin: 0;
     text-align: center;
+    overflow: visible;
   }
 
-  .cell .question {
+  .question {
+    display: grid;
     font-size: 28px;
     font-weight: bold;
     letter-spacing: 3px;
@@ -99,10 +96,11 @@ div#page_faq {
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
   }
 
-  .cell .response {
+  .response {
+    display: grid;
     height: 0%;
     align-content: center;
-    transform: translateY(70px);
+    transform: translateY(60px);
     opacity: 0;
     align-items: center;
     transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
@@ -122,7 +120,6 @@ div#page_faq {
     justify-content: center;
     font-size: 14px;
     font-weight: 400;
-    color: $off-white;
     color: $off-white;
     background-color: $purple;
     /*border: 3px solid $yellow-1;*/
@@ -147,7 +144,6 @@ div#page_faq {
     font-size: 14px;
     font-weight: 400;
     color: $off-white;
-    color: $off-white;
     background-color: $yellow-1;
     /*border: 3px solid $yellow-1;*/
     .text {
@@ -171,7 +167,6 @@ div#page_faq {
     font-size: 14px;
     font-weight: 400;
     color: $off-white;
-    color: $off-white;
     background-color: $orange-2;
     /*border: 3px solid $yellow-1;*/
     .text {
@@ -180,7 +175,7 @@ div#page_faq {
     }
   }
 
-  @media (max-width: 1025px) {
+  @media (max-width: 1024px) {
     .grid-container {
       display: grid;
       gap: 15px;
@@ -190,7 +185,7 @@ div#page_faq {
       padding-bottom: 60px;
       justify-content: center;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: repeat(4, 1fr) 1fr;
+      grid-template-rows: repeat(4, 220px) 190px;
       grid-template-areas:
         "cou-1 cou-2"
         "cou-3 dor-1"
@@ -198,162 +193,9 @@ div#page_faq {
         "reg-2 reg-3"
         "reg-4 reg-4";
     }
-    .course-1 {
-      grid-area: cou-1;
-    }
-    .course-2 {
-      grid-area: cou-2;
-    }
-    .course-3 {
-      grid-area: cou-3;
-    }
-    .dormitory-1 {
-      grid-area: dor-1;
-    }
-    .dormitory-2 {
-      grid-area: dor-2;
-    }
-    .register-1 {
-      grid-area: reg-1;
-    }
-    .register-2 {
-      grid-area: reg-2;
-    }
-    .register-3 {
-      grid-area: reg-3;
-    }
-    .register-4 {
-      grid-area: reg-4;
-    }
-
-    .cell {
-      display: flex;
-      box-sizing: border-box;
-      justify-content: center;
-      align-items: center;
-      background-color: $off-white;
-      border-radius: 20px;
-      padding-right: 3vw;
-      padding-left: 3vw;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-
-    .cell:hover .question {
-      opacity: 0;
-      height: 0%;
-      transform: translateY(-70px);
-    }
-
-    .cell:hover .response {
-      opacity: 1;
-      height: 0%;
-      transform: translateY(0px);
-    }
-
-    .cell h2,
-    .cell p {
-      margin: 0;
-      text-align: center;
-    }
-
-    .cell .question {
-      font-size: 28px;
-      font-weight: bold;
-      letter-spacing: 3px;
-      text-align: center;
-      opacity: 1;
-      height: 0%;
-      align-content: center;
-      transform: translateY(-7px);
-      transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-    }
-
-    .cell .response {
-      height: 0%;
-      align-content: center;
-      transform: translateY(70px);
-      opacity: 0;
-      align-items: center;
-      transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-    }
-
-    .category-course {
-      display: flex;
-      position: relative;
-      transform: translateX(-50%);
-      left: 50%;
-      height: 1.8em;
-      width: 6.5em;
-      border-radius: 50px;
-      align-items: center;
-      align-content: center;
-      text-align: center;
-      justify-content: center;
-      font-size: 14px;
-      font-weight: 400;
-      color: $off-white;
-      color: $off-white;
-      background-color: $purple;
-      /*border: 3px solid $yellow-1;*/
-      .text {
-        padding-bottom: 0.1em;
-        padding-left: 0.3em;
-      }
-    }
-
-    .category-dormitory {
-      display: flex;
-      position: relative;
-      transform: translateX(-50%);
-      left: 50%;
-      height: 1.8em;
-      width: 6.5em;
-      border-radius: 50px;
-      align-items: center;
-      align-content: center;
-      text-align: center;
-      justify-content: center;
-      font-size: 14px;
-      font-weight: 400;
-      color: $off-white;
-      color: $off-white;
-      background-color: $yellow-1;
-      /*border: 3px solid $yellow-1;*/
-      .text {
-        padding-bottom: 0.1em;
-        padding-left: 0.3em;
-      }
-    }
-
-    .category-register {
-      display: flex;
-      position: relative;
-      transform: translateX(-50%);
-      left: 50%;
-      height: 1.8em;
-      width: 6.5em;
-      border-radius: 50px;
-      align-items: center;
-      align-content: center;
-      text-align: center;
-      justify-content: center;
-      font-size: 14px;
-      font-weight: 400;
-      color: $off-white;
-      color: $off-white;
-      background-color: $orange-2;
-      /*border: 3px solid $yellow-1;*/
-      .text {
-        padding-bottom: 0.1em;
-        padding-left: 0.3em;
-      }
-    }
   }
 
-  @media (max-width: 770px) {
+  @media (max-width: 821px) {
     .grid-container {
       display: grid;
       gap: 15px;
@@ -363,7 +205,7 @@ div#page_faq {
       padding-bottom: 60px;
       justify-content: center;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: repeat(4, 0.8fr) 1fr;
+      grid-template-rows: repeat(4, 270px) 250px;
       grid-template-areas:
         "cou-1 cou-2"
         "cou-3 dor-1"
@@ -371,161 +213,9 @@ div#page_faq {
         "reg-2 reg-3"
         "reg-4 reg-4";
     }
-    .course-1 {
-      grid-area: cou-1;
-    }
-    .course-2 {
-      grid-area: cou-2;
-    }
-    .course-3 {
-      grid-area: cou-3;
-    }
-    .dormitory-1 {
-      grid-area: dor-1;
-    }
-    .dormitory-2 {
-      grid-area: dor-2;
-    }
-    .register-1 {
-      grid-area: reg-1;
-    }
-    .register-2 {
-      grid-area: reg-2;
-    }
-    .register-3 {
-      grid-area: reg-3;
-    }
-    .register-4 {
-      grid-area: reg-4;
-    }
-
-    .cell {
-      display: flex;
-      box-sizing: border-box;
-      justify-content: center;
-      align-items: center;
-      background-color: $off-white;
-      border-radius: 20px;
-      padding-right: 3vw;
-      padding-left: 3vw;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-
-    .cell:hover .question {
-      opacity: 0;
-      height: 0%;
-      transform: translateY(-70px);
-    }
-
-    .cell:hover .response {
-      opacity: 1;
-      height: 0%;
-      transform: translateY(0px);
-    }
-
-    .cell h2,
-    .cell p {
-      margin: 0;
-      text-align: center;
-    }
-
-    .cell .question {
-      font-size: 28px;
-      font-weight: bold;
-      letter-spacing: 3px;
-      text-align: center;
-      opacity: 1;
-      height: 0%;
-      align-content: center;
-      transform: translateY(-7px);
-      transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-    }
-
-    .cell .response {
-      height: 0%;
-      align-content: center;
-      transform: translateY(70px);
-      opacity: 0;
-      align-items: center;
-      transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-    }
-
-    .category-course {
-      display: flex;
-      position: relative;
-      transform: translateX(-50%);
-      left: 50%;
-      height: 1.8em;
-      width: 6.5em;
-      border-radius: 50px;
-      align-items: center;
-      align-content: center;
-      text-align: center;
-      justify-content: center;
-      font-size: 14px;
-      font-weight: 400;
-      color: $off-white;
-      color: $off-white;
-      background-color: $purple;
-      /*border: 3px solid $yellow-1;*/
-      .text {
-        padding-bottom: 0.1em;
-        padding-left: 0.3em;
-      }
-    }
-
-    .category-dormitory {
-      display: flex;
-      position: relative;
-      transform: translateX(-50%);
-      left: 50%;
-      height: 1.8em;
-      width: 6.5em;
-      border-radius: 50px;
-      align-items: center;
-      align-content: center;
-      text-align: center;
-      justify-content: center;
-      font-size: 14px;
-      font-weight: 400;
-      color: $off-white;
-      color: $off-white;
-      background-color: $yellow-1;
-      /*border: 3px solid $yellow-1;*/
-      .text {
-        padding-bottom: 0.1em;
-        padding-left: 0.3em;
-      }
-    }
-
-    .category-register {
-      display: flex;
-      position: relative;
-      transform: translateX(-50%);
-      left: 50%;
-      height: 1.8em;
-      width: 6.5em;
-      border-radius: 50px;
-      align-items: center;
-      align-content: center;
-      text-align: center;
-      justify-content: center;
-      font-size: 14px;
-      font-weight: 400;
-      color: $off-white;
-      color: $off-white;
-      background-color: $orange-2;
-      /*border: 3px solid $yellow-1;*/
-      .text {
-        padding-bottom: 0.1em;
-        padding-left: 0.3em;
-      }
-    }
   }
-  @media (max-width: 426px) {
+
+  @media (max-width: 700px) {
     .grid-container {
       display: grid;
       gap: 15px;
@@ -535,7 +225,7 @@ div#page_faq {
       padding-bottom: 60px;
       justify-content: center;
       grid-template-columns: 1fr;
-      grid-template-rows: repeat(8, 1.3fr) 1.8fr;
+      grid-template-rows: 230px 270px 200px repeat(5, 230px) 270px;
       grid-template-areas:
         "cou-1"
         "cou-2"
@@ -559,7 +249,7 @@ div#page_faq {
       padding-bottom: 60px;
       justify-content: center;
       grid-template-columns: 1fr;
-      grid-template-rows: repeat(8, 1.4fr) 1.8fr;
+      grid-template-rows: 230px 275px 230px repeat(5, 230px) 275px;
       grid-template-areas:
         "cou-1"
         "cou-2"

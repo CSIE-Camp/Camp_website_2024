@@ -24,14 +24,12 @@
 */
 
 .traffic-info {
-  width: 100%;
-
+  margin: auto 8vw;
   h1 {
     display: flex;
     position: static;
     width: 100%;
     padding-top: 150px;
-    padding-left: 50px;
   }
 }
 
@@ -50,7 +48,6 @@
 }
 
 .ntnu-address {
-  display: flex;
   justify-content: center;
   text-align: center;
   color: white;
@@ -65,7 +62,7 @@
 
 .traffic-btn {
   padding: 30px 150px;
-  // background-color: #ffead8;
+  // background-color: $off-white;
   border-radius: 50px;
   // font-size: 20px;
   background: none;
@@ -75,7 +72,7 @@
   font: inherit;
   cursor: pointer;
   outline: inherit;
-  color: #19a6a2;
+  color: $light-blue;
   font-weight: bold;
   width: 100%;
 }
@@ -93,7 +90,7 @@
 }
 
 .traffic-block {
-  background-color: #ffead8;
+  background-color: $off-white;
   display: flex;
   justify-content: space-around;
   margin-right: 8vw;
@@ -328,9 +325,9 @@
   justify-content: center;
   gap: 2px;
   border-radius: 20px;
-  background-color: #ffead8;
+  background-color: $off-white;
   padding: 20px;
-  color: #19a6a2;
+  color: $light-blue;
   font-weight: bold;
 }
 
@@ -363,12 +360,12 @@
     // background-color: red;
     font-size: 16px;
     white-space: nowrap;
-    color: #19a6a2;
+    color: $light-blue;
     font-weight: bold;
   }
 
   .traffic-block {
-    background-color: #ffead8;
+    background-color: $off-white;
     display: flex;
     justify-content: space-around;
     margin-right: 8vw;
@@ -399,7 +396,7 @@
     justify-content: center;
     gap: 2px;
     border-radius: 20px;
-    background-color: #ffead8;
+    background-color: $off-white;
     padding: 10px;
   }
 }
@@ -429,7 +426,7 @@
     // background-color: red;
     font-size: 16px;
     white-space: nowrap;
-    color: #19a6a2;
+    color: $light-blue;
     font-weight: bold;
   }
 
@@ -452,7 +449,7 @@
     justify-content: center;
     gap: 2px;
     border-radius: 20px;
-    background-color: #ffead8;
+    background-color: $off-white;
     padding: 10px;
   }
 
@@ -529,14 +526,13 @@
 
 @media screen and (max-width: 500px) {
   .ntnu-address {
-    display: flex;
     justify-content: center;
     font-size: 18px;
     text-align: center;
   }
 
   .traffic-block {
-    background-color: #ffead8;
+    background-color: $off-white;
     display: flex;
     justify-content: space-around;
     margin-right: 8vw;
@@ -558,12 +554,12 @@
     font-size: 16px;
     white-space: nowrap;
     font-size: 18px;
-    color: #19a6a2;
+    color: $light-blue;
     font-weight: bold;
   }
 
   .traffic-block {
-    background-color: #ffead8;
+    background-color: $off-white;
     display: flex;
     justify-content: space-around;
     margin-right: 8vw;
