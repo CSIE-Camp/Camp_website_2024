@@ -32,8 +32,8 @@ const About = () => {
           <h2>Python 進階</h2>
           <p>
             學完了 Python 基礎的課程後，我們會帶你們學習更多更進階的 Python
-            功能，如：物件導向、Class、如何使用函式庫、Try & Except 還有 Python
-            虛擬環境的架設，讓你們對 Python 的世界有更深的了解。
+            功能，如：Class、如何使用函式庫、Try & Except 還有 Python 虛擬環境的架設，讓你們對
+            Python 的世界有更深的了解。
           </p>
         </div>
 
