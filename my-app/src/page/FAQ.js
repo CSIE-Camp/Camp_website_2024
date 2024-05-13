@@ -22,7 +22,7 @@ export const FAQ = () => {
             <p>沒有基礎的適合來參加嗎？</p>
           </div>
           <div class="response">
-            <p>非常歡迎。我們的課程都是新手向，都是在零基礎的情況下設計的。</p>
+            <p>非常歡迎。我們的課程都是新手導向，都是在零基礎的情況下設計的。</p>
           </div>
         </div>
         <div class="cell course-2">
