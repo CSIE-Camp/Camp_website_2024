@@ -72,12 +72,30 @@ export const Info = () => {
             <div class="early_bird">
               {/* <span class="early_bird-label">進行中</span> */}
               <span class="early_bird_text">
-                早鳥優惠：新臺幣 8900 元整（113 年 4 月 20 日 至 113 年 4 月 30 日）
+                早鳥優惠：新臺幣 8900 元整（113 年 4 月 20 日 至 113 年 4 月 30 日） （已截止）
               </span>
             </div>
           </p>
         </div>
         <img src={require("../image/google_icon/paid.png")} alt="paid_icon" class="imageinfo"></img>
+      </div>
+      <div class="lesson">
+        <div>
+          <h2>匯款資訊</h2>
+          <p>國立臺灣師範大學資訊工程系學會 112 學年度郵局帳號：</p>
+          <p>戶名：國立臺灣師範大學資訊工程系學會洪軾凱</p>
+          <p>郵局代號：700</p>
+          <p>匯款帳號：0001972 0101705</p>
+
+          <p>
+            請在匯款備註註明：<b>2024師大資工營費用</b> 喔
+          </p>
+        </div>
+        <img
+          src={require("../image/google_icon/send_money.png")}
+          alt="description_icon"
+          class="imageinfo"
+        ></img>
       </div>
       <div class="lesson">
         <div>
