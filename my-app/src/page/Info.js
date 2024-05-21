@@ -50,7 +50,12 @@ export const Info = () => {
       <div class="lesson">
         <div>
           <h2>報名時間</h2>
-          <p>第一階段：113 年 4 月 20 日 至 113 年 5 月 20 日</p>
+          <p>
+            <del class="time_up">第一階段：113 年 4 月 20 日 至 113 年 5 月 20 日</del>（已截止）
+          </p>
+          <p>第一階段錄取名單公布：113 年 5 月 27 日</p>
+          <p>第一階段繳費期限：113 年 6 月 1 日</p>
+          <p>第二階段：113 年 6 月 1 日 至 113 年 6 月 7 日</p>
         </div>
         <img
           src={require("../image/google_icon/clock.png")}
