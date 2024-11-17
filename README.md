@@ -1,8 +1,9 @@
 
-Camp_website_2024
-NTNU CSIE camp website for 2024 Edit from last year's website
+> Camp_website_2024<br>
+> NTNU CSIE camp website for 2024 Edit from last year's website
 
-# When 'a' and 'e' are undefined, then **Kaiwei** will become kiwi. Thanks!
+# NTNU CSIE Camp 2024 Website
+Developed by NTNU CSIE Camp development team.
 
 > # react-app-website-frontside
 > 
