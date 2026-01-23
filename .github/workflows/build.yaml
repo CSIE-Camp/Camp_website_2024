@@ -27,5 +27,5 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           projectName: camp-site-2024
-          directory: my-app/build
+          directory: my-app/deploy
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
