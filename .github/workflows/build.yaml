@@ -18,7 +18,13 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Build
-        run: cd my-app && npm i && npm run build
+        run: |
+          cd my-app
+          npm i
+          npm run build
+          # 建立一個中轉目錄來存放 /2024 結構
+          mkdir -p deploy/2024
+          cp -r build/* deploy/2024/
 
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/pages-action@v1
