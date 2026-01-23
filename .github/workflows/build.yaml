@@ -24,13 +24,25 @@ jobs:
 
       - name: Debug Cloudflare Connection
         env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CF_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: |
-          echo "=== 開始技術偵錯 ==="
-          # 檢查當前 Token 權限下可以看到的 Pages 專案清單
-          npx wrangler pages project list
-          echo "=== 偵錯結束 ==="
+          echo "=== [Step 1] 驗證 Token 是否有效 ==="
+          curl -s -X GET "https://api.cloudflare.com/client/v4/user/tokens/verify" \
+               -H "Authorization: Bearer $CF_TOKEN" \
+               -H "Content-Type:application/json" | jq .
+
+          echo "=== [Step 2] 列出此 Token 有權限存取的帳號清單 ==="
+          # 這會顯示你的 Token 到底能看到哪些 Account ID
+          curl -s -X GET "https://api.cloudflare.com/client/v4/accounts" \
+               -H "Authorization: Bearer $CF_TOKEN" \
+               -H "Content-Type:application/json" | jq '.result[] | {name: .name, id: .id}'
+
+          echo "=== [Step 3] 檢查目標專案是否存在於該帳號下 ==="
+          # 如果這步噴出 400/404，代表 Step 2 找出的 ID 與你填寫的 CF_ACCOUNT_ID 不符
+          curl -s -X GET "https://api.cloudflare.com/client/v4/accounts/$CF_ACCOUNT_ID/pages/projects" \
+               -H "Authorization: Bearer $CF_TOKEN" \
+               -H "Content-Type:application/json" | jq '.result[]?.name'
 
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/pages-action@v1
