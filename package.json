@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/CSIE-Camp/website-frontend/issues"
   },
-  "homepage": "https://github.com/CSIE-Camp/website-frontend#readme",
+  "homepage": "/2024",
   "dependencies": {
     "react-bootstrap": "^2.7.2",
     "styled-components": "^5.3.6"
